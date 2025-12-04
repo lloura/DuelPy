@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=io.github.lloura.DuelPy
+Exec=@bindir@/duelpy --gapplication-service

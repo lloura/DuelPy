@@ -1,0 +1,233 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $DuelpyWindow: Adw.ApplicationWindow {
+  title: _("Duel");
+  default-width: 450;
+  default-height: 600;
+
+  Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar {
+      [end]
+      Gtk.MenuButton {
+        icon-name: "open-menu-symbolic";
+        tooltip-text: _("Main Menu");
+        menu-model: primary_menu;
+      }
+    }
+
+        Adw.NavigationView navigation_view {
+      Adw.NavigationPage {
+        title: _("Home");
+        tag: "home";
+
+        child: Gtk.Box {
+          orientation: vertical;
+          valign: center;
+          halign: center;
+          spacing: 12;
+          margin-start: 16;
+          margin-end: 16;
+          margin-bottom: 16;
+
+          Gtk.Image {
+            icon-name: "welcome";
+            pixel-size: 160;
+            margin-bottom: 16;
+
+            styles [
+              "icon-dropshadow",
+            ]
+          }
+
+          Gtk.Label {
+            label: _("Welcome!");
+            halign: center;
+
+            styles [
+              "title-1",
+            ]
+          }
+
+          Gtk.Label {
+            label: _("Let's Play Rock-Paper-Scissors-Lizard-Spock!");
+            halign: center;
+            wrap: true;
+            margin-bottom: 16;
+
+            styles [
+              "description",
+            ]
+          }
+
+          Adw.Clamp {
+            maximum-size: 250;
+
+            Gtk.Box {
+              orientation: vertical;
+              spacing: 8;
+
+              Gtk.Button button_rock {
+                action-name: "win.rock";
+
+                styles [
+                  "opaque",
+                  "Button",
+                  "button_rock",
+                ]
+
+                Adw.ButtonContent {
+                  label: "Rock!";
+                  icon-name: "rock_symbolic";
+                }
+              }
+
+              Gtk.Button button_paper {
+                action-name: "win.paper";
+
+                styles [
+                  "opaque",
+                  "Button",
+                  "button_paper",
+                ]
+
+                Adw.ButtonContent {
+                  label: "Paper!";
+                  icon-name: "paper_symbolic";
+                }
+              }
+
+              Gtk.Button button_scissors {
+                action-name: "win.scissors";
+
+                styles [
+                  "opaque",
+                  "Button",
+                  "button_scissors",
+                ]
+
+                Adw.ButtonContent {
+                  label: "Scissors!";
+                  icon-name: "scissors_symbolic";
+                }
+              }
+
+              Gtk.Button button_lizard {
+                action-name: "win.lizard";
+
+                styles [
+                  "opaque",
+                  "Button",
+                  "button_lizard",
+                ]
+
+                Adw.ButtonContent {
+                  label: "Lizard!";
+                  icon-name: "lizard_symbolic";
+                }
+              }
+
+              Gtk.Button button_spock {
+                action-name: "win.spock";
+
+                styles [
+                  "opaque",
+                  "Button",
+                  "button_spock",
+                ]
+
+                Adw.ButtonContent {
+                  label: "Spock!";
+                  icon-name: "spock_symbolic";
+                }
+              }
+            }
+          }
+        };
+      }
+
+      Adw.NavigationPage {
+        title: _("Results");
+        tag: "results";
+
+        child: Gtk.Box {
+          orientation: vertical;
+          valign: center;
+          halign: center;
+          spacing: 12;
+          margin-start: 16;
+          margin-end: 16;
+          margin-bottom: 16;
+
+          Gtk.Box {
+            orientation: horizontal;
+            spacing: 16;
+
+            Gtk.Image {
+              icon-name: "rock";
+              pixel-size: 160;
+
+              styles [
+                "icon-dropshadow",
+              ]
+            }
+
+            Gtk.Label {
+              label: _("X");
+
+              styles [
+                "title-1",
+              ]
+            }
+
+            Gtk.Image {
+              icon-name: "scissors";
+              pixel-size: 160;
+
+              styles [
+                "icon-dropshadow",
+              ]
+            }
+          }
+
+          Adw.Clamp {
+            maximum-size: 250;
+
+            Gtk.Button button_retry {
+              action-name: "win.retry";
+
+              styles [
+                "opaque",
+              ]
+
+              Adw.ButtonContent {
+                label: "Retry!";
+                icon-name: "retry_symbolic";
+              }
+            }
+          }
+        };
+      }
+    }
+  }
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("_Preferences");
+      action: "app.preferences";
+    }
+
+    item {
+      label: _("_Keyboard Shortcuts");
+      action: "win.show-help-overlay";
+    }
+
+    item {
+      label: _("_About Duel");
+      action: "app.about";
+    }
+  }
+}

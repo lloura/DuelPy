@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=duelpy
+Exec=duelpy
+Icon=io.github.lloura.DuelPy
+Terminal=false
+Type=Application
+Categories=Utility;
+Keywords=GTK;
+StartupNotify=true
+DBusActivatable=true

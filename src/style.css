@@ -1,0 +1,24 @@
+.Button{
+  color: @white_1;
+}
+
+.button_rock{
+  background-color: @blue_3;
+}
+
+.button_paper{
+  background-color: @green_4;
+}
+
+.button_scissors{
+  background-color: @red_3;
+}
+
+.button_lizard{
+  background-color: @orange_3;
+}
+
+.button_spock{
+  background-color: @purple_3;
+}
+

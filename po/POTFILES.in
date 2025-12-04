@@ -1,0 +1,8 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+data/io.github.lloura.DuelPy.desktop.in
+data/io.github.lloura.DuelPy.metainfo.xml.in
+data/io.github.lloura.DuelPy.gschema.xml
+src/main.py
+src/window.py
+src/window.blp

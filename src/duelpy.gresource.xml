@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/io/github/lloura/DuelPy">
+    <file preprocess="xml-stripblanks">window.ui</file>
+    <file>style.css</file>
+
+    <file preprocess="xml-stripblanks">icons/paper.svg</file>
+    <file preprocess="xml-stripblanks">icons/paper_symbolic.svg</file>
+    <file preprocess="xml-stripblanks">icons/retry_symbolic.svg</file>
+    <file preprocess="xml-stripblanks">icons/rock.svg</file>
+    <file preprocess="xml-stripblanks">icons/rock_symbolic.svg</file>
+    <file preprocess="xml-stripblanks">icons/scissors.svg</file>
+    <file preprocess="xml-stripblanks">icons/scissors_symbolic.svg</file>
+    <file preprocess="xml-stripblanks">icons/welcome.svg</file>
+  </gresource>
+</gresources>
+
