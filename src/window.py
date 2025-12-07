@@ -27,6 +27,10 @@ class DuelpyWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'DuelpyWindow'
 
     navigation_view = Gtk.Template.Child()
+    img_player_choice = Gtk.Template.Child()
+    img_computer_choice = Gtk.Template.Child()
+    lbl_result = Gtk.Template.Child()
+    lbl_explanation = Gtk.Template.Child()
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -49,9 +53,14 @@ class DuelpyWindow(Adw.ApplicationWindow):
 
         result = self.determine_winner(player_choice, computer_choice)
 
-        print(f"player_choice: {player_choice}")
-        print(f"computer_choice: {computer_choice}")
-        print(f"result: {result}")
+        #print(f"player_choice: {player_choice}")
+        #print(f"computer_choice: {computer_choice}")
+        #print(f"result: {result}")
+
+        self.img_player_choice.set_from_icon_name(player_choice)
+        self.img_computer_choice.set_from_icon_name(computer_choice)
+        self.lbl_result.set_text(result)
+        self.lbl_explanation.set_text(self.get_explanation(player_choice, computer_choice))
 
         self.navigation_view.push_by_tag("results")
 
@@ -71,6 +80,57 @@ class DuelpyWindow(Adw.ApplicationWindow):
             return "You Won!"
         else:
             return "You Lost!"
+
+    def get_explanation(self, player_choice, computer_choice):
+        if (player_choice == computer_choice):
+            return f"{player_choice} evens out with {computer_choice}"
+
+        match(player_choice):
+            case "rock":
+                if (computer_choice == "scissors"):
+                    return "Rock smashes Scissors!"
+                if (computer_choice == "lizard"):
+                    return "Rock smashes Lizard!"
+                if (computer_choice == "paper"):
+                    return "Rock gets covered by Paper!"
+                if (computer_choice == "spock"):
+                    return "Rock gets vaporized by Spock!"
+            case "paper":
+                if (computer_choice == "rock"):
+                    return "Paper covers Rock!"
+                if (computer_choice == "spock"):
+                    return "Paper disproves Spock!"
+                if (computer_choice == "scissors"):
+                    return "Paper gets cut by Scissors!"
+                if (computer_choice == "lizard"):
+                    return "Paper gets eaten by Lizard!"
+            case "scissors":
+                if (computer_choice == "paper"):
+                    return "Scissors cuts Paper!"
+                if (computer_choice == "lizard"):
+                    return "Scissors decapites Lizard!"
+                if (computer_choice == "rock"):
+                    return "Scissors gets smashed by Rock!"
+                if (computer_choice == "spock"):
+                    return "Scissors gets smashed by Spock!"
+            case "lizard":
+                if (computer_choice == "paper"):
+                    return "Lizard eats Paper!"
+                if (computer_choice == "spock"):
+                    return "Lizard poisons Spock!"
+                if (computer_choice == "scissors"):
+                    return "Lizard gets decapited by Scissors!"
+                if (computer_choice == "rock"):
+                    return "Lizard gets smashed by Rock!"
+            case "spock":
+                if (computer_choice == "rock"):
+                    return "Spock vaporizes Rock!"
+                if (computer_choice == "scissors"):
+                    return "Spock smashes scissors!"
+                if (computer_choice == "paper"):
+                    return "Spock gets disproven by Paper!"
+                if (computer_choice == "lizard"):
+                    return "Spock gets poisoned by Lizard!"
 
     def on_retry(self):
         self.navigation_view.pop()
