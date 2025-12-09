@@ -4,13 +4,15 @@
     <file preprocess="xml-stripblanks">window.ui</file>
     <file>style.css</file>
 
+    <file preprocess="xml-stripblanks">icons/alien-symbolic.svg</file>
     <file preprocess="xml-stripblanks">icons/paper.svg</file>
-    <file preprocess="xml-stripblanks">icons/paper_symbolic.svg</file>
-    <file preprocess="xml-stripblanks">icons/retry_symbolic.svg</file>
+    <file preprocess="xml-stripblanks">icons/paper-symbolic.svg</file>
+    <file preprocess="xml-stripblanks">icons/retry-symbolic.svg</file>
     <file preprocess="xml-stripblanks">icons/rock.svg</file>
-    <file preprocess="xml-stripblanks">icons/rock_symbolic.svg</file>
+    <file preprocess="xml-stripblanks">icons/rock-symbolic.svg</file>
     <file preprocess="xml-stripblanks">icons/scissors.svg</file>
-    <file preprocess="xml-stripblanks">icons/scissors_symbolic.svg</file>
+    <file preprocess="xml-stripblanks">icons/scissors-symbolic.svg</file>
+    <file preprocess="xml-stripblanks">icons/lizard-symbolic.svg</file>
     <file preprocess="xml-stripblanks">icons/welcome.svg</file>
   </gresource>
 </gresources>

@@ -17,7 +17,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
       }
     }
 
-        Adw.NavigationView navigation_view {
+    Adw.NavigationView navigation_view {
       Adw.NavigationPage {
         title: _("Home");
         tag: "home";
@@ -79,7 +79,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
 
                 Adw.ButtonContent {
                   label: "Rock!";
-                  icon-name: "rock_symbolic";
+                  icon-name: "rock-symbolic";
                 }
               }
 
@@ -94,7 +94,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
 
                 Adw.ButtonContent {
                   label: "Paper!";
-                  icon-name: "paper_symbolic";
+                  icon-name: "paper-symbolic";
                 }
               }
 
@@ -109,7 +109,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
 
                 Adw.ButtonContent {
                   label: "Scissors!";
-                  icon-name: "scissors_symbolic";
+                  icon-name: "scissors-symbolic";
                 }
               }
 
@@ -124,7 +124,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
 
                 Adw.ButtonContent {
                   label: "Lizard!";
-                  icon-name: "lizard_symbolic";
+                  icon-name: "lizard-symbolic";
                 }
               }
 
@@ -139,7 +139,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
 
                 Adw.ButtonContent {
                   label: "Spock!";
-                  icon-name: "spock_symbolic";
+                  icon-name: "alien-symbolic";
                 }
               }
             }
@@ -192,24 +192,28 @@ template $DuelpyWindow: Adw.ApplicationWindow {
             }
           }
 
-Gtk.Box {
-      orientation: vertical;
-      spacing: 12;
-      margin-bottom: 32;
+          Gtk.Box {
+            orientation: vertical;
+            spacing: 12;
+            margin-bottom: 32;
 
-        Gtk.Label lbl_result{
-label: _("");
+            Gtk.Label lbl_result {
+              label: _("");
 
-      styles ["title-2",]
+              styles [
+                "title-2",
+              ]
             }
 
-                    Gtk.Label lbl_explanation{
-label: _("");
+            Gtk.Label lbl_explanation {
+              label: _("");
 
-      styles ["description",]
+              styles [
+                "description",
+              ]
             }
+          }
 
-    }
           Adw.Clamp {
             maximum-size: 250;
 
@@ -222,7 +226,7 @@ label: _("");
 
               Adw.ButtonContent {
                 label: "Retry!";
-                icon-name: "retry_symbolic";
+                icon-name: "retry-symbolic";
               }
             }
           }
