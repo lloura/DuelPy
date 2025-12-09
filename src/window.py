@@ -66,7 +66,7 @@ class DuelpyWindow(Adw.ApplicationWindow):
 
     def determine_winner(self, player_choice, computer_choice):
         if player_choice == computer_choice:
-            return 'Draw!'
+            return "Draw!"
 
         wins = {
             'rock': ['scissors', 'lizard'],
@@ -83,7 +83,16 @@ class DuelpyWindow(Adw.ApplicationWindow):
 
     def get_explanation(self, player_choice, computer_choice):
         if (player_choice == computer_choice):
-            return f"{player_choice} evens out with {computer_choice}"
+            if (player_choice == "rock"):
+                return "Rock evens out with Rock!"
+            if (player_choice == "paper"):
+                return "Paper evens out with Paper!"
+            if (player_choice == "scissors"):
+                return "Scissors evens out with Scissors!"
+            if (player_choice == "lizard"):
+                return "Lizard evens out with Lizard!"
+            if (player_choice == "spock"):
+                return "Spock evens out with Spock!"
 
         match(player_choice):
             case "rock":
