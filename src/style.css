@@ -7,7 +7,7 @@
 }
 
 .button_paper{
-  background-color: @green_4;
+  background-color: @purple_3;
 }
 
 .button_scissors{
@@ -19,6 +19,10 @@
 }
 
 .button_spock{
-  background-color: @purple_3;
+  background-color: @green_4;
 }
 
+.button_retry{
+  color: @color_2;
+  background-color: @dark_2;
+}
