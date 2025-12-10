@@ -57,8 +57,16 @@ class DuelpyWindow(Adw.ApplicationWindow):
         #print(f"computer_choice: {computer_choice}")
         #print(f"result: {result}")
 
-        self.img_player_choice.set_from_icon_name(player_choice)
-        self.img_computer_choice.set_from_icon_name(computer_choice)
+        if (player_choice == "spock"):
+            self.img_player_choice.set_from_icon_name("alien")
+        else:
+            self.img_player_choice.set_from_icon_name(player_choice)
+
+        if (computer_choice == "spock"):
+            self.img_computer_choice.set_from_icon_name("alien")
+        else:
+            self.img_computer_choice.set_from_icon_name(computer_choice)
+
         self.lbl_result.set_text(result)
         self.lbl_explanation.set_text(self.get_explanation(player_choice, computer_choice))
 
