@@ -1,7 +1,7 @@
 <div align="center">
   <img src="data/icons/hicolor/scalable/apps/io.github.lloura.DuelPy.svg" width="192" height="192" alt="Duel! Icon"/>
   
-  # Duel!
+  # Duel! (DuelPy)
   
   A Rock, Paper, Scissors, Lizard, Spock game built with GTK4 and Libadwaita
   
