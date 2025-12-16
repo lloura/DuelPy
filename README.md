@@ -67,10 +67,8 @@ Pre-built Flatpak packages will be available in the [Releases](../../releases) s
 <details>
 <summary>Click to see more screenshots</summary>
 
-![Lizard X Rock](data/screenshots/lizard_x_rock.png)
-![Paper X Spock](data/screenshots/paper_x_spock.png)
-![Rock X Scissors](data/screenshots/rock_x_scissors.png)
-![Paper X Lizard](data/screenshots/paper_x_lizard.png)
+![Lizard x Rock • Paper x Spock](data/screenshots/lizard_x_rock_paper_x_spock.png)
+![Paper x Lizard • Rock x Scissors](data/screenshots/paper_x_lizard_rock_x_scissors.png)
 
 </details>
 
