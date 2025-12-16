@@ -3,72 +3,93 @@
   <id>io.github.lloura.DuelPy</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
-
   <name>Duel!</name>
-  <summary>A Libadwaita "Rock-Paper-Scissors-Lizard-Spock" Game!</summary>
+  <summary>Play Rock, Paper, Scissors, Lizard, Spock against the computer</summary>
+
   <description>
-    <p>Play against the computer on a game of RPSLS!</p>
+    <p>
+      Duel! is a modern GNOME game implementing the Rock, Paper, Scissors, Lizard, Spock variant popularized by The Big Bang Theory.
+    </p>
+    <p>
+      Built with GTK4 and Libadwaita, it provides a clean and intuitive interface following GNOME's design guidelines. Challenge the computer and see if you can master all five moves!
+    </p>
+    <p>Features:</p>
+    <ul>
+      <li>Classic RPSLS gameplay with all five moves</li>
+      <li>Modern adaptive interface</li>
+      <li>Follows GNOME Human Interface Guidelines</li>
+      <li>Clean and simple design</li>
+    </ul>
   </description>
 
   <developer id="io.github.lloura">
     <name>Lucas Loura</name>
   </developer>
 
-  <!-- Required: Should be a link to the upstream homepage for the component -->
   <url type="homepage">https://github.com/lloura/DuelPy</url>
-  <!-- Recommended: It is highly recommended for open-source projects to display the source code repository -->
   <url type="vcs-browser">https://github.com/lloura/DuelPy</url>
-  <!-- Should point to the software's bug tracking system, for users to report new bugs -->
   <url type="bugtracker">https://github.com/lloura/DuelPy/issues</url>
-  <!-- Should link a FAQ page for this software, to answer some of the most-asked questions in detail -->
-  <!-- URLs of this type should point to a webpage where users can submit or modify translations of the upstream project -->
-  <!-- <url type="translate">https://example.org/translate</url> -->
-  <!-- <url type="faq">https://example.org/faq</url> -->
-  <!-- Should provide a web link to an online user's reference, a software manual or help page -->
-  <!-- <url type="help">https://example.org/help</url> -->
-  <!-- URLs of this type should point to a webpage showing information on how to donate to the described software project -->
-  <!-- <url type="donation">https://example.org/donate</url> -->
-  <!-- This could for example be an HTTPS URL to an online form or a page describing how to contact the developer -->
-  <!-- <url type="contact">https://example.org/contact</url> -->
-  <!-- URLs of this type should point to a webpage showing information on how to contribute to the described software project -->
-  <!-- <url type="contribute">https://example.org/contribute</url> -->
 
   <translation type="gettext">duelpy</translation>
-  <!-- All graphical applications having a desktop file must have this tag in the MetaInfo.
-     If this is present, appstreamcli compose will pull icons, keywords and categories from the desktop file. -->
   <launchable type="desktop-id">io.github.lloura.DuelPy.desktop</launchable>
-  <!-- Use the OARS website (https://hughsie.github.io/oars/generate.html) to generate these and make sure to use oars-1.1 -->
+
+  <!-- No violent or inappropriate content -->
   <content_rating type="oars-1.1"/>
 
-  <!-- Applications should set a brand color in both light and dark variants like so -->
+  <!-- Brand colors - adjust to match your app's theme -->
   <branding>
-    <color type="primary" scheme_preference="light">#3584e4</color>
-    <color type="primary" scheme_preference="dark">#1c71d8</color>
+    <color type="primary" scheme_preference="light">#8FF0A4</color>
+    <color type="primary" scheme_preference="dark">#9141AC</color>
   </branding>
 
   <screenshots>
     <screenshot type="default">
-      <image>https://example.org/example1.png</image>
-      <caption>A caption</caption>
+      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/main.png</image>
+      <caption>Main welcome screen</caption>
     </screenshot>
     <screenshot>
-      <image>https://example.org/example2.png</image>
-      <caption>A caption</caption>
+      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/paper_x_spock.png</image>
+      <caption>Game results showing Paper vs Spock</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/lizard_x_rock.png</image>
+      <caption>Game results showing Lizard vs Rock</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/rock_x_scissors.png</image>
+      <caption>Game results showing Rock vs Scissors</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/paper_x_lizard.png</image>
+      <caption>Game results showing Paper vs Lizard</caption>
     </screenshot>
   </screenshots>
 
   <releases>
-    <release version="1.0.1" date="2024-01-18">
-      <url type="details">https://example.org/changelog.html#version_1.0.1</url>
+    <release version="0.1.0" date="2025-02-16">
       <description translate="no">
-        <p>Release description</p>
+        <p>Initial release</p>
         <ul>
-          <li>List of changes</li>
-          <li>List of changes</li>
+          <li>Rock, Paper, Scissors, Lizard, Spock gameplay</li>
+          <li>Modern GTK4/Libadwaita interface</li>
+          <li>Clean and simple design</li>
         </ul>
       </description>
     </release>
   </releases>
 
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+  </supports>
+
+  <categories>
+    <category>Game</category>
+  </categories>
 </component>
 

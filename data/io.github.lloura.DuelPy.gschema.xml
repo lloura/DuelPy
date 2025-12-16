@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist gettext-domain="duelpy">
-	<schema id="io.github.lloura.DuelPy" path="/io/github/lloura/DuelPy/">
-	</schema>
+  <schema id="io.github.lloura.DuelPy" path="/io/github/lloura/DuelPy/">
+    <key name="window-width" type="i">
+      <default>600</default>
+      <summary>Window width</summary>
+      <description>The width of the application window</description>
+    </key>
+    <key name="window-height" type="i">
+      <default>400</default>
+      <summary>Window height</summary>
+      <description>The height of the application window</description>
+    </key>
+    <key name="window-maximized" type="b">
+      <default>false</default>
+      <summary>Window maximized state</summary>
+      <description>Whether the window is maximized</description>
+    </key>
+    <key name="window-fullscreen" type="b">
+      <default>false</default>
+      <summary>Window fullscreen state</summary>
+      <description>Whether the window is fullscreen</description>
+    </key>
+  </schema>
 </schemalist>
+

@@ -1,10 +1,10 @@
 [Desktop Entry]
 Name=Duel!
+Comment=Play Rock, Paper, Scissors, Lizard, Spock
 Exec=duelpy
 Icon=io.github.lloura.DuelPy
 Terminal=false
 Type=Application
-Categories=Game;
-Keywords=GTK;
+Categories=GTK;GNOME;Game;
+Keywords=game;rock;paper;scissors;lizard;spock;rpsls;
 StartupNotify=true
-DBusActivatable=true
