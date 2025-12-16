@@ -1,11 +1,11 @@
 <div align="center">
   <img src="data/icons/hicolor/scalable/apps/io.github.lloura.DuelPy.svg" width="192" height="192" alt="Duel! Icon"/>
   
-  # Duel!
+  # Duel! (DuelPy)
   
   A Rock, Paper, Scissors, Lizard, Spock game built with GTK4 and Libadwaita
   
-  ![main](data/screenshots/main_paper_x_spock.png)
+  <img src="data/screenshots/main_paper_x_spock.png" alt="Main • Paper x Spock"/>
 </div>
 
 ---
@@ -67,8 +67,8 @@ Pre-built Flatpak packages will be available in the [Releases](../../releases) s
 <details>
 <summary>Click to see more screenshots</summary>
 
-![Lizard x Rock • Paper x Spock](data/screenshots/lizard_x_rock_paper_x_spock.png)
-![Paper x Lizard • Rock x Scissors](data/screenshots/paper_x_lizard_rock_x_scissors.png)
+<img src="data/screenshots/lizard_x_rock_paper_x_spock.png" alt="Lizard x Rock • Paper x Spock"/>
+<img src="data/screenshots/paper_x_lizard_rock_x_scissors.png" alt="Paper x Lizard • Rock x Scissors"/>
 
 </details>
 
