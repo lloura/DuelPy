@@ -51,7 +51,7 @@ class DuelpyApplication(Adw.Application):
 
     def on_about_action(self, *args):
         """Callback for the app.about action."""
-        about = Adw.AboutDialog(application_name='duelpy',
+        about = Adw.AboutDialog(application_name='Duel!',
                                 application_icon='io.github.lloura.DuelPy',
                                 developer_name='Lucas Loura',
                                 version='0.1.0',
