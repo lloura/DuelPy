@@ -32,20 +32,31 @@ class DuelpyWindow(Adw.ApplicationWindow):
     lbl_result = Gtk.Template.Child()
     lbl_explanation = Gtk.Template.Child()
 
+    shortcuts_dialog = Gtk.Template.Child()
+
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.create_action('rock', self.on_play, 'rock')
-        self.create_action('paper', self.on_play, 'paper')
-        self.create_action('scissors', self.on_play, 'scissors')
-        self.create_action('lizard', self.on_play, 'lizard')
-        self.create_action('spock', self.on_play, 'spock')
-        self.create_action('retry', self.on_retry)
+        self.create_action('rock', self.on_play, 'rock', ['1'])
+        self.create_action('paper', self.on_play, 'paper', ['2'])
+        self.create_action('scissors', self.on_play, 'scissors', ['3'])
+        self.create_action('lizard', self.on_play, 'lizard', ['4'])
+        self.create_action('spock', self.on_play, 'spock', ['5'])
+        self.create_action('retry', self.on_retry, shortcuts=['<Ctrl>R'])
 
-    def create_action(self, name, callback, parameter=None):
+        self.create_action('show-help-overlay', self.on_show_shortcuts, shortcuts=['<Ctrl>question'])
+
+    def create_action(self, name, callback, parameter=None, shortcuts=None):
         action = Gio.SimpleAction.new(name, None)
-        action.connect('activate', lambda action, _: callback(parameter) if parameter else callback())
+        action.connect(
+            "activate",
+            lambda action, _: callback(parameter) if parameter else callback()
+        )
         self.add_action(action)
+
+        if shortcuts:
+            app = self.get_application()
+            app.set_accels_for_action(f"win.{name}", shortcuts)
 
     def on_play(self, player_choice):
         choices = ['rock', 'paper', 'scissors', 'lizard', 'spock']
@@ -70,7 +81,8 @@ class DuelpyWindow(Adw.ApplicationWindow):
         self.lbl_result.set_text(result)
         self.lbl_explanation.set_text(self.get_explanation(player_choice, computer_choice))
 
-        self.navigation_view.push_by_tag("results")
+        if self.navigation_view.get_visible_page_tag() != "results":
+            self.navigation_view.push_by_tag("results")
 
     def determine_winner(self, player_choice, computer_choice):
         if player_choice == computer_choice:
@@ -150,4 +162,9 @@ class DuelpyWindow(Adw.ApplicationWindow):
                     return "Spock gets poisoned by Lizard!"
 
     def on_retry(self):
-        self.navigation_view.pop()
+        if self.navigation_view.get_visible_page_tag() == "results":
+            self.navigation_view.pop()
+
+    def on_show_shortcuts(self):
+        self.shortcuts_dialog.present(self)
+

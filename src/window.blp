@@ -250,3 +250,41 @@ menu primary_menu {
     }
   }
 }
+
+Adw.ShortcutsDialog shortcuts_dialog {
+  title: _("Keyboard Shortcuts");
+
+  Adw.ShortcutsSection {
+    title: _("Gameplay");
+
+    Adw.ShortcutsItem {
+      title: _("Rock");
+      accelerator: "1";
+    }
+
+    Adw.ShortcutsItem {
+      title: _("Paper");
+      accelerator: "2";
+    }
+
+    Adw.ShortcutsItem {
+      title: _("Scissors");
+      accelerator: "3";
+    }
+
+    Adw.ShortcutsItem {
+      title: _("Lizard");
+      accelerator: "4";
+    }
+
+    Adw.ShortcutsItem {
+      title: _("Spock");
+      accelerator: "5";
+    }
+
+    Adw.ShortcutsItem {
+      title: _("Retry");
+      accelerator: "<Ctrl>R";
+    }
+  }
+}
