@@ -68,7 +68,7 @@
   <releases>
     <release version="0.1.1" date="2025-12-16">
       <description translate="no">
-        <p>Updated Runtime & Keybindings</p>
+        <p>Updated Runtime and Keybindings</p>
         <ul>
           <li>Added keyboard shortcuts for game actions (Rock, Paper, Scissors, Lizard, Spock, Retry)</li>
           <li>Added a 'Keyboard Shortcuts' window to easily see the available shortcuts</li>
