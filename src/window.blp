@@ -78,7 +78,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
                 ]
 
                 Adw.ButtonContent {
-                  label: "Rock!";
+                  label: _("Rock!");
                   icon-name: "rock-symbolic";
                 }
               }
@@ -93,7 +93,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
                 ]
 
                 Adw.ButtonContent {
-                  label: "Paper!";
+                  label: _("Paper!");
                   icon-name: "paper-symbolic";
                 }
               }
@@ -108,7 +108,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
                 ]
 
                 Adw.ButtonContent {
-                  label: "Scissors!";
+                  label: _("Scissors!");
                   icon-name: "scissors-symbolic";
                 }
               }
@@ -123,7 +123,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
                 ]
 
                 Adw.ButtonContent {
-                  label: "Lizard!";
+                  label: _("Lizard!");
                   icon-name: "lizard-symbolic";
                 }
               }
@@ -138,7 +138,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
                 ]
 
                 Adw.ButtonContent {
-                  label: "Spock!";
+                  label: _("Spock!");
                   icon-name: "alien-symbolic";
                 }
               }
@@ -175,7 +175,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
             }
 
             Gtk.Label {
-              label: _("X");
+              label: "X";
 
               styles [
                 "title-1",
@@ -198,16 +198,12 @@ template $DuelpyWindow: Adw.ApplicationWindow {
             margin-bottom: 32;
 
             Gtk.Label lbl_result {
-              label: "";
-
               styles [
                 "title-2",
               ]
             }
 
             Gtk.Label lbl_explanation {
-              label: "";
-
               styles [
                 "description",
               ]
@@ -226,7 +222,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
               ]
 
               Adw.ButtonContent {
-                label: "Retry!";
+                label: _("Retry!");
                 icon-name: "retry-symbolic";
               }
             }
