@@ -91,8 +91,8 @@ I chose Python because I plan to use it for similar projects in the future, and 
 ## Roadmap
 
 - [x] Basic game functionality
-- [ ] Quality of life improvements (Like Keybindings)
-- [ ] Flatpak package for releases
+- [x] Quality of life improvements (Like Keybindings)
+- [x] Flatpak package for releases
 - [ ] Flathub submission (😳👉️👈️)
 
 **Contributions are welcome!** Feel free to open issues or submit pull requests.
