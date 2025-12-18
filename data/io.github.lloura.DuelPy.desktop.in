@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Duel!
-Comment=Play Rock, Paper, Scissors, Lizard, Spock
+Comment=Play Rock, Paper, Scissors, Lizard, Spock!
 Exec=duelpy
 Icon=io.github.lloura.DuelPy
 Terminal=false
