@@ -1,0 +1,32 @@
+name: Build Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  flatpak:
+    name: Build Flatpak
+    runs-on: ubuntu-latest
+    container:
+      image: bilelmoussaoui/flatpak-github-actions:gnome-48
+      options: --privileged
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Build Flatpak
+        uses: flatpak/flatpak-github-actions/flatpak-builder@v6
+        with:
+          bundle: io.github.lloura.DuelPy.flatpak
+          manifest-path: io.github.lloura.DuelPy.json
+          cache-key: flatpak-builder-${{ github.sha }}
+      
+      - name: Upload to Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: io.github.lloura.DuelPy.flatpak
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
