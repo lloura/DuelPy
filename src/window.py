@@ -22,6 +22,10 @@ from gi.repository import Gtk
 from gi.repository import Gio
 import random
 
+import gettext
+
+_ = gettext.gettext
+
 @Gtk.Template(resource_path='/io/github/lloura/DuelPy/window.ui')
 class DuelpyWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'DuelpyWindow'
@@ -86,7 +90,7 @@ class DuelpyWindow(Adw.ApplicationWindow):
 
     def determine_winner(self, player_choice, computer_choice):
         if player_choice == computer_choice:
-            return "Draw!"
+            return _("Draw!")
 
         wins = {
             'rock': ['scissors', 'lizard'],
@@ -97,69 +101,69 @@ class DuelpyWindow(Adw.ApplicationWindow):
         }
 
         if computer_choice in wins[player_choice]:
-            return "You Won!"
+            return _("You Won!")
         else:
-            return "You Lost!"
+            return _("You Lost!")
 
     def get_explanation(self, player_choice, computer_choice):
         if (player_choice == computer_choice):
             if (player_choice == "rock"):
-                return "Rock evens out with Rock!"
+                return _("Rock evens out with Rock!")
             if (player_choice == "paper"):
-                return "Paper evens out with Paper!"
+                return _("Paper evens out with Paper!")
             if (player_choice == "scissors"):
-                return "Scissors evens out with Scissors!"
+                return _("Scissors evens out with Scissors!")
             if (player_choice == "lizard"):
-                return "Lizard evens out with Lizard!"
+                return _("Lizard evens out with Lizard!")
             if (player_choice == "spock"):
-                return "Spock evens out with Spock!"
+                return _("Spock evens out with Spock!")
 
         match(player_choice):
             case "rock":
                 if (computer_choice == "scissors"):
-                    return "Rock smashes Scissors!"
+                    return _("Rock smashes Scissors!")
                 if (computer_choice == "lizard"):
-                    return "Rock smashes Lizard!"
+                    return _("Rock smashes Lizard!")
                 if (computer_choice == "paper"):
-                    return "Rock gets covered by Paper!"
+                    return _("Rock gets covered by Paper!")
                 if (computer_choice == "spock"):
-                    return "Rock gets vaporized by Spock!"
+                    return _("Rock gets vaporized by Spock!")
             case "paper":
                 if (computer_choice == "rock"):
-                    return "Paper covers Rock!"
+                    return _("Paper covers Rock!")
                 if (computer_choice == "spock"):
-                    return "Paper disproves Spock!"
+                    return _("Paper disproves Spock!")
                 if (computer_choice == "scissors"):
-                    return "Paper gets cut by Scissors!"
+                    return _("Paper gets cut by Scissors!")
                 if (computer_choice == "lizard"):
-                    return "Paper gets eaten by Lizard!"
+                    return _("Paper gets eaten by Lizard!")
             case "scissors":
                 if (computer_choice == "paper"):
-                    return "Scissors cuts Paper!"
+                    return _("Scissors cuts Paper!")
                 if (computer_choice == "lizard"):
-                    return "Scissors decapites Lizard!"
+                    return _("Scissors decapites Lizard!")
                 if (computer_choice == "rock"):
-                    return "Scissors gets smashed by Rock!"
+                    return _("Scissors gets smashed by Rock!")
                 if (computer_choice == "spock"):
-                    return "Scissors gets smashed by Spock!"
+                    return _("Scissors gets smashed by Spock!")
             case "lizard":
                 if (computer_choice == "paper"):
-                    return "Lizard eats Paper!"
+                    return _("Lizard eats Paper!")
                 if (computer_choice == "spock"):
-                    return "Lizard poisons Spock!"
+                    return _("Lizard poisons Spock!")
                 if (computer_choice == "scissors"):
-                    return "Lizard gets decapited by Scissors!"
+                    return _("Lizard gets decapited by Scissors!")
                 if (computer_choice == "rock"):
-                    return "Lizard gets smashed by Rock!"
+                    return _("Lizard gets smashed by Rock!")
             case "spock":
                 if (computer_choice == "rock"):
-                    return "Spock vaporizes Rock!"
+                    return _("Spock vaporizes Rock!")
                 if (computer_choice == "scissors"):
-                    return "Spock smashes scissors!"
+                    return _("Spock smashes scissors!")
                 if (computer_choice == "paper"):
-                    return "Spock gets disproven by Paper!"
+                    return _("Spock gets disproven by Paper!")
                 if (computer_choice == "lizard"):
-                    return "Spock gets poisoned by Lizard!"
+                    return _("Spock gets poisoned by Lizard!")
 
     def on_retry(self):
         if self.navigation_view.get_visible_page_tag() == "results":

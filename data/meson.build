@@ -4,7 +4,7 @@ desktop_file = i18n.merge_file(
          type: 'desktop',
        po_dir: '../po',
       install: true,
-  install_dir: get_option('datadir') / 'applications'
+  install_dir: join_paths(get_option('datadir'), 'applications')
 )
 
 desktop_utils = find_program('desktop-file-validate', required: false)
@@ -17,7 +17,7 @@ appstream_file = i18n.merge_file(
        output: 'io.github.lloura.DuelPy.metainfo.xml',
        po_dir: '../po',
       install: true,
-  install_dir: get_option('datadir') / 'metainfo'
+  install_dir: join_paths(get_option('datadir'), 'metainfo')
 )
 
 appstreamcli = find_program('appstreamcli', required: false, disabler: true)
