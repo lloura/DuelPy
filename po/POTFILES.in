@@ -6,3 +6,4 @@ data/io.github.lloura.DuelPy.gschema.xml
 src/main.py
 src/window.py
 src/window.blp
+src/constants.py

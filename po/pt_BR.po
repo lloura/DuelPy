@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: duelpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-19 10:24-0300\n"
-"PO-Revision-Date: 2025-12-19 10:25-0300\n"
+"POT-Creation-Date: 2025-12-19 19:59-0300\n"
+"PO-Revision-Date: 2025-12-19 19:32-0300\n"
 "Last-Translator: Lucas Loura <oliverloura2020@gmail.com>\n"
 "Language-Team: Brazilian Portuguese\n"
 "Language: pt_BR\n"
@@ -98,6 +98,21 @@ msgstr "Resultados do jogo mostrando Pedra vs Tesoura"
 msgid "Game results showing Paper vs Lizard"
 msgstr "Resultados do jogo mostrando Papel vs Lagarto"
 
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:73
+msgid "Added support for internationalization (i18n) using gettext"
+msgstr "Adicionado suporte para internacionalização (i18n) por meio do gettext"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:74
+msgid "Added Brazilian Portuguese (pt_BR) translation"
+msgstr "Adicionada tradução em Português Brasileiro (pt_BR)"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:75
+msgid ""
+"Keyboard shortcuts (1-5) are now also triggerable via the keypad (Numpad)"
+msgstr ""
+"Atalhos de teclado (1-5) agora também são acionados através do teclado "
+"numérico"
+
 #: data/io.github.lloura.DuelPy.gschema.xml:6
 msgid "Window width"
 msgstr "Largura da janela"
@@ -130,199 +145,179 @@ msgstr "Estado da janela em tela cheia"
 msgid "Whether the window is fullscreen"
 msgstr "Se a janela está em tela cheia"
 
+#: data/io.github.lloura.DuelPy.gschema.xml:26
+msgid "Game mode"
+msgstr "Modo de Jogo"
+
+#: data/io.github.lloura.DuelPy.gschema.xml:27
+msgid ""
+"The current game mode: 'rpsls' for Rock-Paper-Scissors-Lizard-Spock or "
+"'classic' for Rock-Paper-Scissors"
+msgstr ""
+"O modo de jogo atual: 'rpsls' para Pedra-Papel-Tesoura-Lagarto-Spock ou "
+"'classic' para 'Pedra-Papel-Tesoura'"
+
 #. Translators: Replace "translator-credits" with your name/username, and optionally an email or URL.
 #: src/main.py:61
 msgid "translator-credits"
 msgstr "Lucas Loura https://github.com/lloura"
 
-#: src/window.py:86
+#: src/window.py:130
 msgid "Draw!"
 msgstr "Empate!"
 
-#: src/window.py:97
+#: src/window.py:133
 msgid "You Won!"
 msgstr "Você Venceu!"
 
-#: src/window.py:99
+#: src/window.py:134
 msgid "You Lost!"
 msgstr "Você Perdeu!"
 
-#: src/window.py:104
-msgid "Rock evens out with Rock!"
-msgstr "Pedra empata com a Pedra!"
-
-#: src/window.py:106
-msgid "Rock gets covered by Paper!"
-msgstr "Pedra é coberta pelo Papel!"
-
-#: src/window.py:108
+#: src/window.py:139
 msgid "Rock smashes Scissors!"
 msgstr "Pedra quebra a Tesoura!"
 
-#: src/window.py:110
+#: src/window.py:140
 msgid "Rock smashes Lizard!"
 msgstr "Pedra esmaga o Lagarto!"
 
-#: src/window.py:112
-msgid "Rock gets vaporized by Spock!"
-msgstr "Pedra é vaporizada pelo Spock!"
-
-#: src/window.py:115
+#: src/window.py:141
 msgid "Paper covers Rock!"
 msgstr "Papel cobre a Pedra!"
 
-#: src/window.py:117
-msgid "Paper evens out with Paper!"
-msgstr "Papel empata com o Papel!"
-
-#: src/window.py:119
-msgid "Paper gets cut by Scissors!"
-msgstr "Papel é cortado pela Tesoura!"
-
-#: src/window.py:121
-msgid "Paper gets eaten by Lizard!"
-msgstr "Papel é comido pelo Lagarto!"
-
-#: src/window.py:123
+#: src/window.py:142
 msgid "Paper disproves Spock!"
 msgstr "Papel refuta o Spock!"
 
-#: src/window.py:126
-msgid "Scissors gets smashed by Rock!"
-msgstr "Tesoura é quebrada pela Pedra!"
-
-#: src/window.py:128
+#: src/window.py:143
 msgid "Scissors cuts Paper!"
 msgstr "Tesoura corta o Papel!"
 
-#: src/window.py:130
-msgid "Scissors evens out with Scissors!"
-msgstr "Tesoura empata com a Tesoura!"
-
-#: src/window.py:132
+#: src/window.py:144
 msgid "Scissors decapitates Lizard!"
 msgstr "Tesoura decapita o Lagarto!"
 
-#: src/window.py:134
-msgid "Scissors gets smashed by Spock!"
-msgstr "Tesoura é quebrada pelo Spock!"
-
-#: src/window.py:137
-msgid "Lizard gets smashed by Rock!"
-msgstr "Lagarto é esmagado pela Pedra!"
-
-#: src/window.py:139
+#: src/window.py:145
 msgid "Lizard eats Paper!"
 msgstr "Lagarto come o Papel!"
 
-#: src/window.py:141
-msgid "Lizard gets decapitated by Scissors!"
-msgstr "Lagarto é decapitado pela Tesoura!"
-
-#: src/window.py:143
-msgid "Lizard evens out with Lizard!"
-msgstr "Lagarto empata com o Lagarto!"
-
-#: src/window.py:145
+#: src/window.py:146
 msgid "Lizard poisons Spock!"
 msgstr "Lagarto envenena o Spock!"
 
-#: src/window.py:148
+#: src/window.py:147
 msgid "Spock vaporizes Rock!"
 msgstr "Spock vaporiza a Pedra!"
 
-#: src/window.py:150
-msgid "Spock gets disproven by Paper!"
-msgstr "Spock é refutado pelo Papel!"
-
-#: src/window.py:152
+#: src/window.py:148
 msgid "Spock smashes Scissors!"
 msgstr "Spock quebra a Tesoura!"
 
-#: src/window.py:154
-msgid "Spock gets poisoned by Lizard!"
-msgstr "Spock é envenenado pelo Lagarto!"
+#: src/window.py:153
+msgid "It's a tie!"
+msgstr "É um empate!"
 
-#: src/window.py:156
-msgid "Spock evens out with Spock!"
-msgstr "Spock empata com o Spock!"
+#: src/window.blp:18
+msgid "Mode Selection"
+msgstr "Seleção de Modos"
 
-#: src/window.blp:15
+#: src/window.blp:21 src/window.blp:73 src/window.blp:354 src/constants.py:17
+msgid "RPSLS"
+msgstr "PPTLS"
+
+#: src/window.blp:30
 msgid "Main Menu"
 msgstr "Menu Principal"
 
-#: src/window.blp:22
+#: src/window.blp:37
 msgid "Home"
 msgstr "Início"
 
-#: src/window.blp:45
+#: src/window.blp:60
 msgid "Welcome!"
 msgstr "Boas-vindas!"
 
-#: src/window.blp:54
+#: src/window.blp:80
 msgid "Let's Play Rock-Paper-Scissors-Lizard-Spock!"
 msgstr "Vamos jogar Pedra-Papel-Tesoura-Lagarto-Spock!"
 
-#: src/window.blp:81
+#: src/window.blp:107 src/window.blp:209
 msgid "Rock!"
 msgstr "Pedra!"
 
-#: src/window.blp:96
+#: src/window.blp:121 src/window.blp:223
 msgid "Paper!"
 msgstr "Papel!"
 
-#: src/window.blp:111
+#: src/window.blp:135 src/window.blp:237
 msgid "Scissors!"
 msgstr "Tesoura!"
 
-#: src/window.blp:126
+#: src/window.blp:149
 msgid "Lizard!"
 msgstr "Lagarto!"
 
-#: src/window.blp:141
+#: src/window.blp:163
 msgid "Spock!"
 msgstr "Spock!"
 
-#: src/window.blp:151
+#: src/window.blp:175 src/window.blp:360 src/constants.py:7
+msgid "Classic"
+msgstr "Clássico"
+
+#: src/window.blp:182
+msgid "Let's Play Rock-Paper-Scissors!"
+msgstr "Vamos jogar Pedra-Papel-Tesoura!"
+
+#: src/window.blp:251
 msgid "Results"
 msgstr "Resultados"
 
-#: src/window.blp:225
-msgid "Retry!"
-msgstr "Tentar Novamente!"
+#: src/window.blp:325 src/window.blp:405
+msgid "Try Again"
+msgstr "Tentar Novamente"
 
-#: src/window.blp:239 src/window.blp:251
+#: src/window.blp:340 src/window.blp:369
 msgid "Keyboard Shortcuts"
 msgstr "Atalhos de Teclado"
 
-#: src/window.blp:244
+#: src/window.blp:345
 msgid "About Duel!"
 msgstr "Sobre o Duel!"
 
-#: src/window.blp:254
+#: src/window.blp:372
 msgid "Gameplay"
 msgstr "Jogabilidade"
 
-#: src/window.blp:257
+#: src/window.blp:375
 msgid "Rock"
 msgstr "Pedra"
 
-#: src/window.blp:262
+#: src/window.blp:381
 msgid "Paper"
 msgstr "Papel"
 
-#: src/window.blp:267
+#: src/window.blp:387
 msgid "Scissors"
 msgstr "Tesoura"
 
-#: src/window.blp:272
+#: src/window.blp:393
 msgid "Lizard"
 msgstr "Lagarto"
 
-#: src/window.blp:277
+#: src/window.blp:399
 msgid "Spock"
 msgstr "Spock"
 
-#: src/window.blp:282
-msgid "Retry"
-msgstr "Tentar Novamente"
+#: src/window.blp:412
+msgid "Mode"
+msgstr "Modo"
+
+#: src/window.blp:415
+msgid "RPSLS Mode"
+msgstr "Modo PPTLS"
+
+#: src/window.blp:421
+msgid "Classic Mode"
+msgstr "Modo Clássico"
