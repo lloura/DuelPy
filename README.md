@@ -38,7 +38,7 @@ Choose your move and see if you can beat the computer!
 
 - Python 3.14+
 - GTK 4
-- Libadwaita 1.6+ (GNOME 48)
+- Libadwaita 1.8+ (GNOME 49)
 - Blueprint Compiler
 - Meson build system
 
