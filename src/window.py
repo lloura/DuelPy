@@ -56,11 +56,11 @@ class DuelpyWindow(Adw.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.create_action('rock', self.on_play, 'Rock', ['1'])
-        self.create_action('paper', self.on_play, 'Paper', ['2'])
-        self.create_action('scissors', self.on_play, 'Scissors', ['3'])
-        self.create_action('lizard', self.on_play, 'Lizard', ['4'])
-        self.create_action('spock', self.on_play, 'Spock', ['5'])
+        self.create_action('rock', self.on_play, 'Rock', ['1','KP_1'])
+        self.create_action('paper', self.on_play, 'Paper', ['2','KP_2'])
+        self.create_action('scissors', self.on_play, 'Scissors', ['3','KP_3'])
+        self.create_action('lizard', self.on_play, 'Lizard', ['4','KP_4'])
+        self.create_action('spock', self.on_play, 'Spock', ['5','KP_5'])
         self.create_action('retry', self.on_retry, shortcuts=['<Ctrl>R'])
 
         self.create_action('show-help-overlay', self.on_show_shortcuts, shortcuts=['<Ctrl>question'])
