@@ -21,6 +21,11 @@
       <summary>Window fullscreen state</summary>
       <description>Whether the window is fullscreen</description>
     </key>
+    <key name="game-mode" type="s">
+      <default>'rpsls'</default>
+      <summary>Game mode</summary>
+      <description>The current game mode: 'rpsls' for Rock-Paper-Scissors-Lizard-Spock or 'classic' for Rock-Paper-Scissors</description>
+    </key>
   </schema>
 </schemalist>
 

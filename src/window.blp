@@ -9,15 +9,30 @@ template $DuelpyWindow: Adw.ApplicationWindow {
   Adw.ToolbarView {
     [top]
     Adw.HeaderBar {
+      [start]
+      Gtk.MenuButton mode_selector {
+        menu-model: window_menu;
+        focus-on-click: false;
+        always-show-arrow: true;
+        can-shrink: true;
+        tooltip-text: _("Mode Selection");
+
+        child: Adw.ButtonContent mode_label {
+          label: _("RPSLS");
+          icon-name: "spock-symbolic";
+        };
+      }
+
       [end]
       Gtk.MenuButton {
+        menu-model: primary_menu;
         icon-name: "open-menu-symbolic";
         tooltip-text: _("Main Menu");
-        menu-model: primary_menu;
       }
     }
 
-    Adw.NavigationView navigation_view {
+    content: Adw.NavigationView navigation_view {
+      /* ───────────── Home ───────────── */
       Adw.NavigationPage {
         title: _("Home");
         tag: "home";
@@ -50,103 +65,188 @@ template $DuelpyWindow: Adw.ApplicationWindow {
             ]
           }
 
-          Gtk.Label {
-            label: _("Let's Play Rock-Paper-Scissors-Lizard-Spock!");
-            halign: center;
-            wrap: true;
-            margin-bottom: 16;
+          /* ═══════════ ViewStack ═══════════ */
+          Adw.ViewStack mode_stack {
+            /* ─── RPSLS Mode ─── */
+            Adw.ViewStackPage {
+              name: "rpsls";
+              title: _("RPSLS");
 
-            styles [
-              "description",
-            ]
-          }
+              child: Gtk.Box {
+                orientation: vertical;
+                spacing: 12;
 
-          Adw.Clamp {
-            maximum-size: 250;
+                Gtk.Label {
+                  label: _("Let's Play Rock-Paper-Scissors-Lizard-Spock!");
+                  halign: center;
+                  wrap: true;
+                  justify: center;
+                  margin-bottom: 16;
 
-            Gtk.Box {
-              orientation: vertical;
-              spacing: 8;
-
-              Gtk.Button button_rock {
-                action-name: "win.rock";
-
-                styles [
-                  "opaque",
-                  "Button",
-                  "button_rock",
-                ]
-
-                Adw.ButtonContent {
-                  label: _("Rock!");
-                  icon-name: "rock-symbolic";
+                  styles [
+                    "description",
+                  ]
                 }
-              }
 
-              Gtk.Button button_paper {
-                action-name: "win.paper";
+                Adw.Clamp {
+                  maximum-size: 250;
 
-                styles [
-                  "opaque",
-                  "Button",
-                  "button_paper",
-                ]
+                  Gtk.Box {
+                    orientation: vertical;
+                    spacing: 8;
 
-                Adw.ButtonContent {
-                  label: _("Paper!");
-                  icon-name: "paper-symbolic";
+                    Gtk.Button {
+                      action-name: "win.rock";
+
+                      styles [
+                        "opaque",
+                        "button_rock",
+                      ]
+
+                      child: Adw.ButtonContent {
+                        label: _("Rock!");
+                        icon-name: "rock-symbolic";
+                      };
+                    }
+
+                    Gtk.Button {
+                      action-name: "win.paper";
+
+                      styles [
+                        "opaque",
+                        "button_paper",
+                      ]
+
+                      child: Adw.ButtonContent {
+                        label: _("Paper!");
+                        icon-name: "paper-symbolic";
+                      };
+                    }
+
+                    Gtk.Button {
+                      action-name: "win.scissors";
+
+                      styles [
+                        "opaque",
+                        "button_scissors",
+                      ]
+
+                      child: Adw.ButtonContent {
+                        label: _("Scissors!");
+                        icon-name: "scissors-symbolic";
+                      };
+                    }
+
+                    Gtk.Button {
+                      action-name: "win.lizard";
+
+                      styles [
+                        "opaque",
+                        "button_lizard",
+                      ]
+
+                      child: Adw.ButtonContent {
+                        label: _("Lizard!");
+                        icon-name: "lizard-symbolic";
+                      };
+                    }
+
+                    Gtk.Button {
+                      action-name: "win.spock";
+
+                      styles [
+                        "opaque",
+                        "button_spock",
+                      ]
+
+                      child: Adw.ButtonContent {
+                        label: _("Spock!");
+                        icon-name: "spock-symbolic";
+                      };
+                    }
+                  }
                 }
-              }
+              };
+            }
 
-              Gtk.Button button_scissors {
-                action-name: "win.scissors";
+            /* ─── Classic Mode -─── */
+            Adw.ViewStackPage {
+              name: "classic";
+              title: _("Classic");
 
-                styles [
-                  "opaque",
-                  "Button",
-                  "button_scissors",
-                ]
+              child: Gtk.Box {
+                orientation: vertical;
+                spacing: 12;
 
-                Adw.ButtonContent {
-                  label: _("Scissors!");
-                  icon-name: "scissors-symbolic";
+                Gtk.Label {
+                  label: _("Let's Play Rock-Paper-Scissors!");
+                  halign: center;
+                  wrap: true;
+                  justify: center;
+                  margin-bottom: 16;
+
+                  styles [
+                    "description",
+                  ]
                 }
-              }
 
-              Gtk.Button button_lizard {
-                action-name: "win.lizard";
+                Adw.Clamp {
+                  maximum-size: 250;
 
-                styles [
-                  "opaque",
-                  "Button",
-                  "button_lizard",
-                ]
+                  Gtk.Box {
+                    orientation: vertical;
+                    spacing: 8;
 
-                Adw.ButtonContent {
-                  label: _("Lizard!");
-                  icon-name: "lizard-symbolic";
+                    Gtk.Button {
+                      action-name: "win.rock";
+
+                      styles [
+                        "opaque",
+                        "button_rock",
+                      ]
+
+                      child: Adw.ButtonContent {
+                        label: _("Rock!");
+                        icon-name: "rock-symbolic";
+                      };
+                    }
+
+                    Gtk.Button {
+                      action-name: "win.paper";
+
+                      styles [
+                        "opaque",
+                        "button_paper",
+                      ]
+
+                      child: Adw.ButtonContent {
+                        label: _("Paper!");
+                        icon-name: "paper-symbolic";
+                      };
+                    }
+
+                    Gtk.Button {
+                      action-name: "win.scissors";
+
+                      styles [
+                        "opaque",
+                        "button_scissors",
+                      ]
+
+                      child: Adw.ButtonContent {
+                        label: _("Scissors!");
+                        icon-name: "scissors-symbolic";
+                      };
+                    }
+                  }
                 }
-              }
-
-              Gtk.Button button_spock {
-                action-name: "win.spock";
-
-                styles [
-                  "opaque",
-                  "Button",
-                  "button_spock",
-                ]
-
-                Adw.ButtonContent {
-                  label: _("Spock!");
-                  icon-name: "spock-symbolic";
-                }
-              }
+              };
             }
           }
         };
       }
 
+      /* ───────────── Results ───────────── */
       Adw.NavigationPage {
         title: _("Results");
         tag: "results";
@@ -166,7 +266,6 @@ template $DuelpyWindow: Adw.ApplicationWindow {
             margin-bottom: 16;
 
             Gtk.Image img_player_choice {
-              icon-name: "";
               pixel-size: 160;
 
               styles [
@@ -175,7 +274,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
             }
 
             Gtk.Label {
-              label: "X";
+              label: "VS";
 
               styles [
                 "title-1",
@@ -183,7 +282,6 @@ template $DuelpyWindow: Adw.ApplicationWindow {
             }
 
             Gtk.Image img_computer_choice {
-              icon-name: "";
               pixel-size: 160;
 
               styles [
@@ -204,6 +302,9 @@ template $DuelpyWindow: Adw.ApplicationWindow {
             }
 
             Gtk.Label lbl_explanation {
+              wrap: true;
+              justify: center;
+
               styles [
                 "description",
               ]
@@ -213,26 +314,26 @@ template $DuelpyWindow: Adw.ApplicationWindow {
           Adw.Clamp {
             maximum-size: 250;
 
-            Gtk.Button button_retry {
+            Gtk.Button {
               action-name: "win.retry";
 
               styles [
                 "opaque",
-                "button_retry",
               ]
 
-              Adw.ButtonContent {
-                label: _("Retry!");
-                icon-name: "retry-symbolic";
-              }
+              child: Adw.ButtonContent {
+                label: _("Try Again");
+                icon-name: "view-refresh-symbolic";
+              };
             }
           }
         };
       }
-    }
+    };
   }
 }
 
+/* ───────────────── Menu ───────────────── */
 menu primary_menu {
   section {
     item {
@@ -247,6 +348,23 @@ menu primary_menu {
   }
 }
 
+menu window_menu {
+  section {
+    item {
+      label: _("RPSLS");
+      action: "win.change-mode";
+      target: "rpsls";
+    }
+
+    item {
+      label: _("Classic");
+      action: "win.change-mode";
+      target: "classic";
+    }
+  }
+}
+
+/* ───────────────── Shortcuts ───────────────── */
 Adw.ShortcutsDialog shortcuts_dialog {
   title: _("Keyboard Shortcuts");
 
@@ -256,31 +374,53 @@ Adw.ShortcutsDialog shortcuts_dialog {
     Adw.ShortcutsItem {
       title: _("Rock");
       accelerator: "1";
+      action-name: "win.rock";
     }
 
     Adw.ShortcutsItem {
       title: _("Paper");
       accelerator: "2";
+      action-name: "win.paper";
     }
 
     Adw.ShortcutsItem {
       title: _("Scissors");
       accelerator: "3";
+      action-name: "win.scissors";
     }
 
     Adw.ShortcutsItem {
       title: _("Lizard");
       accelerator: "4";
+      action-name: "win.lizard";
     }
 
     Adw.ShortcutsItem {
       title: _("Spock");
       accelerator: "5";
+      action-name: "win.spock";
     }
 
     Adw.ShortcutsItem {
       title: _("Retry");
       accelerator: "<Ctrl>R";
+      action-name: "win.retry";
+    }
+  }
+
+  Adw.ShortcutsSection {
+    title: _("Mode");
+
+    Adw.ShortcutsItem {
+      title: _("RPSLS Mode");
+      accelerator: "<Ctrl><Shift>R";
+      action-name: "win.change-mode('rpsls')";
+    }
+
+    Adw.ShortcutsItem {
+      title: _("Classic Mode");
+      accelerator: "<Ctrl><Shift>C";
+      action-name: "win.change-mode('classic')";
     }
   }
 }
