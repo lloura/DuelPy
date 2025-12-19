@@ -21,10 +21,8 @@ from gi.repository import Adw
 from gi.repository import Gtk
 from gi.repository import Gio
 import random
-
 import gettext
-
-_ = gettext.gettext
+import os
 
 def translate_choice(choice):
     translations = {
@@ -40,6 +38,12 @@ def translate_choice(choice):
 @Gtk.Template(resource_path='/io/github/lloura/DuelPy/window.ui')
 class DuelpyWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'DuelpyWindow'
+
+    localedir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'locale')
+
+    gettext.bindtextdomain('io.github.lloura.DuelPy', localedir)
+    gettext.textdomain('io.github.lloura.DuelPy')
+    _ = gettext.gettext
 
     navigation_view = Gtk.Template.Child()
     img_player_choice = Gtk.Template.Child()
