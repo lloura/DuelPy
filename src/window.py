@@ -151,9 +151,9 @@ class DuelpyWindow(Adw.ApplicationWindow):
             case ("spock", "scissors"):
                 return _("Spock smashes Scissors!")
             case ("spock", "lizard"):
-                return ("Spock gets poisoned by Lizard!")
+                return _("Spock gets poisoned by Lizard!")
             case ("spock", "spock"):
-                return ("Spock evens out with Spock!")
+                return _("Spock evens out with Spock!")
 
         return ""
 
