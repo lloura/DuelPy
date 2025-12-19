@@ -1,47 +1,48 @@
 # Portuguese translations for duelpy package
-# Tradu��es em portugu�s brasileiro para o pacote duelpy.
+# Traduções em português brasileiro para o pacote duelpy.
 # Copyright (C) 2025 THE duelpy'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the duelpy package.
 # Lucas Loura <oliverloura2020@gmail.com>, 2025.
 #
-#: src/window.blp:201 src/window.blp:209
 msgid ""
 msgstr ""
 "Project-Id-Version: duelpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-18 13:39-0300\n"
-"PO-Revision-Date: 2025-12-18 13:21-0300\n"
+"POT-Creation-Date: 2025-12-18 21:46-0300\n"
+"PO-Revision-Date: 2025-12-18 22:08-0300\n"
 "Last-Translator: Lucas Loura <oliverloura2020@gmail.com>\n"
-"Language-Team: Brazilian Portuguese <ldpbr-"
-"translation@lists.sourceforge.net>\n"
+"Language-Team: Brazilian Portuguese\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Gtranslator 49.0\n"
 
 #: data/io.github.lloura.DuelPy.desktop.in:2
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:6 src/window.blp:5
 msgid "Duel!"
-msgstr ""
+msgstr "Duel!"
 
 #: data/io.github.lloura.DuelPy.desktop.in:3
-msgid "Play Rock, Paper, Scissors, Lizard, Spock"
-msgstr ""
+msgid "Play Rock, Paper, Scissors, Lizard, Spock!"
+msgstr "Jogue Pedra, Papel, Tesoura, Lagarto, Spock!"
 
 #: data/io.github.lloura.DuelPy.desktop.in:9
 msgid "game;rock;paper;scissors;lizard;spock;rpsls;"
-msgstr ""
+msgstr "jogo;pedra;papel;tesoura;lagarto;spock;pptls;"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:7
 msgid "Play Rock, Paper, Scissors, Lizard, Spock against the computer"
-msgstr ""
+msgstr "Jogue Pedra, Papel Tesoura, Lagarto, Spock contra o computador"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:10
 msgid ""
 "Duel! is a modern GNOME game implementing the Rock, Paper, Scissors, Lizard, "
 "Spock variant popularized by The Big Bang Theory."
 msgstr ""
+"Duel! é um jogo moderno para GNOME que implementa a variante Pedra, Papel, "
+"Tesoura, Lagarto, Spock popularizada pela série The Big Bang Theory."
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:13
 msgid ""
@@ -49,256 +50,249 @@ msgid ""
 "following GNOME's design guidelines. Challenge the computer and see if you "
 "can master all five moves!"
 msgstr ""
+"Construído com GTK4 e Libadwaita, ele oferece uma interface limpa e "
+"intuitiva seguindo as diretrizes de design do GNOME. Desafie o computador e "
+"domine os cinco movimentos!"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:16
 msgid "Features:"
-msgstr ""
+msgstr "Funcionalidades:"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:18
 msgid "Classic RPSLS gameplay with all five moves"
-msgstr ""
+msgstr "Jogabilidade clássica de PPTLS com todos os cinco movimentos"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:19
 msgid "Modern adaptive interface"
-msgstr ""
+msgstr "Interface moderna e adaptativa"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:20
 msgid "Follows GNOME Human Interface Guidelines"
-msgstr ""
+msgstr "Segue as diretrizes de interface humana (HIG) do GNOME"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:21
 msgid "Clean and simple design"
-msgstr ""
+msgstr "Design limpo e simples"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:26
 msgid "Lucas Loura"
-msgstr ""
+msgstr "Lucas Loura"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:48
 msgid "Main welcome screen"
-msgstr ""
+msgstr "Tela principal de boas-vindas"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:52
 msgid "Game results showing Paper vs Spock"
-msgstr ""
+msgstr "Resultados do jogo mostrando Papel vs Spock"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:56
 msgid "Game results showing Lizard vs Rock"
-msgstr ""
+msgstr "Resultados do jogo mostrando Lagarto vs Pedra"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:60
 msgid "Game results showing Rock vs Scissors"
-msgstr ""
+msgstr "Resultados do jogo mostrando Pedra vs Tesoura"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:64
 msgid "Game results showing Paper vs Lizard"
-msgstr ""
+msgstr "Resultados do jogo mostrando Papel vs Lagarto"
 
 #: data/io.github.lloura.DuelPy.gschema.xml:6
 msgid "Window width"
-msgstr ""
+msgstr "Largura da janela"
 
 #: data/io.github.lloura.DuelPy.gschema.xml:7
 msgid "The width of the application window"
-msgstr ""
+msgstr "A largura da janela do aplicativo"
 
 #: data/io.github.lloura.DuelPy.gschema.xml:11
 msgid "Window height"
-msgstr ""
+msgstr "Altura da janela"
 
 #: data/io.github.lloura.DuelPy.gschema.xml:12
 msgid "The height of the application window"
-msgstr ""
+msgstr "A altura da janela do aplicativo"
 
 #: data/io.github.lloura.DuelPy.gschema.xml:16
 msgid "Window maximized state"
-msgstr ""
+msgstr "Estado da janela maximizada"
 
 #: data/io.github.lloura.DuelPy.gschema.xml:17
 msgid "Whether the window is maximized"
-msgstr ""
+msgstr "Se a janela está maximizada"
 
 #: data/io.github.lloura.DuelPy.gschema.xml:21
 msgid "Window fullscreen state"
-msgstr ""
+msgstr "Estado da janela em tela cheia"
 
 #: data/io.github.lloura.DuelPy.gschema.xml:22
 msgid "Whether the window is fullscreen"
-msgstr ""
+msgstr "Se a janela está em tela cheia"
 
 #. Translators: Replace "translator-credits" with your name/username, and optionally an email or URL.
 #: src/main.py:61
 msgid "translator-credits"
 msgstr ""
+"Lucas Loura https://github.com/lloura\n"
+"Dede Doidao https://github.com/lloura"
 
-#: src/window.py:93
+#: src/window.py:29 src/window.blp:257
+msgid "Rock"
+msgstr "Pedra"
+
+#: src/window.py:30 src/window.blp:262
+msgid "Paper"
+msgstr "Papel"
+
+#: src/window.py:31 src/window.blp:267
+msgid "Scissors"
+msgstr "Tesoura"
+
+#: src/window.py:32 src/window.blp:272
+msgid "Lizard"
+msgstr "Lagarto"
+
+#: src/window.py:33 src/window.blp:277
+msgid "Spock"
+msgstr "Spock"
+
+#: src/window.py:97
 msgid "Draw!"
-msgstr ""
+msgstr "Empate!"
 
-#: src/window.py:104
+#: src/window.py:108
 msgid "You Won!"
-msgstr ""
+msgstr "Você Venceu!"
 
-#: src/window.py:106
+#: src/window.py:110
 msgid "You Lost!"
-msgstr ""
-
-#: src/window.py:111
-msgid "Rock evens out with Rock!"
-msgstr ""
-
-#: src/window.py:113
-msgid "Paper evens out with Paper!"
-msgstr ""
-
-#: src/window.py:115
-msgid "Scissors evens out with Scissors!"
-msgstr ""
+msgstr "Você Perdeu!"
 
 #: src/window.py:117
-msgid "Lizard evens out with Lizard!"
-msgstr ""
+msgid "evens out with"
+msgstr "empata com"
 
-#: src/window.py:119
-msgid "Spock evens out with Spock!"
-msgstr ""
+#: src/window.py:122 src/window.py:156
+msgid "smashes"
+msgstr "esmaga"
 
 #: src/window.py:124
-msgid "Rock smashes Scissors!"
-msgstr ""
+msgid "gets covered by"
+msgstr "é coberta por"
 
 #: src/window.py:126
-msgid "Rock smashes Lizard!"
-msgstr ""
+msgid "gets vaporized by"
+msgstr "é vaporizado por"
 
-#: src/window.py:128
-msgid "Rock gets covered by Paper!"
-msgstr ""
+#: src/window.py:129
+msgid "covers"
+msgstr "cobre"
 
-#: src/window.py:130
-msgid "Rock gets vaporized by Spock!"
-msgstr ""
+#: src/window.py:131
+msgid "disproves"
+msgstr "refuta"
 
 #: src/window.py:133
-msgid "Paper covers Rock!"
-msgstr ""
+msgid "gets cut by"
+msgstr "é cortado por"
 
 #: src/window.py:135
-msgid "Paper disproves Spock!"
-msgstr ""
+msgid "gets eaten by"
+msgstr "é comido por"
 
-#: src/window.py:137
-msgid "Paper gets cut by Scissors!"
-msgstr ""
+#: src/window.py:138
+msgid "cuts"
+msgstr "corta"
 
-#: src/window.py:139
-msgid "Paper gets eaten by Lizard!"
-msgstr ""
+#: src/window.py:140
+msgid "decapitates"
+msgstr "decapita"
 
-#: src/window.py:142
-msgid "Scissors cuts Paper!"
-msgstr ""
+#: src/window.py:142 src/window.py:151
+msgid "gets smashed by"
+msgstr "é esmagado por"
 
-#: src/window.py:144
-msgid "Scissors decapites Lizard!"
-msgstr ""
+#: src/window.py:145
+msgid "eats"
+msgstr "come"
 
-#: src/window.py:146
-msgid "Scissors gets smashed by Rock!"
-msgstr ""
+#: src/window.py:147
+msgid "poisons"
+msgstr "envenena"
 
-#: src/window.py:148
-msgid "Scissors gets smashed by Spock!"
-msgstr ""
+#: src/window.py:149
+msgid "gets decapitated by"
+msgstr "é decapitado por"
 
-#: src/window.py:151
-msgid "Lizard eats Paper!"
-msgstr ""
+#: src/window.py:154
+msgid "vaporizes"
+msgstr "vaporiza"
 
-#: src/window.py:153
-msgid "Lizard poisons Spock!"
-msgstr ""
-
-#: src/window.py:155
-msgid "Lizard gets decapited by Scissors!"
-msgstr ""
-
-#: src/window.py:157
-msgid "Lizard gets smashed by Rock!"
-msgstr ""
+#: src/window.py:158
+msgid "gets disproven by"
+msgstr "é refutado por"
 
 #: src/window.py:160
-msgid "Spock vaporizes Rock!"
-msgstr ""
-
-#: src/window.py:162
-msgid "Spock smashes scissors!"
-msgstr ""
-
-#: src/window.py:164
-msgid "Spock gets disproven by Paper!"
-msgstr ""
-
-#: src/window.py:166
-msgid "Spock gets poisoned by Lizard!"
-msgstr ""
+msgid "gets poisoned by"
+msgstr "é envenenado por"
 
 #: src/window.blp:15
 msgid "Main Menu"
-msgstr ""
+msgstr "Menu Principal"
 
 #: src/window.blp:22
 msgid "Home"
-msgstr ""
+msgstr "Início"
 
 #: src/window.blp:45
 msgid "Welcome!"
-msgstr ""
+msgstr "Boas-vindas!"
 
 #: src/window.blp:54
 msgid "Let's Play Rock-Paper-Scissors-Lizard-Spock!"
-msgstr ""
+msgstr "Vamos jogar Pedra-Papel-Tesoura-Lagarto-Spock!"
+
+#: src/window.blp:81
+msgid "Rock!"
+msgstr "Pedra!"
+
+#: src/window.blp:96
+msgid "Paper!"
+msgstr "Papel!"
+
+#: src/window.blp:111
+msgid "Scissors!"
+msgstr "Tesoura!"
+
+#: src/window.blp:126
+msgid "Lizard!"
+msgstr "Lagarto!"
+
+#: src/window.blp:141
+msgid "Spock!"
+msgstr "Spock!"
 
 #: src/window.blp:151
 msgid "Results"
-msgstr ""
+msgstr "Resultados"
 
-#: src/window.blp:178
-msgid "X"
-msgstr ""
+#: src/window.blp:225
+msgid "Retry!"
+msgstr "Tentar Novamente!"
 
-#: src/window.blp:243 src/window.blp:255
+#: src/window.blp:239 src/window.blp:251
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Atalhos de Teclado"
 
-#: src/window.blp:248
+#: src/window.blp:244
 msgid "About Duel!"
-msgstr ""
+msgstr "Sobre o Duel!"
 
-#: src/window.blp:258
+#: src/window.blp:254
 msgid "Gameplay"
-msgstr ""
+msgstr "Jogabilidade"
 
-#: src/window.blp:261
-msgid "Rock"
-msgstr ""
-
-#: src/window.blp:266
-msgid "Paper"
-msgstr ""
-
-#: src/window.blp:271
-msgid "Scissors"
-msgstr ""
-
-#: src/window.blp:276
-msgid "Lizard"
-msgstr ""
-
-#: src/window.blp:281
-msgid "Spock"
-msgstr ""
-
-#: src/window.blp:286
+#: src/window.blp:282
 msgid "Retry"
-msgstr ""
+msgstr "Tentar Novamente"

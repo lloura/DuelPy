@@ -3,13 +3,12 @@
 # This file is distributed under the same license as the duelpy package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#: src/window.blp:201 src/window.blp:209
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: duelpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-18 13:39-0300\n"
+"POT-Creation-Date: 2025-12-18 21:51-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,7 +23,7 @@ msgid "Duel!"
 msgstr ""
 
 #: data/io.github.lloura.DuelPy.desktop.in:3
-msgid "Play Rock, Paper, Scissors, Lizard, Spock"
+msgid "Play Rock, Paper, Scissors, Lizard, Spock!"
 msgstr ""
 
 #: data/io.github.lloura.DuelPy.desktop.in:9
@@ -129,116 +128,104 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 
-#: src/window.py:93
+#: src/window.py:29 src/window.blp:257
+msgid "Rock"
+msgstr ""
+
+#: src/window.py:30 src/window.blp:262
+msgid "Paper"
+msgstr ""
+
+#: src/window.py:31 src/window.blp:267
+msgid "Scissors"
+msgstr ""
+
+#: src/window.py:32 src/window.blp:272
+msgid "Lizard"
+msgstr ""
+
+#: src/window.py:33 src/window.blp:277
+msgid "Spock"
+msgstr ""
+
+#: src/window.py:97
 msgid "Draw!"
 msgstr ""
 
-#: src/window.py:104
+#: src/window.py:108
 msgid "You Won!"
 msgstr ""
 
-#: src/window.py:106
+#: src/window.py:110
 msgid "You Lost!"
 msgstr ""
 
-#: src/window.py:111
-msgid "Rock evens out with Rock!"
-msgstr ""
-
-#: src/window.py:113
-msgid "Paper evens out with Paper!"
-msgstr ""
-
-#: src/window.py:115
-msgid "Scissors evens out with Scissors!"
-msgstr ""
-
 #: src/window.py:117
-msgid "Lizard evens out with Lizard!"
+msgid "evens out with"
 msgstr ""
 
-#: src/window.py:119
-msgid "Spock evens out with Spock!"
+#: src/window.py:122 src/window.py:156
+msgid "smashes"
 msgstr ""
 
 #: src/window.py:124
-msgid "Rock smashes Scissors!"
+msgid "gets covered by"
 msgstr ""
 
 #: src/window.py:126
-msgid "Rock smashes Lizard!"
+msgid "gets vaporized by"
 msgstr ""
 
-#: src/window.py:128
-msgid "Rock gets covered by Paper!"
+#: src/window.py:129
+msgid "covers"
 msgstr ""
 
-#: src/window.py:130
-msgid "Rock gets vaporized by Spock!"
+#: src/window.py:131
+msgid "disproves"
 msgstr ""
 
 #: src/window.py:133
-msgid "Paper covers Rock!"
+msgid "gets cut by"
 msgstr ""
 
 #: src/window.py:135
-msgid "Paper disproves Spock!"
+msgid "gets eaten by"
 msgstr ""
 
-#: src/window.py:137
-msgid "Paper gets cut by Scissors!"
+#: src/window.py:138
+msgid "cuts"
 msgstr ""
 
-#: src/window.py:139
-msgid "Paper gets eaten by Lizard!"
+#: src/window.py:140
+msgid "decapitates"
 msgstr ""
 
-#: src/window.py:142
-msgid "Scissors cuts Paper!"
+#: src/window.py:142 src/window.py:151
+msgid "gets smashed by"
 msgstr ""
 
-#: src/window.py:144
-msgid "Scissors decapites Lizard!"
+#: src/window.py:145
+msgid "eats"
 msgstr ""
 
-#: src/window.py:146
-msgid "Scissors gets smashed by Rock!"
+#: src/window.py:147
+msgid "poisons"
 msgstr ""
 
-#: src/window.py:148
-msgid "Scissors gets smashed by Spock!"
+#: src/window.py:149
+msgid "gets decapitated by"
 msgstr ""
 
-#: src/window.py:151
-msgid "Lizard eats Paper!"
+#: src/window.py:154
+msgid "vaporizes"
 msgstr ""
 
-#: src/window.py:153
-msgid "Lizard poisons Spock!"
-msgstr ""
-
-#: src/window.py:155
-msgid "Lizard gets decapited by Scissors!"
-msgstr ""
-
-#: src/window.py:157
-msgid "Lizard gets smashed by Rock!"
+#: src/window.py:158
+msgid "gets disproven by"
 msgstr ""
 
 #: src/window.py:160
-msgid "Spock vaporizes Rock!"
-msgstr ""
-
-#: src/window.py:162
-msgid "Spock smashes scissors!"
-msgstr ""
-
-#: src/window.py:164
-msgid "Spock gets disproven by Paper!"
-msgstr ""
-
-#: src/window.py:166
-msgid "Spock gets poisoned by Lizard!"
+msgid "gets poisoned by"
 msgstr ""
 
 #: src/window.blp:15
@@ -257,46 +244,46 @@ msgstr ""
 msgid "Let's Play Rock-Paper-Scissors-Lizard-Spock!"
 msgstr ""
 
+#: src/window.blp:81
+msgid "Rock!"
+msgstr ""
+
+#: src/window.blp:96
+msgid "Paper!"
+msgstr ""
+
+#: src/window.blp:111
+msgid "Scissors!"
+msgstr ""
+
+#: src/window.blp:126
+msgid "Lizard!"
+msgstr ""
+
+#: src/window.blp:141
+msgid "Spock!"
+msgstr ""
+
 #: src/window.blp:151
 msgid "Results"
 msgstr ""
 
-#: src/window.blp:178
-msgid "X"
+#: src/window.blp:225
+msgid "Retry!"
 msgstr ""
 
-#: src/window.blp:243 src/window.blp:255
+#: src/window.blp:239 src/window.blp:251
 msgid "Keyboard Shortcuts"
 msgstr ""
 
-#: src/window.blp:248
+#: src/window.blp:244
 msgid "About Duel!"
 msgstr ""
 
-#: src/window.blp:258
+#: src/window.blp:254
 msgid "Gameplay"
 msgstr ""
 
-#: src/window.blp:261
-msgid "Rock"
-msgstr ""
-
-#: src/window.blp:266
-msgid "Paper"
-msgstr ""
-
-#: src/window.blp:271
-msgid "Scissors"
-msgstr ""
-
-#: src/window.blp:276
-msgid "Lizard"
-msgstr ""
-
-#: src/window.blp:281
-msgid "Spock"
-msgstr ""
-
-#: src/window.blp:286
+#: src/window.blp:282
 msgid "Retry"
 msgstr ""
