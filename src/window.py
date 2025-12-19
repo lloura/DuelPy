@@ -20,7 +20,7 @@ class DuelpyWindow(Adw.ApplicationWindow):
     gettext.textdomain('io.github.lloura.DuelPy')
 
     # we use staticmethod to prevent Python from passing 'self' to gettext
-    _ = staticmethod(gettext.gettext)
+    _ = gettext.gettext
 
     # template children
     navigation_view = Gtk.Template.Child()
@@ -99,7 +99,7 @@ class DuelpyWindow(Adw.ApplicationWindow):
         rules = GAME_RULES.get(mode)
         if not rules: return
 
-        self.mode_label.set_label(rules["name"])
+        self.mode_label.set_label(_(rules["name"]))
         self.mode_label.set_icon_name(rules["icon"])
 
         # enable only the keys allowed in the current mode
@@ -127,30 +127,30 @@ class DuelpyWindow(Adw.ApplicationWindow):
 
     def determine_winner(self, mode, player, computer):
         if player == computer:
-            return self._("Draw!")
+            return _("Draw!")
 
         if computer in GAME_RULES[mode]["wins"].get(player, []):
-            return self._("You Won!")
-        return self._("You Lost!")
+            return _("You Won!")
+        return _("You Lost!")
 
     def get_explanation(self, player, computer):
         """Returns the localized string explaining why someone won"""
         explanations = {
-            ("rock", "scissors"): self._("Rock smashes Scissors!"),
-            ("rock", "lizard"): self._("Rock smashes Lizard!"),
-            ("paper", "rock"): self._("Paper covers Rock!"),
-            ("paper", "spock"): self._("Paper disproves Spock!"),
-            ("scissors", "paper"): self._("Scissors cuts Paper!"),
-            ("scissors", "lizard"): self._("Scissors decapitates Lizard!"),
-            ("lizard", "paper"): self._("Lizard eats Paper!"),
-            ("lizard", "spock"): self._("Lizard poisons Spock!"),
-            ("spock", "rock"): self._("Spock vaporizes Rock!"),
-            ("spock", "scissors"): self._("Spock smashes Scissors!"),
+            ("rock", "scissors"): _("Rock smashes Scissors!"),
+            ("rock", "lizard"): _("Rock smashes Lizard!"),
+            ("paper", "rock"): _("Paper covers Rock!"),
+            ("paper", "spock"): _("Paper disproves Spock!"),
+            ("scissors", "paper"): _("Scissors cuts Paper!"),
+            ("scissors", "lizard"): _("Scissors decapitates Lizard!"),
+            ("lizard", "paper"): _("Lizard eats Paper!"),
+            ("lizard", "spock"): _("Lizard poisons Spock!"),
+            ("spock", "rock"): _("Spock vaporizes Rock!"),
+            ("spock", "scissors"): _("Spock smashes Scissors!"),
         }
 
         # check both directions (player wins or computer wins)
         if player == computer:
-            return self._("It's a tie!")
+            return _("It's a tie!")
 
         return explanations.get((player, computer),
                explanations.get((computer, player), ""))
