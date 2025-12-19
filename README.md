@@ -56,9 +56,9 @@ Choose your move and see if you can beat the computer!
 3. Open the project in GNOME Builder
 4. Click the **Run** button at the top
 
-### Flatpak (Coming Soon)
+### Flatpak
 
-Pre-built Flatpak packages will be available in the [Releases](../../releases) section.
+Pre-built Flatpak packages are available in the [Releases](../../releases) section.
 
 ---
 
