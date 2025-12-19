@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: duelpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-18 21:51-0300\n"
+"POT-Creation-Date: 2025-12-19 10:24-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -128,104 +128,116 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 
-#: src/window.py:29 src/window.blp:257
-msgid "Rock"
-msgstr ""
-
-#: src/window.py:30 src/window.blp:262
-msgid "Paper"
-msgstr ""
-
-#: src/window.py:31 src/window.blp:267
-msgid "Scissors"
-msgstr ""
-
-#: src/window.py:32 src/window.blp:272
-msgid "Lizard"
-msgstr ""
-
-#: src/window.py:33 src/window.blp:277
-msgid "Spock"
-msgstr ""
-
-#: src/window.py:97
+#: src/window.py:86
 msgid "Draw!"
 msgstr ""
 
-#: src/window.py:108
+#: src/window.py:97
 msgid "You Won!"
 msgstr ""
 
-#: src/window.py:110
+#: src/window.py:99
 msgid "You Lost!"
 msgstr ""
 
+#: src/window.py:104
+msgid "Rock evens out with Rock!"
+msgstr ""
+
+#: src/window.py:106
+msgid "Rock gets covered by Paper!"
+msgstr ""
+
+#: src/window.py:108
+msgid "Rock smashes Scissors!"
+msgstr ""
+
+#: src/window.py:110
+msgid "Rock smashes Lizard!"
+msgstr ""
+
+#: src/window.py:112
+msgid "Rock gets vaporized by Spock!"
+msgstr ""
+
+#: src/window.py:115
+msgid "Paper covers Rock!"
+msgstr ""
+
 #: src/window.py:117
-msgid "evens out with"
+msgid "Paper evens out with Paper!"
 msgstr ""
 
-#: src/window.py:122 src/window.py:156
-msgid "smashes"
+#: src/window.py:119
+msgid "Paper gets cut by Scissors!"
 msgstr ""
 
-#: src/window.py:124
-msgid "gets covered by"
+#: src/window.py:121
+msgid "Paper gets eaten by Lizard!"
+msgstr ""
+
+#: src/window.py:123
+msgid "Paper disproves Spock!"
 msgstr ""
 
 #: src/window.py:126
-msgid "gets vaporized by"
+msgid "Scissors gets smashed by Rock!"
 msgstr ""
 
-#: src/window.py:129
-msgid "covers"
+#: src/window.py:128
+msgid "Scissors cuts Paper!"
 msgstr ""
 
-#: src/window.py:131
-msgid "disproves"
+#: src/window.py:130
+msgid "Scissors evens out with Scissors!"
 msgstr ""
 
-#: src/window.py:133
-msgid "gets cut by"
+#: src/window.py:132
+msgid "Scissors decapitates Lizard!"
 msgstr ""
 
-#: src/window.py:135
-msgid "gets eaten by"
+#: src/window.py:134
+msgid "Scissors gets smashed by Spock!"
 msgstr ""
 
-#: src/window.py:138
-msgid "cuts"
+#: src/window.py:137
+msgid "Lizard gets smashed by Rock!"
 msgstr ""
 
-#: src/window.py:140
-msgid "decapitates"
+#: src/window.py:139
+msgid "Lizard eats Paper!"
 msgstr ""
 
-#: src/window.py:142 src/window.py:151
-msgid "gets smashed by"
+#: src/window.py:141
+msgid "Lizard gets decapitated by Scissors!"
+msgstr ""
+
+#: src/window.py:143
+msgid "Lizard evens out with Lizard!"
 msgstr ""
 
 #: src/window.py:145
-msgid "eats"
+msgid "Lizard poisons Spock!"
 msgstr ""
 
-#: src/window.py:147
-msgid "poisons"
+#: src/window.py:148
+msgid "Spock vaporizes Rock!"
 msgstr ""
 
-#: src/window.py:149
-msgid "gets decapitated by"
+#: src/window.py:150
+msgid "Spock gets disproven by Paper!"
+msgstr ""
+
+#: src/window.py:152
+msgid "Spock smashes Scissors!"
 msgstr ""
 
 #: src/window.py:154
-msgid "vaporizes"
+msgid "Spock gets poisoned by Lizard!"
 msgstr ""
 
-#: src/window.py:158
-msgid "gets disproven by"
-msgstr ""
-
-#: src/window.py:160
-msgid "gets poisoned by"
+#: src/window.py:156
+msgid "Spock evens out with Spock!"
 msgstr ""
 
 #: src/window.blp:15
@@ -282,6 +294,26 @@ msgstr ""
 
 #: src/window.blp:254
 msgid "Gameplay"
+msgstr ""
+
+#: src/window.blp:257
+msgid "Rock"
+msgstr ""
+
+#: src/window.blp:262
+msgid "Paper"
+msgstr ""
+
+#: src/window.blp:267
+msgid "Scissors"
+msgstr ""
+
+#: src/window.blp:272
+msgid "Lizard"
+msgstr ""
+
+#: src/window.blp:277
+msgid "Spock"
 msgstr ""
 
 #: src/window.blp:282

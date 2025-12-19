@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: duelpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-18 21:46-0300\n"
-"PO-Revision-Date: 2025-12-18 22:20-0300\n"
+"POT-Creation-Date: 2025-12-19 10:24-0300\n"
+"PO-Revision-Date: 2025-12-19 10:25-0300\n"
 "Last-Translator: Lucas Loura <oliverloura2020@gmail.com>\n"
 "Language-Team: Brazilian Portuguese\n"
 "Language: pt_BR\n"
@@ -135,105 +135,117 @@ msgstr "Se a janela está em tela cheia"
 msgid "translator-credits"
 msgstr "Lucas Loura https://github.com/lloura"
 
-#: src/window.py:29 src/window.blp:257
-msgid "Rock"
-msgstr "Pedra"
-
-#: src/window.py:30 src/window.blp:262
-msgid "Paper"
-msgstr "Papel"
-
-#: src/window.py:31 src/window.blp:267
-msgid "Scissors"
-msgstr "Tesoura"
-
-#: src/window.py:32 src/window.blp:272
-msgid "Lizard"
-msgstr "Lagarto"
-
-#: src/window.py:33 src/window.blp:277
-msgid "Spock"
-msgstr "Spock"
-
-#: src/window.py:97
+#: src/window.py:86
 msgid "Draw!"
 msgstr "Empate!"
 
-#: src/window.py:108
+#: src/window.py:97
 msgid "You Won!"
 msgstr "Você Venceu!"
 
-#: src/window.py:110
+#: src/window.py:99
 msgid "You Lost!"
 msgstr "Você Perdeu!"
 
+#: src/window.py:104
+msgid "Rock evens out with Rock!"
+msgstr "Pedra empata com a Pedra!"
+
+#: src/window.py:106
+msgid "Rock gets covered by Paper!"
+msgstr "Pedra é coberta pelo Papel!"
+
+#: src/window.py:108
+msgid "Rock smashes Scissors!"
+msgstr "Pedra quebra a Tesoura!"
+
+#: src/window.py:110
+msgid "Rock smashes Lizard!"
+msgstr "Pedra esmaga o Lagarto!"
+
+#: src/window.py:112
+msgid "Rock gets vaporized by Spock!"
+msgstr "Pedra é vaporizada pelo Spock!"
+
+#: src/window.py:115
+msgid "Paper covers Rock!"
+msgstr "Papel cobre a Pedra!"
+
 #: src/window.py:117
-msgid "evens out with"
-msgstr "empata com"
+msgid "Paper evens out with Paper!"
+msgstr "Papel empata com o Papel!"
 
-#: src/window.py:122 src/window.py:156
-msgid "smashes"
-msgstr "esmaga"
+#: src/window.py:119
+msgid "Paper gets cut by Scissors!"
+msgstr "Papel é cortado pela Tesoura!"
 
-#: src/window.py:124
-msgid "gets covered by"
-msgstr "é coberta por"
+#: src/window.py:121
+msgid "Paper gets eaten by Lizard!"
+msgstr "Papel é comido pelo Lagarto!"
+
+#: src/window.py:123
+msgid "Paper disproves Spock!"
+msgstr "Papel refuta o Spock!"
 
 #: src/window.py:126
-msgid "gets vaporized by"
-msgstr "é vaporizado por"
+msgid "Scissors gets smashed by Rock!"
+msgstr "Tesoura é quebrada pela Pedra!"
 
-#: src/window.py:129
-msgid "covers"
-msgstr "cobre"
+#: src/window.py:128
+msgid "Scissors cuts Paper!"
+msgstr "Tesoura corta o Papel!"
 
-#: src/window.py:131
-msgid "disproves"
-msgstr "refuta"
+#: src/window.py:130
+msgid "Scissors evens out with Scissors!"
+msgstr "Tesoura empata com a Tesoura!"
 
-#: src/window.py:133
-msgid "gets cut by"
-msgstr "é cortado por"
+#: src/window.py:132
+msgid "Scissors decapitates Lizard!"
+msgstr "Tesoura decapita o Lagarto!"
 
-#: src/window.py:135
-msgid "gets eaten by"
-msgstr "é comido por"
+#: src/window.py:134
+msgid "Scissors gets smashed by Spock!"
+msgstr "Tesoura é quebrada pelo Spock!"
 
-#: src/window.py:138
-msgid "cuts"
-msgstr "corta"
+#: src/window.py:137
+msgid "Lizard gets smashed by Rock!"
+msgstr "Lagarto é esmagado pela Pedra!"
 
-#: src/window.py:140
-msgid "decapitates"
-msgstr "decapita"
+#: src/window.py:139
+msgid "Lizard eats Paper!"
+msgstr "Lagarto come o Papel!"
 
-#: src/window.py:142 src/window.py:151
-msgid "gets smashed by"
-msgstr "é esmagado por"
+#: src/window.py:141
+msgid "Lizard gets decapitated by Scissors!"
+msgstr "Lagarto é decapitado pela Tesoura!"
+
+#: src/window.py:143
+msgid "Lizard evens out with Lizard!"
+msgstr "Lagarto empata com o Lagarto!"
 
 #: src/window.py:145
-msgid "eats"
-msgstr "come"
+msgid "Lizard poisons Spock!"
+msgstr "Lagarto envenena o Spock!"
 
-#: src/window.py:147
-msgid "poisons"
-msgstr "envenena"
+#: src/window.py:148
+msgid "Spock vaporizes Rock!"
+msgstr "Spock vaporiza a Pedra!"
 
-#: src/window.py:149
-msgid "gets decapitated by"
-msgstr "é decapitado por"
+#: src/window.py:150
+msgid "Spock gets disproven by Paper!"
+msgstr "Spock é refutado pelo Papel!"
+
+#: src/window.py:152
+msgid "Spock smashes Scissors!"
+msgstr "Spock quebra a Tesoura!"
 
 #: src/window.py:154
-msgid "vaporizes"
-msgstr "vaporiza"
+msgid "Spock gets poisoned by Lizard!"
+msgstr "Spock é envenenado pelo Lagarto!"
 
-#: src/window.py:158
-msgid "gets disproven by"
-msgstr "é refutado por"
-
-#: src/window.py:160
-msgid "gets poisoned by"
-msgstr "é envenenado por"
+#: src/window.py:156
+msgid "Spock evens out with Spock!"
+msgstr "Spock empata com o Spock!"
 
 #: src/window.blp:15
 msgid "Main Menu"
@@ -291,6 +303,53 @@ msgstr "Sobre o Duel!"
 msgid "Gameplay"
 msgstr "Jogabilidade"
 
+#: src/window.blp:257
+msgid "Rock"
+msgstr "Pedra"
+
+#: src/window.blp:262
+msgid "Paper"
+msgstr "Papel"
+
+#: src/window.blp:267
+msgid "Scissors"
+msgstr "Tesoura"
+
+#: src/window.blp:272
+msgid "Lizard"
+msgstr "Lagarto"
+
+#: src/window.blp:277
+msgid "Spock"
+msgstr "Spock"
+
 #: src/window.blp:282
 msgid "Retry"
 msgstr "Tentar Novamente"
+
+#~ msgid "smashes"
+#~ msgstr "esmaga"
+
+#~ msgid "covers"
+#~ msgstr "cobre"
+
+#~ msgid "disproves"
+#~ msgstr "refuta"
+
+#~ msgid "gets cut by"
+#~ msgstr "é cortado por"
+
+#~ msgid "cuts"
+#~ msgstr "corta"
+
+#~ msgid "decapitates"
+#~ msgstr "decapita"
+
+#~ msgid "eats"
+#~ msgstr "come"
+
+#~ msgid "poisons"
+#~ msgstr "envenena"
+
+#~ msgid "gets poisoned by"
+#~ msgstr "é envenenado por"
