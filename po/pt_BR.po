@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: duelpy\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-18 21:46-0300\n"
-"PO-Revision-Date: 2025-12-18 22:08-0300\n"
+"PO-Revision-Date: 2025-12-18 22:20-0300\n"
 "Last-Translator: Lucas Loura <oliverloura2020@gmail.com>\n"
 "Language-Team: Brazilian Portuguese\n"
 "Language: pt_BR\n"
@@ -133,9 +133,7 @@ msgstr "Se a janela está em tela cheia"
 #. Translators: Replace "translator-credits" with your name/username, and optionally an email or URL.
 #: src/main.py:61
 msgid "translator-credits"
-msgstr ""
-"Lucas Loura https://github.com/lloura\n"
-"Dede Doidao https://github.com/lloura"
+msgstr "Lucas Loura https://github.com/lloura"
 
 #: src/window.py:29 src/window.blp:257
 msgid "Rock"
