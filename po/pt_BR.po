@@ -326,30 +326,3 @@ msgstr "Spock"
 #: src/window.blp:282
 msgid "Retry"
 msgstr "Tentar Novamente"
-
-#~ msgid "smashes"
-#~ msgstr "esmaga"
-
-#~ msgid "covers"
-#~ msgstr "cobre"
-
-#~ msgid "disproves"
-#~ msgstr "refuta"
-
-#~ msgid "gets cut by"
-#~ msgstr "é cortado por"
-
-#~ msgid "cuts"
-#~ msgstr "corta"
-
-#~ msgid "decapitates"
-#~ msgstr "decapita"
-
-#~ msgid "eats"
-#~ msgstr "come"
-
-#~ msgid "poisons"
-#~ msgstr "envenena"
-
-#~ msgid "gets poisoned by"
-#~ msgstr "é envenenado por"

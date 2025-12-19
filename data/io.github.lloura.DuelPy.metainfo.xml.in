@@ -66,6 +66,16 @@
   </screenshots>
 
   <releases>
+    <release version="0.1.2" date="2025-12-19">
+      <p>Implemented Internationalization Support</p>
+      <description>
+        <ul>
+          <li>Added support for internationalization (i18n) using gettext</li>
+          <li>Added Brazilian Portuguese (pt_BR) translation</li>
+          <li>Keyboard shortcuts (1-5) are now also triggerable via the keypad (Numpad)</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.1.1" date="2025-12-17">
       <description translate="no">
         <p>Updated Runtime and Keybindings</p>

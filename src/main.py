@@ -54,7 +54,7 @@ class DuelpyApplication(Adw.Application):
         about = Adw.AboutDialog(application_name='Duel!',
                                 application_icon='io.github.lloura.DuelPy',
                                 developer_name='Lucas Loura',
-                                version='0.1.1',
+                                version='0.1.2',
                                 developers=['Lucas Loura'],
                                 copyright='© 2025 Lucas Loura')
         # Translators: Replace "translator-credits" with your name/username, and optionally an email or URL.
