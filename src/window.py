@@ -24,17 +24,6 @@ import random
 import gettext
 import os
 
-def translate_choice(choice):
-    translations = {
-        'Rock': _('Rock'),
-        'Paper': _('Paper'),
-        'Scissors': _('Scissors'),
-        'Lizard': _('Lizard'),
-        'Spock': _('Spock')
-    }
-
-    return translations.get(choice, choice)
-
 @Gtk.Template(resource_path='/io/github/lloura/DuelPy/window.ui')
 class DuelpyWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'DuelpyWindow'
@@ -56,11 +45,11 @@ class DuelpyWindow(Adw.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.create_action('rock', self.on_play, 'Rock', ['1','KP_1'])
-        self.create_action('paper', self.on_play, 'Paper', ['2','KP_2'])
-        self.create_action('scissors', self.on_play, 'Scissors', ['3','KP_3'])
-        self.create_action('lizard', self.on_play, 'Lizard', ['4','KP_4'])
-        self.create_action('spock', self.on_play, 'Spock', ['5','KP_5'])
+        self.create_action('rock', self.on_play, 'rock', ['1','KP_1'])
+        self.create_action('paper', self.on_play, 'paper', ['2','KP_2'])
+        self.create_action('scissors', self.on_play, 'scissors', ['3','KP_3'])
+        self.create_action('lizard', self.on_play, 'lizard', ['4','KP_4'])
+        self.create_action('spock', self.on_play, 'spock', ['5','KP_5'])
         self.create_action('retry', self.on_retry, shortcuts=['<Ctrl>R'])
 
         self.create_action('show-help-overlay', self.on_show_shortcuts, shortcuts=['<Ctrl>question'])
@@ -78,7 +67,7 @@ class DuelpyWindow(Adw.ApplicationWindow):
             app.set_accels_for_action(f"win.{name}", shortcuts)
 
     def on_play(self, player_choice):
-        choices = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock']
+        choices = ['rock', 'paper', 'scissors', 'lizard', 'spock']
         computer_choice = random.choice(choices)
 
         result = self.determine_winner(player_choice, computer_choice)
@@ -97,11 +86,11 @@ class DuelpyWindow(Adw.ApplicationWindow):
             return _("Draw!")
 
         wins = {
-            'Rock': ['Scissors', 'Lizard'],
-            'Paper': ['Rock', 'Spock'],
-            'Scissors': ['Paper', 'Lizard'],
-            'Lizard': ['Spock', 'Paper'],
-            'Spock': ['Scissors', 'Rock']
+            'rock': ['scissors', 'lizard'],
+            'paper': ['rock', 'spock'],
+            'scissors': ['paper', 'lizard'],
+            'lizard': ['spock', 'paper'],
+            'spock': ['scissors', 'rock']
         }
 
         if computer_choice in wins[player_choice]:
@@ -110,54 +99,63 @@ class DuelpyWindow(Adw.ApplicationWindow):
             return _("You Lost!")
 
     def get_explanation(self, player_choice, computer_choice):
-        player = translate_choice(player_choice)
-        computer = translate_choice(computer_choice)
+        match(player_choice, computer_choice):
+            case ("rock", "rock"):
+                return _("Rock evens out with Rock!")
+            case ("rock", "paper"):
+                return _("Rock gets covered by Paper!")
+            case ("rock", "scissors"):
+                return _("Rock smashes Scissors!")
+            case ("rock", "lizard"):
+                return _("Rock smashes Lizard!")
+            case ("rock", "spock"):
+                return _("Rock gets vaporized by Spock!")
 
-        if (player_choice == computer_choice):
-            return f"{player} {_('evens out with')} {computer}!"
+            case ("paper", "rock"):
+                return _("Paper covers Rock!")
+            case ("paper", "paper"):
+                return _("Paper evens out with Paper!")
+            case ("paper", "scissors"):
+                return _("Paper gets cut by Scissors!")
+            case ("paper", "lizard"):
+                return _("Paper gets eaten by Lizard!")
+            case ("paper", "spock"):
+                return _("Paper disproves Spock!")
 
-        match(player_choice):
-            case "Rock":
-                if (computer_choice == "Scissors" or computer_choice == "Lizard"):
-                    return f"{player} {_('smashes')} {computer}!"
-                if (computer_choice == "Paper"):
-                    return f"{player} {_('gets covered by')} {computer}!"
-                if (computer_choice == "Spock"):
-                    return f"{player} {_('gets vaporized by')} {computer}!"
-            case "Paper":
-                if (computer_choice == "Rock"):
-                    return f"{player} {_('covers')} {computer}!"
-                if (computer_choice == "Spock"):
-                    return f"{player} {_('disproves')} {computer}!"
-                if (computer_choice == "Scissors"):
-                    return f"{player} {_('gets cut by')} {computer}!"
-                if (computer_choice == "Lizard"):
-                    return f"{player} {_('gets eaten by')} {computer}!"
-            case "Scissors":
-                if (computer_choice == "Paper"):
-                    return f"{player} {_('cuts')} {computer}!"
-                if (computer_choice == "Lizard"):
-                    return f"{player} {_('decapitates')} {computer}!"
-                if (computer_choice == "Rock" or computer_choice == "Spock"):
-                    return f"{player} {_('gets smashed by')} {computer}!"
-            case "Lizard":
-                if (computer_choice == "Paper"):
-                    return f"{player} {_('eats')} {computer}!"
-                if (computer_choice == "Spock"):
-                    return f"{player} {_('poisons')} {computer}!"
-                if (computer_choice == "Scissors"):
-                    return f"{player} {_('gets decapitated by')} {computer}!"
-                if (computer_choice == "Rock"):
-                    return f"{player} {_('gets smashed by')} {computer}!"
-            case "Spock":
-                if (computer_choice == "Rock"):
-                    return f"{player} {_('vaporizes')} {computer}!"
-                if (computer_choice == "Scissors"):
-                    return f"{player} {_('smashes')} {computer}!"
-                if (computer_choice == "Paper"):
-                    return f"{player} {_('gets disproven by')} {computer}!"
-                if (computer_choice == "Lizard"):
-                    return f"{player} {_('gets poisoned by')} {computer}!"
+            case ("scissors","rock"):
+                return _("Scissors gets smashed by Rock!")
+            case ("scissors","paper"):
+                return _("Scissors cuts Paper!")
+            case ("scissors","scissors"):
+                return _("Scissors evens out with Scissors!")
+            case ("scissors","lizard"):
+                return _("Scissors decapitates Lizard!")
+            case ("scissors","spock"):
+                return _("Scissors gets smashed by Spock!")
+
+            case ("lizard","rock"):
+                return _("Lizard gets smashed by Rock!")
+            case ("lizard","paper"):
+                return _("Lizard eats Paper!")
+            case ("lizard","scissors"):
+                return _("Lizard gets decapitated by Scissors!")
+            case ("lizard","lizard"):
+                return _("Lizard evens out with Lizard!")
+            case ("lizard","spock"):
+                return _("Lizard poisons Spock!")
+
+            case ("spock", "rock"):
+                return _("Spock vaporizes Rock!")
+            case ("spock", "paper"):
+                return _("Spock gets disproven by Paper!")
+            case ("spock", "scissors"):
+                return _("Spock smashes Scissors!")
+            case ("spock", "lizard"):
+                return ("Spock gets poisoned by Lizard!")
+            case ("spock", "spock"):
+                return ("Spock evens out with Spock!")
+
+        return ""
 
     def on_retry(self):
         if self.navigation_view.get_visible_page_tag() == "results":
