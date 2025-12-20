@@ -2,6 +2,13 @@
 
 # Script to update DuelPy translations
 # Usage: ./update-translations.sh [command]
+#
+# ENVIRONMENT REQUIREMENTS (Fedora/Toolbox):
+#   The following packages must be installed for this script to work:
+#   sudo dnf install meson ninja-build gettext glib2-devel desktop-file-utils appstream
+#
+#   Note: If using Fedora Silverblue, run this script inside a 'toolbox'.
+#
 #   update    - Update existing translations
 #   add LANG  - Add new language (e.g., ./update-translations.sh add es)
 #   stats     - Show translation statistics

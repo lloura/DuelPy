@@ -66,6 +66,17 @@
   </screenshots>
 
   <releases>
+    <release version="0.2.0" date="2025-12-20">
+      <p>The Game Modes Update</p>
+      <description>
+        <ul>
+          <li>Added Classic game mode (Rock, Paper, Scissors)</li>
+          <li>Implemented game mode persistence using GSettings</li>
+          <li>New mode selector in the header bar</li>
+          <li>Refactored internal architecture for better scalability</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.1.2" date="2025-12-19">
       <p>Implemented Internationalization Support</p>
       <description>

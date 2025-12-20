@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: duelpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-19 19:59-0300\n"
-"PO-Revision-Date: 2025-12-19 19:32-0300\n"
+"POT-Creation-Date: 2025-12-20 19:53-0300\n"
+"PO-Revision-Date: 2025-12-20 20:26-0300\n"
 "Last-Translator: Lucas Loura <oliverloura2020@gmail.com>\n"
 "Language-Team: Brazilian Portuguese\n"
 "Language: pt_BR\n"
@@ -99,14 +99,30 @@ msgid "Game results showing Paper vs Lizard"
 msgstr "Resultados do jogo mostrando Papel vs Lagarto"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:73
+msgid "Added Classic game mode (Rock, Paper, Scissors)"
+msgstr "Adicionado modo de jogo Clássico (Pedra, Papel, Tesoura)"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:74
+msgid "Implemented game mode persistence using GSettings"
+msgstr "Implementada persistência de modo de jogo por meio do Gsettings"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:75
+msgid "New mode selector in the header bar"
+msgstr "Novo seletor de modos na barra de título"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:76
+msgid "Refactored internal architecture for better scalability"
+msgstr "Refatorada estrutura interna para melhor escalabilidade"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:84
 msgid "Added support for internationalization (i18n) using gettext"
 msgstr "Adicionado suporte para internacionalização (i18n) por meio do gettext"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:74
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:85
 msgid "Added Brazilian Portuguese (pt_BR) translation"
 msgstr "Adicionada tradução em Português Brasileiro (pt_BR)"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:75
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:86
 msgid ""
 "Keyboard shortcuts (1-5) are now also triggerable via the keypad (Numpad)"
 msgstr ""
@@ -162,59 +178,59 @@ msgstr ""
 msgid "translator-credits"
 msgstr "Lucas Loura https://github.com/lloura"
 
-#: src/window.py:130
+#: src/window.py:145
 msgid "Draw!"
 msgstr "Empate!"
 
-#: src/window.py:133
+#: src/window.py:148
 msgid "You Won!"
 msgstr "Você Venceu!"
 
-#: src/window.py:134
+#: src/window.py:149
 msgid "You Lost!"
 msgstr "Você Perdeu!"
 
-#: src/window.py:139
+#: src/window.py:154
 msgid "Rock smashes Scissors!"
 msgstr "Pedra quebra a Tesoura!"
 
-#: src/window.py:140
+#: src/window.py:155
 msgid "Rock smashes Lizard!"
 msgstr "Pedra esmaga o Lagarto!"
 
-#: src/window.py:141
+#: src/window.py:156
 msgid "Paper covers Rock!"
 msgstr "Papel cobre a Pedra!"
 
-#: src/window.py:142
+#: src/window.py:157
 msgid "Paper disproves Spock!"
 msgstr "Papel refuta o Spock!"
 
-#: src/window.py:143
+#: src/window.py:158
 msgid "Scissors cuts Paper!"
 msgstr "Tesoura corta o Papel!"
 
-#: src/window.py:144
+#: src/window.py:159
 msgid "Scissors decapitates Lizard!"
 msgstr "Tesoura decapita o Lagarto!"
 
-#: src/window.py:145
+#: src/window.py:160
 msgid "Lizard eats Paper!"
 msgstr "Lagarto come o Papel!"
 
-#: src/window.py:146
+#: src/window.py:161
 msgid "Lizard poisons Spock!"
 msgstr "Lagarto envenena o Spock!"
 
-#: src/window.py:147
+#: src/window.py:162
 msgid "Spock vaporizes Rock!"
 msgstr "Spock vaporiza a Pedra!"
 
-#: src/window.py:148
+#: src/window.py:163
 msgid "Spock smashes Scissors!"
 msgstr "Spock quebra a Tesoura!"
 
-#: src/window.py:153
+#: src/window.py:168
 msgid "It's a tie!"
 msgstr "É um empate!"
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: duelpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-19 19:59-0300\n"
+"POT-Creation-Date: 2025-12-20 19:53-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,14 +92,30 @@ msgid "Game results showing Paper vs Lizard"
 msgstr ""
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:73
-msgid "Added support for internationalization (i18n) using gettext"
+msgid "Added Classic game mode (Rock, Paper, Scissors)"
 msgstr ""
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:74
-msgid "Added Brazilian Portuguese (pt_BR) translation"
+msgid "Implemented game mode persistence using GSettings"
 msgstr ""
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:75
+msgid "New mode selector in the header bar"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:76
+msgid "Refactored internal architecture for better scalability"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:84
+msgid "Added support for internationalization (i18n) using gettext"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:85
+msgid "Added Brazilian Portuguese (pt_BR) translation"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:86
 msgid ""
 "Keyboard shortcuts (1-5) are now also triggerable via the keypad (Numpad)"
 msgstr ""
@@ -151,59 +167,59 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 
-#: src/window.py:130
+#: src/window.py:145
 msgid "Draw!"
 msgstr ""
 
-#: src/window.py:133
+#: src/window.py:148
 msgid "You Won!"
 msgstr ""
 
-#: src/window.py:134
+#: src/window.py:149
 msgid "You Lost!"
 msgstr ""
 
-#: src/window.py:139
+#: src/window.py:154
 msgid "Rock smashes Scissors!"
 msgstr ""
 
-#: src/window.py:140
+#: src/window.py:155
 msgid "Rock smashes Lizard!"
 msgstr ""
 
-#: src/window.py:141
+#: src/window.py:156
 msgid "Paper covers Rock!"
 msgstr ""
 
-#: src/window.py:142
+#: src/window.py:157
 msgid "Paper disproves Spock!"
 msgstr ""
 
-#: src/window.py:143
+#: src/window.py:158
 msgid "Scissors cuts Paper!"
 msgstr ""
 
-#: src/window.py:144
+#: src/window.py:159
 msgid "Scissors decapitates Lizard!"
 msgstr ""
 
-#: src/window.py:145
+#: src/window.py:160
 msgid "Lizard eats Paper!"
 msgstr ""
 
-#: src/window.py:146
+#: src/window.py:161
 msgid "Lizard poisons Spock!"
 msgstr ""
 
-#: src/window.py:147
+#: src/window.py:162
 msgid "Spock vaporizes Rock!"
 msgstr ""
 
-#: src/window.py:148
+#: src/window.py:163
 msgid "Spock smashes Scissors!"
 msgstr ""
 
-#: src/window.py:153
+#: src/window.py:168
 msgid "It's a tie!"
 msgstr ""
 
