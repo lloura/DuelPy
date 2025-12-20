@@ -1,28 +1,24 @@
-.Button{
-  color: @white_1;
-}
-
 .button_rock{
+  color: @white_1;
   background-color: @blue_3;
 }
 
 .button_paper{
+  color: @white_1;
   background-color: @purple_3;
 }
 
 .button_scissors{
+  color: @white_1;
   background-color: @red_3;
 }
 
 .button_lizard{
+  color: @white_1;
   background-color: @orange_3;
 }
 
 .button_spock{
+  color: @white_1;
   background-color: @green_4;
-}
-
-.button_retry{
-  color: @color_2;
-  background-color: @dark_2;
 }
