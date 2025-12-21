@@ -16,7 +16,6 @@
     <file preprocess="xml-stripblanks">icons/rock-symbolic.svg</file>
     <file preprocess="xml-stripblanks">icons/scissors-symbolic.svg</file>
     <file preprocess="xml-stripblanks">icons/spock-symbolic.svg</file>
-    <file preprocess="xml-stripblanks">icons/retry-symbolic.svg</file>
   </gresource>
 </gresources>
 
