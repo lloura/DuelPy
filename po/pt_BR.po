@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: duelpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-20 23:58-0300\n"
-"PO-Revision-Date: 2025-12-21 00:04-0300\n"
+"POT-Creation-Date: 2025-12-21 02:12-0300\n"
+"PO-Revision-Date: 2025-12-21 02:15-0300\n"
 "Last-Translator: Lucas Loura <oliverloura2020@gmail.com>\n"
 "Language-Team: Brazilian Portuguese\n"
 "Language: pt_BR\n"
@@ -99,30 +99,46 @@ msgid "Game results showing Paper vs Lizard"
 msgstr "Resultados do jogo mostrando Papel vs Lagarto"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:73
+msgid ""
+"Redesigned the \"About\" window to provide a more modern experience and "
+"clearer project information"
+msgstr ""
+"Reformulação da janela \"Sobre\" para fornecer uma experiência mais moderna "
+"e informações mais claras do projeto"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:74
+msgid ""
+"Added dedicated credits for the game variant creators: Sam Kass and Karen "
+"Bryla (RPSLS) and David C. Lovelace (RPS-7)"
+msgstr ""
+"Adicionados créditos aos criadores dos modos de jogo: Sam Kass e Karen Bryla "
+"(RPSLS) e David C. Lovelace (RPS-7)."
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:82
 msgid "Added Classic game mode (Rock, Paper, Scissors)"
 msgstr "Adicionado modo de jogo Clássico (Pedra, Papel, Tesoura)"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:74
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:83
 msgid "Implemented game mode persistence using GSettings"
 msgstr "Implementada persistência de modo de jogo por meio do Gsettings"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:75
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:84
 msgid "New mode selector in the header bar"
 msgstr "Novo seletor de modos na barra de título"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:76
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:85
 msgid "Refactored internal architecture for better scalability"
 msgstr "Refatorada estrutura interna para melhor escalabilidade"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:84
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:93
 msgid "Added support for internationalization (i18n) using gettext"
 msgstr "Adicionado suporte para internacionalização (i18n) por meio do gettext"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:85
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:94
 msgid "Added Brazilian Portuguese (pt_BR) translation"
 msgstr "Adicionada tradução em Português Brasileiro (pt_BR)"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:86
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:95
 msgid ""
 "Keyboard shortcuts (1-5) are now also triggerable via the keypad (Numpad)"
 msgstr ""

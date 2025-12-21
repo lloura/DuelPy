@@ -66,8 +66,17 @@
   </screenshots>
 
   <releases>
+    <release version="0.2.1" date="2025-12-21">
+      <p>Credits and Visual Polish</p>
+      <description>
+        <ul>
+          <li>Redesigned the "About" window to provide a more modern experience and clearer project information</li>
+          <li>Added dedicated credits for the game variant creators: Sam Kass and Karen Bryla (RPSLS) and David C. Lovelace (RPS-7)</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.2.0" date="2025-12-20">
-      <p>The Game Modes Update</p>
+      <p>Introducing Game Modes</p>
       <description>
         <ul>
           <li>Added Classic game mode (Rock, Paper, Scissors)</li>

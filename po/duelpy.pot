@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: duelpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-20 23:58-0300\n"
+"POT-Creation-Date: 2025-12-21 02:12-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,30 +92,42 @@ msgid "Game results showing Paper vs Lizard"
 msgstr ""
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:73
-msgid "Added Classic game mode (Rock, Paper, Scissors)"
+msgid ""
+"Redesigned the \"About\" window to provide a more modern experience and "
+"clearer project information"
 msgstr ""
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:74
+msgid ""
+"Added dedicated credits for the game variant creators: Sam Kass and Karen "
+"Bryla (RPSLS) and David C. Lovelace (RPS-7)"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:82
+msgid "Added Classic game mode (Rock, Paper, Scissors)"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:83
 msgid "Implemented game mode persistence using GSettings"
 msgstr ""
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:75
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:84
 msgid "New mode selector in the header bar"
 msgstr ""
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:76
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:85
 msgid "Refactored internal architecture for better scalability"
 msgstr ""
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:84
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:93
 msgid "Added support for internationalization (i18n) using gettext"
 msgstr ""
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:85
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:94
 msgid "Added Brazilian Portuguese (pt_BR) translation"
 msgstr ""
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:86
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:95
 msgid ""
 "Keyboard shortcuts (1-5) are now also triggerable via the keypad (Numpad)"
 msgstr ""
