@@ -104,7 +104,7 @@ I chose Python because I plan to use it for similar projects in the future, and 
 
 **Game Variants:**
 
-- **RPSLS** created by [Sam Kass](https://www.samkass.com/theories/RPSSL.html).
+- **RPSLS** created by [Sam Kass and Karen Bryla](https://www.samkass.com/theories/RPSSL.html).
 - **RPS-7** and others created by [David C. Lovelace](https://umop.com/rps7.htm).
 
 **Inspiration:**

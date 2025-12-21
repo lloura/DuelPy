@@ -61,7 +61,7 @@ class DuelpyApplication(Adw.Application):
             version='0.2.0',
             copyright='© 2025 Lucas Loura',
             # credits and inspirations shown in the About dialog
-            comments=_("A modern take on the RPSLS variant created by Sam Kass. Inspired by the work of ByteSeb.\n\nSpecial thanks to Sam Kass and David C. Lovelace for the game variants."),
+            comments=_("A modern take on the RPSLS variant created by Sam Kass and Karen Bryla. Inspired by the work of ByteSeb.\n\nSpecial thanks to David C. Lovelace for the additional game variants."),
             website='https://github.com/lloura/DuelPy',
             issue_url='https://github.com/lloura/DuelPy/issues',
             license_type=Gtk.License.GPL_3_0
