@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: duelpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-20 19:53-0300\n"
+"POT-Creation-Date: 2025-12-20 23:58-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -162,8 +162,17 @@ msgid ""
 "'classic' for Rock-Paper-Scissors"
 msgstr ""
 
-#. Translators: Replace "translator-credits" with your name/username, and optionally an email or URL.
-#: src/main.py:61
+#. credits and inspirations shown in the About dialog
+#: src/main.py:64
+msgid ""
+"A modern take on the RPSLS variant created by Sam Kass and Karen Bryla. "
+"Inspired by the work of ByteSeb.\n"
+"\n"
+"Special thanks to David C. Lovelace for the additional game variants."
+msgstr ""
+
+#. set translator credits from the .po file
+#: src/main.py:71
 msgid "translator-credits"
 msgstr ""
 

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: duelpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-20 19:53-0300\n"
-"PO-Revision-Date: 2025-12-20 20:26-0300\n"
+"POT-Creation-Date: 2025-12-20 23:58-0300\n"
+"PO-Revision-Date: 2025-12-21 00:01-0300\n"
 "Last-Translator: Lucas Loura <oliverloura2020@gmail.com>\n"
 "Language-Team: Brazilian Portuguese\n"
 "Language: pt_BR\n"
@@ -173,8 +173,22 @@ msgstr ""
 "O modo de jogo atual: 'rpsls' para Pedra-Papel-Tesoura-Lagarto-Spock ou "
 "'classic' para 'Pedra-Papel-Tesoura'"
 
-#. Translators: Replace "translator-credits" with your name/username, and optionally an email or URL.
-#: src/main.py:61
+#. credits and inspirations shown in the About dialog
+#: src/main.py:64
+msgid ""
+"A modern take on the RPSLS variant created by Sam Kass and Karen Bryla. "
+"Inspired by the work of ByteSeb.\n"
+"\n"
+"Special thanks to David C. Lovelace for the additional game variants."
+msgstr ""
+"Uma versão moderna da variante RPSLS criada por Sam Kass e Karen Bryla. "
+"Inspirado no trabalho de ByteSeb.\n"
+"\n"
+"Agradecimentos especiais a David C. Lovelace pelas variantes de jogo "
+"adicionais."
+
+#. set translator credits from the .po file
+#: src/main.py:71
 msgid "translator-credits"
 msgstr "Lucas Loura https://github.com/lloura"
 
