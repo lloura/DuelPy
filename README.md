@@ -91,18 +91,25 @@ I chose Python because I plan to use it for similar projects in the future, and 
 ## Roadmap
 
 - [x] Basic game functionality
-- [x] Quality of life improvements (Like Keybindings)
-- [x] Flatpak package for releases
+- [x] Persistence with GSettings
+- [ ] **Next:** Implementation of David C. Lovelace's **RPS-7** mode
+- [ ] Implementation of a visual 'How to Play' guide for the different variants
 - [ ] Flathub submission (😳👉️👈️)
 
 **Contributions are welcome!** Feel free to open issues or submit pull requests.
 
 ---
 
-## References
+## Credits & References
 
-- Original concept: [ByteSeb's Duel](https://github.com/byteseb/Duel) and [Tutorial Video](https://www.youtube.com/watch?v=WtvObZHhdf0)
-- Previous iteration: [Jokenpo+](https://github.com/lloura/jokenpo)
+**Game Variants:**
+
+- **RPSLS** created by [Sam Kass](https://www.samkass.com/theories/RPSSL.html).
+- **RPS-7** and others created by [David C. Lovelace](https://umop.com/rps7.htm).
+
+**Inspiration:**
+
+- Originally inspired by [ByteSeb's Duel](https://github.com/byteseb/Duel) & [Tutorial Video](https://www.youtube.com/watch?v=WtvObZHhdf0) and a previous [college project](https://github.com/lloura/jokenpo).
 
 ---
 
