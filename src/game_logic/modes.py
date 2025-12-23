@@ -1,4 +1,4 @@
-# modes.py
+# game_logic/modes.py
 #
 # Copyright 2025 Lucas Loura
 #

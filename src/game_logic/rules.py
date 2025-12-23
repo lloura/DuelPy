@@ -1,4 +1,4 @@
-# rules.py
+# game_logic/rules.py
 #
 # Copyright 2025 Lucas Loura
 #

@@ -1,4 +1,4 @@
-# widgets.py
+# ui/widgets.py
 #
 # Copyright 2025 Lucas Loura
 #
@@ -40,15 +40,15 @@ def create_shortcuts(title, moves):
     mode_section = Adw.ShortcutsSection(title=_("Game Mode"))
 
     mode_section.add(Adw.ShortcutsItem(
-        title=_("Switch to Classic Mode"),
-        accelerator="<Ctrl><Shift>C",
-        action_name="win.change-mode('classic')"
-    ))
-
-    mode_section.add(Adw.ShortcutsItem(
         title=_("Switch to RPSLS Mode"),
         accelerator="<Ctrl><Shift>R",
         action_name="win.change-mode('rpsls')"
+    ))
+
+    mode_section.add(Adw.ShortcutsItem(
+        title=_("Switch to Classic Mode"),
+        accelerator="<Ctrl><Shift>C",
+        action_name="win.change-mode('classic')"
     ))
 
     dialog.add(mode_section)
