@@ -1,12 +1,7 @@
-/* Estilo base para todos os botões de jogada */
 .button_rock, .button_paper, .button_scissors, .button_lizard, .button_spock {
-    border-radius: 12px;
-    padding: 8px;
     transition: all 200ms ease;
-    font-weight: bold;
 }
 
-/* Aplicando as cores com suporte a hover */
 .button_rock { background-color: @blue_3; color: white; }
 .button_rock:hover { background-color: @blue_4; }
 

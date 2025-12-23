@@ -17,7 +17,7 @@ def create_shortcuts(title, moves):
     return dialog
 
 @Gtk.Template(resource_path='/io/github/lloura/DuelPy/ui/rpsls_view.ui')
-class RpslsView(Gtk.Box): # Voltamos para Gtk.Box aqui
+class RpslsView(Gtk.Box):
     __gtype_name__ = 'RpslsView'
 
     def __init__(self, **kwargs):
