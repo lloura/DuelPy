@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: duelpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 22:01-0300\n"
-"PO-Revision-Date: 2025-12-22 22:07-0300\n"
+"POT-Creation-Date: 2025-12-22 22:26-0300\n"
+"PO-Revision-Date: 2025-12-22 22:28-0300\n"
 "Last-Translator: Lucas Loura <oliverloura2020@gmail.com>\n"
 "Language-Team: Brazilian Portuguese\n"
 "Language: pt_BR\n"
@@ -269,7 +269,7 @@ msgid "Mode Selection"
 msgstr "Seleção de Modos"
 
 #: src/window.blp:21 src/window.blp:72 src/window.blp:190
-#: src/game_logic/modes.py:9
+#: src/game_logic/modes.py:28
 msgid "RPSLS"
 msgstr "PPTLS"
 
@@ -285,7 +285,7 @@ msgstr "Início"
 msgid "Welcome!"
 msgstr "Boas-vindas!"
 
-#: src/window.blp:78 src/window.blp:196 src/game_logic/modes.py:36
+#: src/window.blp:78 src/window.blp:196 src/game_logic/modes.py:55
 msgid "Classic"
 msgstr "Clássico"
 
@@ -293,7 +293,7 @@ msgstr "Clássico"
 msgid "Results"
 msgstr "Resultados"
 
-#: src/window.blp:161 src/ui/widgets.py:14
+#: src/window.blp:161 src/ui/widgets.py:34
 msgid "Try Again"
 msgstr "Tentar Novamente"
 
@@ -305,75 +305,87 @@ msgstr "Atalhos de Teclado"
 msgid "About Duel!"
 msgstr "Sobre o Duel!"
 
-#: src/game_logic/modes.py:20 src/game_logic/modes.py:45
+#: src/game_logic/modes.py:39 src/game_logic/modes.py:64
 msgid "Rock breaks Scissors!"
 msgstr "Pedra quebra a Tesoura!"
 
-#: src/game_logic/modes.py:21
+#: src/game_logic/modes.py:40
 msgid "Rock crushes Lizard!"
 msgstr "Pedra esmaga o Lagarto!"
 
-#: src/game_logic/modes.py:22 src/game_logic/modes.py:46
+#: src/game_logic/modes.py:41 src/game_logic/modes.py:65
 msgid "Paper covers Rock!"
 msgstr "Papel cobre a Pedra!"
 
-#: src/game_logic/modes.py:23
+#: src/game_logic/modes.py:42
 msgid "Paper disproves Spock!"
 msgstr "Papel refuta o Spock!"
 
-#: src/game_logic/modes.py:24 src/game_logic/modes.py:47
+#: src/game_logic/modes.py:43 src/game_logic/modes.py:66
 msgid "Scissors cuts Paper!"
 msgstr "Tesoura corta o Papel!"
 
-#: src/game_logic/modes.py:25
+#: src/game_logic/modes.py:44
 msgid "Scissors decapitates Lizard!"
 msgstr "Tesoura decapita o Lagarto!"
 
-#: src/game_logic/modes.py:26
+#: src/game_logic/modes.py:45
 msgid "Lizard poisons Spock!"
 msgstr "Lagarto envenena o Spock!"
 
-#: src/game_logic/modes.py:27
+#: src/game_logic/modes.py:46
 msgid "Lizard eats Paper!"
 msgstr "Lagarto come o Papel!"
 
-#: src/game_logic/modes.py:28
+#: src/game_logic/modes.py:47
 msgid "Spock breaks Scissors!"
 msgstr "Spock quebra a Tesoura!"
 
-#: src/game_logic/modes.py:29
+#: src/game_logic/modes.py:48
 msgid "Spock vaporizes Rock!"
 msgstr "Spock vaporiza a Pedra!"
 
-#: src/ui/widgets.py:8
+#: src/ui/widgets.py:28
 msgid "Gameplay"
 msgstr "Jogabilidade"
 
-#: src/ui/widgets.py:26
+#: src/ui/widgets.py:40
+msgid "Game Mode"
+msgstr "Modo de Jogo"
+
+#: src/ui/widgets.py:43
+msgid "Switch to Classic Mode"
+msgstr "Mudar para o Modo Clássico"
+
+#: src/ui/widgets.py:49
+msgid "Switch to RPSLS Mode"
+msgstr "Mudar para o Modo PPTLS"
+
+#: src/ui/widgets.py:64
 msgid "RPSLS Mode"
 msgstr "Modo PPTLS"
 
-#: src/ui/widgets.py:28 src/ui/widgets.py:45
+#: src/ui/widgets.py:66 src/ui/widgets.py:83
 msgid "Rock"
 msgstr "Pedra"
 
-#: src/ui/widgets.py:29 src/ui/widgets.py:46
+#: src/ui/widgets.py:67 src/ui/widgets.py:84
 msgid "Paper"
 msgstr "Papel"
 
-#: src/ui/widgets.py:30 src/ui/widgets.py:47
+#: src/ui/widgets.py:68 src/ui/widgets.py:85
 msgid "Scissors"
 msgstr "Tesoura"
 
-#: src/ui/widgets.py:31
+#: src/ui/widgets.py:69
 msgid "Lizard"
 msgstr "Lagarto"
 
-#: src/ui/widgets.py:32
+#: src/ui/widgets.py:70
 msgid "Spock"
 msgstr "Spock"
 
-#: src/ui/widgets.py:43
+#: src/ui/widgets.py:81
 msgid "Classic Mode"
 msgstr "Modo Clássico"
 
