@@ -1,10 +1,16 @@
 pkgdatadir = get_option('prefix') / get_option('datadir') / meson.project_name()
+
 moduledir = pkgdatadir / 'duelpy'
+logicdir = moduledir / 'game_logic'
+uidir = moduledir / 'ui'
+
 gnome = import('gnome')
 
 blueprints = custom_target('blueprints',
   input: files(
     'window.blp',
+    'ui/rpsls_view.blp',
+    'ui/classic_view.blp',
   ),
   output: '.',
   command: [find_program('blueprint-compiler'), 'batch-compile', '@OUTPUT@', '@CURRENT_SOURCE_DIR@', '@INPUT@'],
@@ -39,7 +45,20 @@ duelpy_sources = [
   '__init__.py',
   'main.py',
   'window.py',
-  'constants.py',
+  'ui/widgets.py'
+]
+
+logic_sources = [
+  'game_logic/__init__.py',
+  'game_logic/rules.py',
+  'game_logic/modes.py',
+]
+
+ui_sources = [
+  'ui/__init__.py',
+  'ui/widgets.py',
 ]
 
 install_data(duelpy_sources, install_dir: moduledir)
+install_data(logic_sources, install_dir: logicdir)
+install_data(ui_sources, install_dir: uidir)

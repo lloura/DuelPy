@@ -1,24 +1,23 @@
-.button_rock{
-  color: @white_1;
-  background-color: @blue_3;
+/* Estilo base para todos os botões de jogada */
+.button_rock, .button_paper, .button_scissors, .button_lizard, .button_spock {
+    border-radius: 12px;
+    padding: 8px;
+    transition: all 200ms ease;
+    font-weight: bold;
 }
 
-.button_paper{
-  color: @white_1;
-  background-color: @purple_3;
-}
+/* Aplicando as cores com suporte a hover */
+.button_rock { background-color: @blue_3; color: white; }
+.button_rock:hover { background-color: @blue_4; }
 
-.button_scissors{
-  color: @white_1;
-  background-color: @red_3;
-}
+.button_paper { background-color: @purple_3; color: white; }
+.button_paper:hover { background-color: @purple_4; }
 
-.button_lizard{
-  color: @white_1;
-  background-color: @orange_3;
-}
+.button_scissors { background-color: @red_3; color: white; }
+.button_scissors:hover { background-color: @red_4; }
 
-.button_spock{
-  color: @white_1;
-  background-color: @green_4;
-}
+.button_lizard { background-color: @orange_3; color: white; }
+.button_lizard:hover { background-color: @orange_4; }
+
+.button_spock { background-color: @green_4; color: white; }
+.button_spock:hover { background-color: @green_5; }

@@ -6,4 +6,8 @@ data/io.github.lloura.DuelPy.gschema.xml
 src/main.py
 src/window.py
 src/window.blp
-src/constants.py
+src/game_logic/modes.py
+src/game_logic/rules.py
+src/ui/widgets.py
+src/ui/rpsls_view.blp
+src/ui/classic_view.blp

@@ -97,7 +97,7 @@
       </description>
     </release>
     <release version="0.1.1" date="2025-12-17">
-      <description translate="no">
+      <description>
         <p>Updated Runtime and Keybindings</p>
         <ul>
           <li>Added keyboard shortcuts for game actions (Rock, Paper, Scissors, Lizard, Spock, Retry)</li>
@@ -108,7 +108,7 @@
       </description>
     </release>
     <release version="0.1.0" date="2025-12-17">
-      <description translate="no">
+      <description>
         <p>Initial release</p>
         <ul>
           <li>Rock, Paper, Scissors, Lizard, Spock gameplay</li>

@@ -1,0 +1,53 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ClassicView : Gtk.Box {
+  orientation: vertical;
+  spacing: 12;
+
+  Gtk.Label {
+    label: _("Let's Play Rock-Paper-Scissors!");
+    halign: center;
+    wrap: true;
+    justify: center;
+    margin-bottom: 16;
+    styles ["description"]
+  }
+
+  Adw.Clamp {
+    maximum-size: 250;
+
+    Gtk.Box {
+      orientation: vertical;
+      spacing: 8;
+      valign: center;
+
+      Gtk.Button {
+        action-name: "win.rock";
+        styles ["opaque", "button_rock"]
+        child: Adw.ButtonContent {
+          label: _("Rock!");
+          icon-name: "rock-symbolic";
+        };
+      }
+
+      Gtk.Button {
+        action-name: "win.paper";
+        styles ["opaque", "button_paper"]
+        child: Adw.ButtonContent {
+          label: _("Paper!");
+          icon-name: "paper-symbolic";
+        };
+      }
+
+      Gtk.Button {
+        action-name: "win.scissors";
+        styles ["opaque", "button_scissors"]
+        child: Adw.ButtonContent {
+          label: _("Scissors!");
+          icon-name: "scissors-symbolic";
+        };
+      }
+    }
+  }
+}

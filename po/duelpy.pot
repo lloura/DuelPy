@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: duelpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-21 02:12-0300\n"
+"POT-Creation-Date: 2025-12-22 22:01-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,6 +64,7 @@ msgid "Follows GNOME Human Interface Guidelines"
 msgstr ""
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:21
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:116
 msgid "Clean and simple design"
 msgstr ""
 
@@ -132,6 +133,41 @@ msgid ""
 "Keyboard shortcuts (1-5) are now also triggerable via the keypad (Numpad)"
 msgstr ""
 
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:101
+msgid "Updated Runtime and Keybindings"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:103
+msgid ""
+"Added keyboard shortcuts for game actions (Rock, Paper, Scissors, Lizard, "
+"Spock, Retry)"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:104
+msgid ""
+"Added a 'Keyboard Shortcuts' window to easily see the available shortcuts"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:105
+msgid "Updated the Flatpak runtime to GNOME SDK 49"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:106
+msgid "Slightly updated the application icon"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:112
+msgid "Initial release"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:114
+msgid "Rock, Paper, Scissors, Lizard, Spock gameplay"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:115
+msgid "Modern GTK4/Libadwaita interface"
+msgstr ""
+
 #: data/io.github.lloura.DuelPy.gschema.xml:6
 msgid "Window width"
 msgstr ""
@@ -188,67 +224,28 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 
-#: src/window.py:145
+#: src/window.py:138
 msgid "Draw!"
 msgstr ""
 
-#: src/window.py:148
+#: src/window.py:139
+msgid "it's a tie!"
+msgstr ""
+
+#: src/window.py:141
 msgid "You Won!"
 msgstr ""
 
-#: src/window.py:149
+#: src/window.py:144
 msgid "You Lost!"
-msgstr ""
-
-#: src/window.py:154
-msgid "Rock smashes Scissors!"
-msgstr ""
-
-#: src/window.py:155
-msgid "Rock smashes Lizard!"
-msgstr ""
-
-#: src/window.py:156
-msgid "Paper covers Rock!"
-msgstr ""
-
-#: src/window.py:157
-msgid "Paper disproves Spock!"
-msgstr ""
-
-#: src/window.py:158
-msgid "Scissors cuts Paper!"
-msgstr ""
-
-#: src/window.py:159
-msgid "Scissors decapitates Lizard!"
-msgstr ""
-
-#: src/window.py:160
-msgid "Lizard eats Paper!"
-msgstr ""
-
-#: src/window.py:161
-msgid "Lizard poisons Spock!"
-msgstr ""
-
-#: src/window.py:162
-msgid "Spock vaporizes Rock!"
-msgstr ""
-
-#: src/window.py:163
-msgid "Spock smashes Scissors!"
-msgstr ""
-
-#: src/window.py:168
-msgid "It's a tie!"
 msgstr ""
 
 #: src/window.blp:18
 msgid "Mode Selection"
 msgstr ""
 
-#: src/window.blp:21 src/window.blp:73 src/window.blp:354 src/constants.py:17
+#: src/window.blp:21 src/window.blp:72 src/window.blp:190
+#: src/game_logic/modes.py:9
 msgid "RPSLS"
 msgstr ""
 
@@ -264,86 +261,122 @@ msgstr ""
 msgid "Welcome!"
 msgstr ""
 
-#: src/window.blp:80
-msgid "Let's Play Rock-Paper-Scissors-Lizard-Spock!"
-msgstr ""
-
-#: src/window.blp:107 src/window.blp:209
-msgid "Rock!"
-msgstr ""
-
-#: src/window.blp:121 src/window.blp:223
-msgid "Paper!"
-msgstr ""
-
-#: src/window.blp:135 src/window.blp:237
-msgid "Scissors!"
-msgstr ""
-
-#: src/window.blp:149
-msgid "Lizard!"
-msgstr ""
-
-#: src/window.blp:163
-msgid "Spock!"
-msgstr ""
-
-#: src/window.blp:175 src/window.blp:360 src/constants.py:7
+#: src/window.blp:78 src/window.blp:196 src/game_logic/modes.py:36
 msgid "Classic"
 msgstr ""
 
-#: src/window.blp:182
-msgid "Let's Play Rock-Paper-Scissors!"
-msgstr ""
-
-#: src/window.blp:251
+#: src/window.blp:87
 msgid "Results"
 msgstr ""
 
-#: src/window.blp:325 src/window.blp:405
+#: src/window.blp:161 src/ui/widgets.py:14
 msgid "Try Again"
 msgstr ""
 
-#: src/window.blp:340 src/window.blp:369
+#: src/window.blp:176
 msgid "Keyboard Shortcuts"
 msgstr ""
 
-#: src/window.blp:345
+#: src/window.blp:181
 msgid "About Duel!"
 msgstr ""
 
-#: src/window.blp:372
+#: src/game_logic/modes.py:20 src/game_logic/modes.py:45
+msgid "Rock breaks Scissors!"
+msgstr ""
+
+#: src/game_logic/modes.py:21
+msgid "Rock crushes Lizard!"
+msgstr ""
+
+#: src/game_logic/modes.py:22 src/game_logic/modes.py:46
+msgid "Paper covers Rock!"
+msgstr ""
+
+#: src/game_logic/modes.py:23
+msgid "Paper disproves Spock!"
+msgstr ""
+
+#: src/game_logic/modes.py:24 src/game_logic/modes.py:47
+msgid "Scissors cuts Paper!"
+msgstr ""
+
+#: src/game_logic/modes.py:25
+msgid "Scissors decapitates Lizard!"
+msgstr ""
+
+#: src/game_logic/modes.py:26
+msgid "Lizard poisons Spock!"
+msgstr ""
+
+#: src/game_logic/modes.py:27
+msgid "Lizard eats Paper!"
+msgstr ""
+
+#: src/game_logic/modes.py:28
+msgid "Spock breaks Scissors!"
+msgstr ""
+
+#: src/game_logic/modes.py:29
+msgid "Spock vaporizes Rock!"
+msgstr ""
+
+#: src/ui/widgets.py:8
 msgid "Gameplay"
 msgstr ""
 
-#: src/window.blp:375
-msgid "Rock"
-msgstr ""
-
-#: src/window.blp:381
-msgid "Paper"
-msgstr ""
-
-#: src/window.blp:387
-msgid "Scissors"
-msgstr ""
-
-#: src/window.blp:393
-msgid "Lizard"
-msgstr ""
-
-#: src/window.blp:399
-msgid "Spock"
-msgstr ""
-
-#: src/window.blp:412
-msgid "Mode"
-msgstr ""
-
-#: src/window.blp:415
+#: src/ui/widgets.py:26
 msgid "RPSLS Mode"
 msgstr ""
 
-#: src/window.blp:421
+#: src/ui/widgets.py:28 src/ui/widgets.py:45
+msgid "Rock"
+msgstr ""
+
+#: src/ui/widgets.py:29 src/ui/widgets.py:46
+msgid "Paper"
+msgstr ""
+
+#: src/ui/widgets.py:30 src/ui/widgets.py:47
+msgid "Scissors"
+msgstr ""
+
+#: src/ui/widgets.py:31
+msgid "Lizard"
+msgstr ""
+
+#: src/ui/widgets.py:32
+msgid "Spock"
+msgstr ""
+
+#: src/ui/widgets.py:43
 msgid "Classic Mode"
+msgstr ""
+
+#: src/ui/rpsls_view.blp:9
+msgid "Let's Play Rock-Paper-Scissors-Lizard-Spock!"
+msgstr ""
+
+#: src/ui/rpsls_view.blp:36 src/ui/classic_view.blp:29
+msgid "Rock!"
+msgstr ""
+
+#: src/ui/rpsls_view.blp:50 src/ui/classic_view.blp:38
+msgid "Paper!"
+msgstr ""
+
+#: src/ui/rpsls_view.blp:64 src/ui/classic_view.blp:47
+msgid "Scissors!"
+msgstr ""
+
+#: src/ui/rpsls_view.blp:78
+msgid "Lizard!"
+msgstr ""
+
+#: src/ui/rpsls_view.blp:92
+msgid "Spock!"
+msgstr ""
+
+#: src/ui/classic_view.blp:9
+msgid "Let's Play Rock-Paper-Scissors!"
 msgstr ""

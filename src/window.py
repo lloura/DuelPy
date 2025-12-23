@@ -22,8 +22,11 @@ import random
 import gettext
 import os
 
-# import our constants
-from .constants import GAME_RULES, ALL_POSSIBLE_MOVES
+# import all available modes & all available moves
+from .game_logic.modes import AVAILABLE_MODES, ALL_POSSIBLE_MOVES
+
+# import ui widgets
+from .ui.widgets import ClassicView, RpslsView
 
 @Gtk.Template(resource_path='/io/github/lloura/DuelPy/window.ui')
 class DuelpyWindow(Adw.ApplicationWindow):
@@ -34,7 +37,6 @@ class DuelpyWindow(Adw.ApplicationWindow):
     gettext.bindtextdomain('io.github.lloura.DuelPy', localedir)
     gettext.textdomain('io.github.lloura.DuelPy')
 
-    # we use staticmethod to prevent Python from passing 'self' to gettext
     _ = gettext.gettext
 
     # template children
@@ -45,42 +47,42 @@ class DuelpyWindow(Adw.ApplicationWindow):
     lbl_result = Gtk.Template.Child()
     lbl_explanation = Gtk.Template.Child()
     mode_label = Gtk.Template.Child()
-    shortcuts_dialog = Gtk.Template.Child()
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
         self.settings = Gio.Settings.new("io.github.lloura.DuelPy")
+
+        # loads default or currently saved mode
+        saved_mode_id = self.settings.get_string("game-mode") or "rpsls"
+        self.current_game_mode = AVAILABLE_MODES.get(saved_mode_id, AVAILABLE_MODES["rpsls"])
+
         self.create_game_actions()
 
         # monitor mode changes in the stack
         self.mode_stack.connect("notify::visible-child-name", self.on_mode_changed)
 
-        # restore saved mode and apply initial action states
-        saved_mode = self.settings.get_string("game-mode")
-        if saved_mode in GAME_RULES:
-            self.mode_stack.set_visible_child_name(saved_mode)
-            self.sync_mode_ui(saved_mode)
+        # apply initial ui state
+        self.mode_stack.set_visible_child_name(self.current_game_mode.id)
+        self.sync_mode_ui()
 
     def create_game_actions(self):
         """Initialize all window actions and shortcuts"""
-        # Gameplay actions
-        self.create_action("rock", self.on_play, "rock", ["1", "KP_1"])
-        self.create_action("paper", self.on_play, "paper", ["2", "KP_2"])
-        self.create_action("scissors", self.on_play, "scissors", ["3", "KP_3"])
-        self.create_action("lizard", self.on_play, "lizard", ["4", "KP_4"])
-        self.create_action("spock", self.on_play, "spock", ["5", "KP_5"])
+        # gameplay actions
+
+        for move in ALL_POSSIBLE_MOVES:
+            idx = ALL_POSSIBLE_MOVES.index(move) + 1
+            self.create_action(move, self.on_play, move, [str(idx), f"KP_{idx}"])
 
         # system actions
         self.create_action("retry", self.on_retry, shortcuts=["<Ctrl>R"])
         self.create_action("show-help-overlay", self.on_show_shortcuts, shortcuts=["<Ctrl>question"])
 
-        # mode change action (Stateful)
-        mode_val = self.settings.get_string("game-mode") or "rpsls"
+        # mode change action (stateful)
         mode_action = Gio.SimpleAction.new_stateful(
             "change-mode",
             GLib.VariantType.new('s'),
-            GLib.Variant('s', mode_val)
+            GLib.Variant('s', self.current_game_mode.id)
         )
         mode_action.connect("activate", self.on_change_mode_activated)
         self.add_action(mode_action)
@@ -102,73 +104,53 @@ class DuelpyWindow(Adw.ApplicationWindow):
 
     def on_mode_changed(self, stack, param):
         """Ensures the app behaves correctly when switching modes"""
-        mode = stack.get_visible_child_name()
-        self.settings.set_string("game-mode", mode)
-        self.sync_mode_ui(mode)
+        mode_id = stack.get_visible_child_name()
+        self.current_game_mode = AVAILABLE_MODES[mode_id]
+        self.settings.set_string("game-mode", mode_id)
+        self.sync_mode_ui()
 
         if self.navigation_view.get_visible_page_tag() == "results":
             self.navigation_view.pop()
 
-    def sync_mode_ui(self, mode):
+    def sync_mode_ui(self):
         """Updates icons, labels and enables/disables shortcuts"""
-        rules = GAME_RULES.get(mode)
-        if not rules: return
-
-        self.mode_label.set_label(_(rules["name"]))
-        self.mode_label.set_icon_name(rules["icon"])
+        self.mode_label.set_label(_(self.current_game_mode.name))
+        self.mode_label.set_icon_name(self.current_game_mode.icon)
 
         # enable only the keys allowed in the current mode
         for move in ALL_POSSIBLE_MOVES:
             action = self.lookup_action(move)
             if action:
-                action.set_enabled(move in rules["choices"])
+                action.set_enabled(move in self.current_game_mode.choices)
 
     # --- game logic ---
 
     def on_play(self, player_choice):
-        mode = self.mode_stack.get_visible_child_name()
-        choices = GAME_RULES[mode]["choices"]
-        computer_choice = random.choice(choices)
+        # the computer can only choose options available in the current game mode
+        computer_choice = random.choice(self.current_game_mode.choices)
 
-        result_text = self.determine_winner(mode, player_choice, computer_choice)
+        # verifies winner using now modularized method
+        result = self.current_game_mode.check_winner(player_choice, computer_choice)
+
+        # defines text and explanation
+        match (result):
+            case('tie'):
+                result_text = _("Draw!")
+                explanation = _("it's a tie!")
+            case('player'):
+                result_text = _("You Won!")
+                explanation = _(self.current_game_mode.get_explanation(player_choice, computer_choice))
+            case('computer'):
+                result_text = _("You Lost!")
+                explanation = _(self.current_game_mode.get_explanation(computer_choice, player_choice))
 
         self.img_player_choice.set_from_icon_name(player_choice)
         self.img_computer_choice.set_from_icon_name(computer_choice)
         self.lbl_result.set_text(result_text)
-        self.lbl_explanation.set_text(self.get_explanation(player_choice, computer_choice))
+        self.lbl_explanation.set_text(explanation)
 
         if self.navigation_view.get_visible_page_tag() != "results":
             self.navigation_view.push_by_tag("results")
-
-    def determine_winner(self, mode, player, computer):
-        if player == computer:
-            return _("Draw!")
-
-        if computer in GAME_RULES[mode]["wins"].get(player, []):
-            return _("You Won!")
-        return _("You Lost!")
-
-    def get_explanation(self, player, computer):
-        """returns the localized string explaining why someone won"""
-        explanations = {
-            ("rock", "scissors"): _("Rock smashes Scissors!"),
-            ("rock", "lizard"): _("Rock smashes Lizard!"),
-            ("paper", "rock"): _("Paper covers Rock!"),
-            ("paper", "spock"): _("Paper disproves Spock!"),
-            ("scissors", "paper"): _("Scissors cuts Paper!"),
-            ("scissors", "lizard"): _("Scissors decapitates Lizard!"),
-            ("lizard", "paper"): _("Lizard eats Paper!"),
-            ("lizard", "spock"): _("Lizard poisons Spock!"),
-            ("spock", "rock"): _("Spock vaporizes Rock!"),
-            ("spock", "scissors"): _("Spock smashes Scissors!"),
-        }
-
-        # check both directions (player wins or computer wins)
-        if player == computer:
-            return _("It's a tie!")
-
-        return explanations.get((player, computer),
-               explanations.get((computer, player), ""))
 
     # --- ui callbacks ---
 
@@ -182,4 +164,10 @@ class DuelpyWindow(Adw.ApplicationWindow):
             self.navigation_view.pop()
 
     def on_show_shortcuts(self):
-        self.shortcuts_dialog.present(self)
+        current_view = self.mode_stack.get_visible_child()
+        dialog = getattr(current_view, 'shortcuts_dialog', None)
+
+        if dialog:
+            dialog.present(self)
+        else:
+            print("error: dialog not found on current view")
