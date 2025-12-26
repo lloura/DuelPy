@@ -18,7 +18,9 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 from .rules import GameMode
-from .. import _
+import gettext
+
+_ = gettext.gettext
 
 # --- rpsls mode ---
 rpsls_mode = GameMode(

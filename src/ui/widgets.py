@@ -18,7 +18,9 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 from gi.repository import Gtk, Adw
-from .. import _
+import gettext
+
+_ = gettext.gettext
 
 def create_shortcuts(title, moves):
     dialog = Adw.ShortcutsDialog(title=title)
