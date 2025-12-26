@@ -20,6 +20,7 @@
 import sys
 import gi
 import gettext
+import os
 
 gi.require_version('Gtk', '4.0')
 gi.require_version('Adw', '1')
@@ -31,8 +32,15 @@ from .window import DuelpyWindow
 _ = gettext.gettext
 
 class DuelpyApplication(Adw.Application):
-    """The main application singleton class."""
 
+    # localization setup
+    localedir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'locale')
+    gettext.bindtextdomain('io.github.lloura.DuelPy', localedir)
+    gettext.textdomain('io.github.lloura.DuelPy')
+
+    _ = gettext.gettext
+
+    """The main application singleton class."""
     def __init__(self):
         super().__init__(application_id='io.github.lloura.DuelPy',
                          flags=Gio.ApplicationFlags.DEFAULT_FLAGS,

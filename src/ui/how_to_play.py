@@ -19,12 +19,18 @@
 
 from gi.repository import Gtk, Adw, Gio
 import gettext
-
-_ = gettext.gettext
+import os
 
 @Gtk.Template(resource_path='/io/github/lloura/DuelPy/ui/how_to_play.ui')
 class HowToPlayDialog(Adw.Dialog):
     __gtype_name__ = 'HowToPlayDialog'
+
+    # localization setup
+    localedir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'locale')
+    gettext.bindtextdomain('io.github.lloura.DuelPy', localedir)
+    gettext.textdomain('io.github.lloura.DuelPy')
+
+    _ = gettext.gettext
 
     rules_group = Gtk.Template.Child()
     img_diagram = Gtk.Template.Child()
@@ -39,7 +45,7 @@ class HowToPlayDialog(Adw.Dialog):
         for action, victims in mode.wins_map.items():
             # creating expander row for main move
             expander = Adw.ExpanderRow()
-            expander.set_title(_(action).capitalize())
+            expander.set_title(_(action.capitalize()))
 
             # main move icon (prefix)
             img = Gtk.Image.new_from_icon_name(f"{action}-symbolic")
@@ -50,7 +56,7 @@ class HowToPlayDialog(Adw.Dialog):
                 explanation = mode.get_explanation(action, victim)
 
                 nested_row = Adw.ActionRow()
-                nested_row.set_title(explanation)
+                nested_row.set_title(_(explanation))
 
                 victim_img = Gtk.Image.new_from_icon_name(f"{victim}-symbolic")
                 nested_row.add_prefix(victim_img)
