@@ -17,10 +17,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-import sys
-import gi
-import gettext
-import os
+import sys, gi
 
 gi.require_version('Gtk', '4.0')
 gi.require_version('Adw', '1')
@@ -29,12 +26,7 @@ from gi.repository import Gtk, Gio, Adw
 from .window import DuelpyWindow
 
 class DuelpyApplication(Adw.Application):
-    # localization setup
-    localedir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'locale')
-    gettext.bindtextdomain('io.github.lloura.DuelPy', localedir)
-    gettext.textdomain('io.github.lloura.DuelPy')
-
-    _ = gettext.gettext
+    from . import _
 
     """The main application singleton class."""
     def __init__(self):

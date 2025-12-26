@@ -18,19 +18,12 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 from gi.repository import Gtk, Adw, Gio
-import gettext
-import os
 
 @Gtk.Template(resource_path='/io/github/lloura/DuelPy/ui/how_to_play.ui')
 class HowToPlayDialog(Adw.Dialog):
     __gtype_name__ = 'HowToPlayDialog'
 
-    # localization setup
-    localedir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'locale')
-    gettext.bindtextdomain('io.github.lloura.DuelPy', localedir)
-    gettext.textdomain('io.github.lloura.DuelPy')
-
-    _ = gettext.gettext
+    from .. import _
 
     rules_group = Gtk.Template.Child()
     img_diagram = Gtk.Template.Child()

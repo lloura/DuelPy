@@ -18,8 +18,6 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 from gi.repository import Gtk, Adw
-import gettext
-import os
 
 def create_shortcuts(title, moves):
     dialog = Adw.ShortcutsDialog(title=title)
@@ -57,12 +55,7 @@ def create_shortcuts(title, moves):
 class RpslsView(Gtk.Box):
     __gtype_name__ = 'RpslsView'
 
-    # localization setup
-    localedir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'locale')
-    gettext.bindtextdomain('io.github.lloura.DuelPy', localedir)
-    gettext.textdomain('io.github.lloura.DuelPy')
-
-    _ = gettext.gettext
+    from .. import _
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
