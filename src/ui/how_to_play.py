@@ -18,9 +18,7 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 from gi.repository import Gtk, Adw, Gio
-import gettext
-
-_ = gettext.gettext
+from .. import _
 
 @Gtk.Template(resource_path='/io/github/lloura/DuelPy/ui/how_to_play.ui')
 class HowToPlayDialog(Adw.Dialog):

@@ -19,7 +19,6 @@
 
 import sys
 import gi
-import gettext
 
 gi.require_version('Gtk', '4.0')
 gi.require_version('Adw', '1')
@@ -28,7 +27,7 @@ from gi.repository import Gtk, Gio, Adw
 from .window import DuelpyWindow
 
 # localization setup for the main module
-_ = gettext.gettext
+from . import _
 
 class DuelpyApplication(Adw.Application):
     """The main application singleton class."""
