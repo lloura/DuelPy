@@ -175,6 +175,11 @@ template $DuelpyWindow: Adw.ApplicationWindow {
 menu primary_menu {
   section {
     item {
+      label: _("How to Play");
+      action: "win.how-to-play";
+    }
+
+    item {
       label: _("Keyboard Shortcuts");
       action: "win.show-help-overlay";
     }

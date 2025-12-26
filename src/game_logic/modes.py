@@ -27,6 +27,7 @@ rpsls_mode = GameMode(
     id="rpsls",
     name=_("RPSLS"),
     icon="spock-symbolic",
+    diagram="diagram-rpsls",
     choices=["rock", "paper", "scissors", "lizard", "spock"],
     wins_map={
         "rock": ["scissors", "lizard"],
@@ -54,6 +55,7 @@ classic_mode = GameMode(
     id="classic",
     name=_("Classic"),
     icon="scissors-symbolic",
+    diagram="diagram-classic",
     choices=["rock", "paper", "scissors"],
     wins_map={
         "rock": ["scissors"],

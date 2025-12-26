@@ -11,6 +11,7 @@ blueprints = custom_target('blueprints',
     'window.blp',
     'ui/rpsls_view.blp',
     'ui/classic_view.blp',
+    'ui/how_to_play.blp',
   ),
   output: '.',
   command: [find_program('blueprint-compiler'), 'batch-compile', '@OUTPUT@', '@CURRENT_SOURCE_DIR@', '@INPUT@'],
@@ -45,7 +46,8 @@ duelpy_sources = [
   '__init__.py',
   'main.py',
   'window.py',
-  'ui/widgets.py'
+  'ui/widgets.py',
+  'ui/how_to_play.py',
 ]
 
 logic_sources = [
@@ -57,6 +59,7 @@ logic_sources = [
 ui_sources = [
   'ui/__init__.py',
   'ui/widgets.py',
+  'ui/how_to_play.py',
 ]
 
 install_data(duelpy_sources, install_dir: moduledir)

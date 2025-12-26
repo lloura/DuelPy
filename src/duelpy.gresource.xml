@@ -4,6 +4,8 @@
     <file preprocess="xml-stripblanks">window.ui</file>
     <file preprocess="xml-stripblanks">ui/rpsls_view.ui</file>
     <file preprocess="xml-stripblanks">ui/classic_view.ui</file>
+
+    <file preprocess="xml-stripblanks">ui/how_to_play.ui</file>
     <file>style.css</file>
 
     <file preprocess="xml-stripblanks">icons/lizard.svg</file>
@@ -18,6 +20,9 @@
     <file preprocess="xml-stripblanks">icons/rock-symbolic.svg</file>
     <file preprocess="xml-stripblanks">icons/scissors-symbolic.svg</file>
     <file preprocess="xml-stripblanks">icons/spock-symbolic.svg</file>
+
+    <file preprocess="xml-stripblanks">icons/diagram-classic.svg</file>
+    <file preprocess="xml-stripblanks">icons/diagram-rpsls.svg</file>
   </gresource>
 </gresources>
 

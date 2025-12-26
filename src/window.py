@@ -27,6 +27,7 @@ from .game_logic.modes import AVAILABLE_MODES, ALL_POSSIBLE_MOVES
 
 # import ui widgets
 from .ui.widgets import ClassicView, RpslsView
+from .ui.how_to_play import HowToPlayWindow
 
 @Gtk.Template(resource_path='/io/github/lloura/DuelPy/window.ui')
 class DuelpyWindow(Adw.ApplicationWindow):
@@ -67,7 +68,7 @@ class DuelpyWindow(Adw.ApplicationWindow):
         self.sync_mode_ui()
 
     def create_game_actions(self):
-        """Initialize all window actions and shortcuts"""
+        """initialize all window actions and shortcuts"""
         # gameplay actions
 
         for move in ALL_POSSIBLE_MOVES:
@@ -77,6 +78,7 @@ class DuelpyWindow(Adw.ApplicationWindow):
         # system actions
         self.create_action("retry", self.on_retry, shortcuts=["<Ctrl>R"])
         self.create_action("show-help-overlay", self.on_show_shortcuts, shortcuts=["<Ctrl>question"])
+        self.create_action("how-to-play", self.on_how_to_play, shortcuts=["<Ctrl>H"])
 
         # mode change action (stateful)
         mode_action = Gio.SimpleAction.new_stateful(
@@ -93,7 +95,7 @@ class DuelpyWindow(Adw.ApplicationWindow):
         app.set_accels_for_action("win.change-mode('classic')", ["<Ctrl><Shift>C"])
 
     def create_action(self, name, callback, parameter=None, shortcuts=None):
-        """Helper to create SimpleActions quickly"""
+        """helper to create SimpleActions quickly"""
         action = Gio.SimpleAction.new(name, None)
         action.connect("activate", lambda a, v: callback(parameter) if parameter else callback())
         self.add_action(action)
@@ -103,7 +105,7 @@ class DuelpyWindow(Adw.ApplicationWindow):
     # --- sync logic ---
 
     def on_mode_changed(self, stack, param):
-        """Ensures the app behaves correctly when switching modes"""
+        """ensures the app behaves correctly when switching modes"""
         mode_id = stack.get_visible_child_name()
         self.current_game_mode = AVAILABLE_MODES[mode_id]
         self.settings.set_string("game-mode", mode_id)
@@ -113,7 +115,7 @@ class DuelpyWindow(Adw.ApplicationWindow):
             self.navigation_view.pop()
 
     def sync_mode_ui(self):
-        """Updates icons, labels and enables/disables shortcuts"""
+        """updates icons, labels and enables/disables shortcuts"""
         self.mode_label.set_label(_(self.current_game_mode.name))
         self.mode_label.set_icon_name(self.current_game_mode.icon)
 
@@ -171,3 +173,8 @@ class DuelpyWindow(Adw.ApplicationWindow):
             dialog.present(self)
         else:
             print("error: dialog not found on current view")
+
+    def on_how_to_play(self):
+        from .ui.how_to_play import HowToPlayWindow
+        dialog = HowToPlayWindow(mode=self.current_game_mode, transient_for=self)
+        dialog.present()

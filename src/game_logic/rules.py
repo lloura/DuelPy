@@ -21,10 +21,11 @@ import gettext
 _ = gettext.gettext
 
 class GameMode:
-    def __init__(self, id, name, icon, choices, wins_map, explanations):
+    def __init__(self, id, name, icon, diagram, choices, wins_map, explanations):
         self.id = id
         self.name = name
         self.icon = icon
+        self.diagram = diagram
         self.choices = choices
         self.wins_map = wins_map
         self.explanations = explanations
@@ -40,3 +41,24 @@ class GameMode:
     def get_explanation(self, winner_move, loser_move):
         """returns the localized string explaining the victory"""
         return self.explanations.get((winner_move, loser_move), "")
+
+    def get_rules_data(self):
+        """returns a list of tuples (action, grouped_explanation_text)"""
+        rules_data = []
+
+        for action in self.choices:
+            victims = self.wins_map.get(action, [])
+            if not victims:
+                continue
+
+            # collects all explanations for this specific action
+            # ex: ["Rock breaks Scissors!", "Rock smashes Lizard!"]
+            explanations = [self.get_explanation(action, v) for v in victims]
+
+            # joins all phrases together with a line break
+            full_text = "\n".join(explanations)
+
+            # adds to the final list: (action_name, full_rules_text)
+            rules_data.append((action, full_text))
+
+        return rules_data
