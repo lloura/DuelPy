@@ -28,11 +28,7 @@ gi.require_version('Adw', '1')
 from gi.repository import Gtk, Gio, Adw
 from .window import DuelpyWindow
 
-# localization setup for the main module
-_ = gettext.gettext
-
 class DuelpyApplication(Adw.Application):
-
     # localization setup
     localedir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'locale')
     gettext.bindtextdomain('io.github.lloura.DuelPy', localedir)
