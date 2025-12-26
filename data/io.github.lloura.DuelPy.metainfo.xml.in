@@ -66,6 +66,16 @@
   </screenshots>
 
   <releases>
+    <release version="0.3.0" date="2025-12-26">
+      <p>How to Play Guide &amp; Refactoring</p>
+      <description>
+        <ul>
+          <li>Introduced a new "How to Play" section with visual guides for each game mode</li>
+          <li>Significant internal restructuring and code refactoring for better maintainability</li>
+          <li>Added new keyboard shortcuts and updated the shortcuts window</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.2.1" date="2025-12-21">
       <p>Credits and Visual Polish</p>
       <description>
