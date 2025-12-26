@@ -27,7 +27,7 @@ from .game_logic.modes import AVAILABLE_MODES, ALL_POSSIBLE_MOVES
 
 # import ui widgets
 from .ui.widgets import ClassicView, RpslsView
-from .ui.how_to_play import HowToPlayWindow
+from .ui.how_to_play import HowToPlayDialog
 
 @Gtk.Template(resource_path='/io/github/lloura/DuelPy/window.ui')
 class DuelpyWindow(Adw.ApplicationWindow):
@@ -175,6 +175,5 @@ class DuelpyWindow(Adw.ApplicationWindow):
             print("error: dialog not found on current view")
 
     def on_how_to_play(self):
-        from .ui.how_to_play import HowToPlayWindow
-        dialog = HowToPlayWindow(mode=self.current_game_mode, transient_for=self)
-        dialog.present()
+        dialog = HowToPlayDialog(mode=self.current_game_mode)
+        dialog.present(self)

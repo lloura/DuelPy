@@ -23,8 +23,8 @@ import gettext
 _ = gettext.gettext
 
 @Gtk.Template(resource_path='/io/github/lloura/DuelPy/ui/how_to_play.ui')
-class HowToPlayWindow(Adw.Window):
-    __gtype_name__ = 'HowToPlayWindow'
+class HowToPlayDialog(Adw.Dialog):
+    __gtype_name__ = 'HowToPlayDialog'
 
     rules_group = Gtk.Template.Child()
     img_diagram = Gtk.Template.Child()

@@ -1,22 +1,12 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $HowToPlayWindow : Adw.Window {
-  title: _("Rules");
-  default-width: 380;
-  default-height: 550;
-  modal: true;
-  resizable: false;
+template $HowToPlayDialog: Adw.Dialog {
+  title: _("How to Play");
+  content-width: 380;
+  content-height: 550;
 
-  Gtk.ShortcutController {
-    scope: managed;
-    Gtk.Shortcut {
-      trigger: "Escape";
-      action: "action(window.close)";
-    }
-  }
-
-  Adw.ToolbarView {
+  child: Adw.ToolbarView {
     [top]
     Adw.HeaderBar {}
 
@@ -44,5 +34,5 @@ template $HowToPlayWindow : Adw.Window {
         description: _("Select a move to see which opponents it defeats and why.");
       }
     };
-  }
+  };
 }
