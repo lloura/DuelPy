@@ -47,6 +47,14 @@ class DuelpyWindow(Adw.ApplicationWindow):
 
         self.settings = Gio.Settings.new("io.github.lloura.DuelPy")
 
+        # loads and monitors window size
+        # using bind to automatically sync properties with gsettings
+        self.settings.bind("window-width", self, "default-width", Gio.SettingsBindFlags.DEFAULT)
+        self.settings.bind("window-height", self, "default-height", Gio.SettingsBindFlags.DEFAULT)
+
+        # loads and monitors window maximized state
+        self.settings.bind("window-maximized", self, "maximized", Gio.SettingsBindFlags.DEFAULT)
+
         # loads default or currently saved mode
         saved_mode_id = self.settings.get_string("game-mode") or "rpsls"
         self.current_game_mode = AVAILABLE_MODES.get(saved_mode_id, AVAILABLE_MODES["rpsls"])
