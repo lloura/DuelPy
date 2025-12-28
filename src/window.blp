@@ -71,13 +71,22 @@ template $DuelpyWindow: Adw.ApplicationWindow {
             Adw.ViewStackPage {
               name: "rpsls";
               title: _("RPSLS");
+
               child: $RpslsView {};
             }
 
             Adw.ViewStackPage {
               name: "classic";
               title: _("Classic");
+
               child: $ClassicView {};
+            }
+
+            Adw.ViewStackPage {
+              name: "rps7";
+              title: _("RPS-7");
+
+              child: $Rps7View {};
             }
           }
         };
@@ -203,6 +212,12 @@ menu window_menu {
       label: _("Classic");
       action: "win.change-mode";
       target: "classic";
+    }
+
+    item {
+      label: _("RPS-7");
+      action: "win.change-mode";
+      target: "rps7";
     }
   }
 }

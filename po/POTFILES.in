@@ -15,5 +15,6 @@ src/game_logic/rules.py
 src/ui/classic_view.blp
 src/ui/how_to_play.blp
 src/ui/how_to_play.py
+src/ui/rps7_view.blp
 src/ui/rpsls_view.blp
 src/ui/widgets.py

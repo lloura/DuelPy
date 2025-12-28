@@ -24,7 +24,7 @@ import random
 from .game_logic.modes import AVAILABLE_MODES, ALL_POSSIBLE_MOVES
 
 # import ui widgets
-from .ui.widgets import ClassicView, RpslsView
+from .ui.widgets import ClassicView, RpslsView, Rps7View
 from .ui.how_to_play import HowToPlayDialog
 
 @Gtk.Template(resource_path='/io/github/lloura/DuelPy/window.ui')
@@ -70,11 +70,10 @@ class DuelpyWindow(Adw.ApplicationWindow):
 
     def create_game_actions(self):
         """initialize all window actions and shortcuts"""
-        # gameplay actions
 
+        # gameplay actions
         for move in ALL_POSSIBLE_MOVES:
-            idx = ALL_POSSIBLE_MOVES.index(move) + 1
-            self.create_action(move, self.on_play, move, [str(idx), f"KP_{idx}"])
+            self.create_action(move, self.on_play, move, shortcuts=None)
 
         # system actions
         self.create_action("retry", self.on_retry, shortcuts=["<Ctrl>R"])
@@ -94,6 +93,7 @@ class DuelpyWindow(Adw.ApplicationWindow):
         app = self.get_application()
         app.set_accels_for_action("win.change-mode('rpsls')", ["<Ctrl><Shift>R"])
         app.set_accels_for_action("win.change-mode('classic')", ["<Ctrl><Shift>C"])
+        app.set_accels_for_action("win.change-mode('rps7')", ["<Ctrl><Shift>S"])
 
     def create_action(self, name, callback, parameter=None, shortcuts=None):
         """helper to create SimpleActions quickly"""
@@ -120,11 +120,26 @@ class DuelpyWindow(Adw.ApplicationWindow):
         self.mode_label.set_label(_(self.current_game_mode.name))
         self.mode_label.set_icon_name(self.current_game_mode.icon)
 
-        # enable only the keys allowed in the current mode
+        app = self.get_application()
+
+        # clears out numeric shortcuts for all possible moves
         for move in ALL_POSSIBLE_MOVES:
+            app.set_accels_for_action(f"win.{move}", [])
             action = self.lookup_action(move)
             if action:
-                action.set_enabled(move in self.current_game_mode.choices)
+                action.set_enabled(False)
+
+        # atributes numeric shortcuts only for current mode moves
+        for i, move in enumerate(self.current_game_mode.choices):
+            idx = i + 1
+            accels = [str(idx), f"KP_{idx}"] # normal key and numpad key
+
+            app.set_accels_for_action(f"win.{move}", accels)
+
+            # enables action
+            action = self.lookup_action(move)
+            if action:
+                action.set_enabled(True)
 
     # --- game logic ---
 

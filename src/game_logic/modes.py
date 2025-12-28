@@ -67,11 +67,57 @@ classic_mode = GameMode(
     }
 )
 
+# --- rps7 mode ---
+rps7_mode = GameMode(
+    id="rps7",
+    name=_("RPS-7"),
+    icon="water-symbolic",
+    diagram="diagram-rps7",
+    choices=["rock", "fire", "scissors", "sponge", "paper", "air", "water"],
+    wins_map={
+        "rock": ["fire", "scissors", "sponge"],
+        "fire": ["scissors", "paper", "sponge"],
+        "scissors": ["air", "paper", "sponge"],
+        "sponge": ["paper", "air", "water"],
+        "paper": ["air", "rock", "water"],
+        "air": ["fire", "rock", "water"],
+        "water": ["rock", "fire", "scissors"],
+    },
+    explanations={
+        ("rock", "fire"): _("Rock pounds out Fire!"),
+        ("rock", "scissors"): _("Rock breaks Scissors!"),
+        ("rock", "sponge"): _("Rock crushes Sponge!"),
+        ("fire", "scissors"): _("Fire melts Scissors!"),
+        ("fire", "paper"): _("Fire burns Paper!"),
+        ("fire", "sponge"): _("Fire burns Sponge!"),
+        ("scissors", "air"): _("Scissors swishes through Air!"),
+        ("scissors", "paper"): _("Scissors cuts Paper!"),
+        ("scissors", "sponge"): _("Scissors cuts Sponge!"),
+        ("sponge", "paper"): _("Sponge soaks Paper!"),
+        ("sponge", "air"): _("Sponge uses Air pockets!"),
+        ("sponge", "water"): _("Sponge absorbs Water!"),
+        ("paper", "air"): _("Paper fans Air!"),
+        ("paper", "rock"): _("Paper covers Rock!"),
+        ("paper", "water"): _("Paper floats on Water!"),
+        ("air", "fire"): _("Air blows out Fire!"),
+        ("air", "rock"): _("Air erodes Rock!"),
+        ("air", "water"): _("Air evaporates Water!"),
+        ("water", "rock"): _("Water erodes Rock!"),
+        ("water", "fire"): _("Water puts out Fire!"),
+        ("water", "scissors"): _("Water rusts Scissors!"),
+    }
+)
+
 # central modes registry
 AVAILABLE_MODES = {
     "rpsls": rpsls_mode,
-    "classic": classic_mode
+    "classic": classic_mode,
+    "rps7": rps7_mode,
 }
 
 # lists all possible moves
-ALL_POSSIBLE_MOVES = ["rock", "paper", "scissors", "lizard", "spock"]
+ALL_POSSIBLE_MOVES = [
+    "rock", "paper", "scissors",
+    "lizard", "spock",
+    "fire", "sponge", "air", "water"
+]

@@ -1,0 +1,156 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $Rps7View: Gtk.Box {
+  orientation: vertical;
+  spacing: 12;
+  margin-start: 16;
+  margin-end: 16;
+  width-request: 375;
+
+  Gtk.Label {
+    label: _("Let's Play Rock-Fire-Scissors-Sponge-Paper-Air-Water!");
+    halign: center;
+    wrap: true;
+    justify: center;
+    margin-bottom: 16;
+
+    styles [
+      "description",
+    ]
+  }
+
+  Adw.Clamp {
+    maximum-size: 375;
+
+    Gtk.Box {
+      orientation: vertical;
+      spacing: 8;
+
+      Gtk.Box {
+        spacing: 8;
+        homogeneous: true;
+
+        Gtk.Button {
+          action-name: "win.rock";
+          hexpand: true;
+
+          styles [
+            "opaque",
+            "button_rock",
+          ]
+
+          child: Adw.ButtonContent {
+            label: _("Rock!");
+            icon-name: "rock-symbolic";
+          };
+        }
+
+        Gtk.Button {
+          action-name: "win.fire";
+          hexpand: true;
+
+          styles [
+            "opaque",
+            "button_fire",
+          ]
+
+          child: Adw.ButtonContent {
+            label: _("Fire!");
+            icon-name: "fire-symbolic";
+          };
+        }
+      }
+
+      Gtk.Box {
+        spacing: 8;
+        homogeneous: true;
+
+        Gtk.Button {
+          action-name: "win.scissors";
+          hexpand: true;
+
+          styles [
+            "opaque",
+            "button_scissors",
+          ]
+
+          child: Adw.ButtonContent {
+            label: _("Scissors!");
+            icon-name: "scissors-symbolic";
+          };
+        }
+
+        Gtk.Button {
+          action-name: "win.sponge";
+          hexpand: true;
+
+          styles [
+            "opaque",
+            "button_sponge",
+          ]
+
+          child: Adw.ButtonContent {
+            label: _("Sponge!");
+            icon-name: "sponge-symbolic";
+          };
+        }
+      }
+
+      Gtk.Box {
+        spacing: 8;
+        homogeneous: true;
+
+        Gtk.Button {
+          action-name: "win.paper";
+          hexpand: true;
+
+          styles [
+            "opaque",
+            "button_paper",
+          ]
+
+          child: Adw.ButtonContent {
+            label: _("Paper!");
+            icon-name: "paper-symbolic";
+          };
+        }
+
+        Gtk.Button {
+          action-name: "win.air";
+          hexpand: true;
+
+          styles [
+            "opaque",
+            "button_air",
+          ]
+
+          child: Adw.ButtonContent {
+            label: _("Air!");
+            icon-name: "air-symbolic";
+          };
+        }
+      }
+
+      Gtk.Box {
+        spacing: 8;
+        halign: center;
+
+        Gtk.Button {
+          action-name: "win.water";
+          width-request: 185;
+
+          styles [
+            "opaque",
+            "button_water",
+          ]
+
+          child: Adw.ButtonContent {
+            label: _("Water!");
+            icon-name: "water-symbolic";
+          };
+        }
+      }
+    }
+  }
+}

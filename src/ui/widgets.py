@@ -48,6 +48,12 @@ def create_shortcuts(title, moves):
         action_name="win.change-mode('classic')"
     ))
 
+    mode_section.add(Adw.ShortcutsItem(
+        title=_("Switch to RPS-7 Mode"),
+        accelerator="<Ctrl><Shift>S",
+        action_name="win.change-mode('rps7')"
+    ))
+
     dialog.add(mode_section)
     return dialog
 
@@ -74,6 +80,8 @@ class RpslsView(Gtk.Box):
 class ClassicView(Gtk.Box):
     __gtype_name__ = 'ClassicView'
 
+    from .. import _
+
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.shortcuts_dialog = create_shortcuts(
@@ -82,5 +90,26 @@ class ClassicView(Gtk.Box):
                 (_("Rock"), "1", "win.rock"),
                 (_("Paper"), "2", "win.paper"),
                 (_("Scissors"), "3", "win.scissors"),
+            ]
+        )
+
+@Gtk.Template(resource_path='/io/github/lloura/DuelPy/ui/rps7_view.ui')
+class Rps7View(Gtk.Box):
+    __gtype_name__ = 'Rps7View'
+
+    from .. import _
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.shortcuts_dialog = create_shortcuts(
+            _("RPS-7 Mode"),
+            [
+                (_("Rock"), "1", "win.rock"),
+                (_("Fire"), "2", "win.fire"),
+                (_("Scissors"), "3", "win.scissors"),
+                (_("Sponge"), "4", "win.sponge"),
+                (_("Paper"), "5", "win.paper"),
+                (_("Air"), "6", "win.air"),
+                (_("Water"), "7", "win.water"),
             ]
         )
