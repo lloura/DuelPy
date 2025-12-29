@@ -92,8 +92,8 @@ I chose Python because I plan to use it for similar projects in the future, and 
 
 - [x] Basic game functionality
 - [x] Persistence with GSettings
-- [ ] **Next**: Implementation of a visual 'How to Play' guide for the different variants
-- [ ] Implementation of David C. Lovelace's **RPS-7** mode
+- [x] Implementation of a visual 'How to Play' guide for the different variants
+- [x] Implementation of David C. Lovelace's **RPS-7** mode
 - [ ] Flathub submission (😳👉️👈️)
 
 **Contributions are welcome!** Feel free to open issues or submit pull requests.
