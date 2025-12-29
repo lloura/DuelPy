@@ -32,6 +32,7 @@
 
     <file preprocess="xml-stripblanks">icons/diagram-classic.svg</file>
     <file preprocess="xml-stripblanks">icons/diagram-rpsls.svg</file>
+    <file preprocess="xml-stripblanks">icons/diagram-rps7.svg</file>
   </gresource>
 </gresources>
 
