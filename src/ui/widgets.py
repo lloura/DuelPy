@@ -105,11 +105,12 @@ class Rps7View(Gtk.Box):
             _("RPS-7 Mode"),
             [
                 (_("Rock"), "1", "win.rock"),
-                (_("Fire"), "2", "win.fire"),
+                (_("Paper"), "5", "win.paper"),
                 (_("Scissors"), "3", "win.scissors"),
                 (_("Sponge"), "4", "win.sponge"),
-                (_("Paper"), "5", "win.paper"),
-                (_("Air"), "6", "win.air"),
+                (_("Fire"), "2", "win.fire"),
                 (_("Water"), "7", "win.water"),
+                (_("Air"), "6", "win.air"),
+
             ]
         )
