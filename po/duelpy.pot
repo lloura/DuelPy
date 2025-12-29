@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: duelpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-26 11:03-0300\n"
+"POT-Creation-Date: 2025-12-28 15:32-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -227,7 +227,7 @@ msgid ""
 msgstr ""
 
 #. credits and inspirations shown in the About dialog
-#: src/main.py:64
+#: src/main.py:60
 msgid ""
 "A modern take on the RPSLS variant created by Sam Kass and Karen Bryla. "
 "Inspired by the work of ByteSeb.\n"
@@ -236,32 +236,16 @@ msgid ""
 msgstr ""
 
 #. set translator credits from the .po file
-#: src/main.py:71
+#: src/main.py:67
 msgid "translator-credits"
-msgstr ""
-
-#: src/window.py:140
-msgid "Draw!"
-msgstr ""
-
-#: src/window.py:141
-msgid "it's a tie!"
-msgstr ""
-
-#: src/window.py:143
-msgid "You Won!"
-msgstr ""
-
-#: src/window.py:146
-msgid "You Lost!"
 msgstr ""
 
 #: src/window.blp:18
 msgid "Mode Selection"
 msgstr ""
 
-#: src/window.blp:21 src/window.blp:73 src/window.blp:197
-#: src/game_logic/modes.py:28
+#: src/window.blp:21 src/window.blp:73 src/window.blp:206
+#: src/game_logic/modes.py:26
 msgid "RPSLS"
 msgstr ""
 
@@ -277,128 +261,211 @@ msgstr ""
 msgid "Welcome!"
 msgstr ""
 
-#: src/window.blp:79 src/window.blp:203 src/game_logic/modes.py:56
+#: src/window.blp:80 src/window.blp:212 src/game_logic/modes.py:54
 msgid "Classic"
 msgstr ""
 
-#: src/window.blp:88
+#: src/window.blp:87 src/window.blp:218 src/game_logic/modes.py:73
+msgid "RPS-7"
+msgstr ""
+
+#: src/window.blp:97
 msgid "Results"
 msgstr ""
 
-#: src/window.blp:163 src/ui/widgets.py:34
+#: src/window.blp:172 src/ui/widgets.py:31
 msgid "Try Again"
 msgstr ""
 
-#: src/window.blp:178
+#: src/window.blp:187 src/ui/how_to_play.blp:5
 msgid "How to Play"
 msgstr ""
 
-#: src/window.blp:183
+#: src/window.blp:192
 msgid "Keyboard Shortcuts"
 msgstr ""
 
-#: src/window.blp:188
+#: src/window.blp:197
 msgid "About Duel!"
 msgstr ""
 
-#: src/game_logic/modes.py:40 src/game_logic/modes.py:66
+#: src/window.py:156
+msgid "Draw!"
+msgstr ""
+
+#: src/window.py:157
+msgid "it's a tie!"
+msgstr ""
+
+#: src/window.py:159
+msgid "You Won!"
+msgstr ""
+
+#: src/window.py:162
+msgid "You Lost!"
+msgstr ""
+
+#: src/game_logic/modes.py:38 src/game_logic/modes.py:64
+#: src/game_logic/modes.py:88
 msgid "Rock breaks Scissors!"
 msgstr ""
 
-#: src/game_logic/modes.py:41
+#: src/game_logic/modes.py:39
 msgid "Rock crushes Lizard!"
 msgstr ""
 
-#: src/game_logic/modes.py:42 src/game_logic/modes.py:67
+#: src/game_logic/modes.py:40 src/game_logic/modes.py:65
+#: src/game_logic/modes.py:100
 msgid "Paper covers Rock!"
 msgstr ""
 
-#: src/game_logic/modes.py:43
+#: src/game_logic/modes.py:41
 msgid "Paper disproves Spock!"
 msgstr ""
 
-#: src/game_logic/modes.py:44 src/game_logic/modes.py:68
+#: src/game_logic/modes.py:42 src/game_logic/modes.py:66
+#: src/game_logic/modes.py:94
 msgid "Scissors cuts Paper!"
 msgstr ""
 
-#: src/game_logic/modes.py:45
+#: src/game_logic/modes.py:43
 msgid "Scissors decapitates Lizard!"
 msgstr ""
 
-#: src/game_logic/modes.py:46
+#: src/game_logic/modes.py:44
 msgid "Lizard poisons Spock!"
 msgstr ""
 
-#: src/game_logic/modes.py:47
+#: src/game_logic/modes.py:45
 msgid "Lizard eats Paper!"
 msgstr ""
 
-#: src/game_logic/modes.py:48
+#: src/game_logic/modes.py:46
 msgid "Spock breaks Scissors!"
 msgstr ""
 
-#: src/game_logic/modes.py:49
+#: src/game_logic/modes.py:47
 msgid "Spock vaporizes Rock!"
 msgstr ""
 
-#: src/ui/widgets.py:28
-msgid "Gameplay"
+#: src/game_logic/modes.py:87
+msgid "Rock pounds out Fire!"
 msgstr ""
 
-#: src/ui/widgets.py:40
-msgid "Game Mode"
+#: src/game_logic/modes.py:89
+msgid "Rock crushes Sponge!"
 msgstr ""
 
-#: src/ui/widgets.py:43
-msgid "Switch to RPSLS Mode"
+#: src/game_logic/modes.py:90
+msgid "Fire melts Scissors!"
 msgstr ""
 
-#: src/ui/widgets.py:49
-msgid "Switch to Classic Mode"
+#: src/game_logic/modes.py:91
+msgid "Fire burns Paper!"
 msgstr ""
 
-#: src/ui/widgets.py:64
-msgid "RPSLS Mode"
+#: src/game_logic/modes.py:92
+msgid "Fire burns Sponge!"
 msgstr ""
 
-#: src/ui/widgets.py:66 src/ui/widgets.py:83
-msgid "Rock"
+#: src/game_logic/modes.py:93
+msgid "Scissors swishes through Air!"
 msgstr ""
 
-#: src/ui/widgets.py:67 src/ui/widgets.py:84
-msgid "Paper"
+#: src/game_logic/modes.py:95
+msgid "Scissors cuts Sponge!"
 msgstr ""
 
-#: src/ui/widgets.py:68 src/ui/widgets.py:85
-msgid "Scissors"
+#: src/game_logic/modes.py:96
+msgid "Sponge soaks Paper!"
 msgstr ""
 
-#: src/ui/widgets.py:69
-msgid "Lizard"
+#: src/game_logic/modes.py:97
+msgid "Sponge uses Air pockets!"
 msgstr ""
 
-#: src/ui/widgets.py:70
-msgid "Spock"
+#: src/game_logic/modes.py:98
+msgid "Sponge absorbs Water!"
 msgstr ""
 
-#: src/ui/widgets.py:81
-msgid "Classic Mode"
+#: src/game_logic/modes.py:99
+msgid "Paper fans Air!"
+msgstr ""
+
+#: src/game_logic/modes.py:101
+msgid "Paper floats on Water!"
+msgstr ""
+
+#: src/game_logic/modes.py:102
+msgid "Air blows out Fire!"
+msgstr ""
+
+#: src/game_logic/modes.py:103
+msgid "Air erodes Rock!"
+msgstr ""
+
+#: src/game_logic/modes.py:104
+msgid "Air evaporates Water!"
+msgstr ""
+
+#: src/game_logic/modes.py:105
+msgid "Water erodes Rock!"
+msgstr ""
+
+#: src/game_logic/modes.py:106
+msgid "Water puts out Fire!"
+msgstr ""
+
+#: src/game_logic/modes.py:107
+msgid "Water rusts Scissors!"
+msgstr ""
+
+#: src/ui/classic_view.blp:13
+msgid "Let's Play Rock-Paper-Scissors!"
+msgstr ""
+
+#: src/ui/classic_view.blp:40 src/ui/rps7_view.blp:44 src/ui/rpsls_view.blp:40
+msgid "Rock!"
+msgstr ""
+
+#: src/ui/classic_view.blp:54 src/ui/rps7_view.blp:114 src/ui/rpsls_view.blp:54
+msgid "Paper!"
+msgstr ""
+
+#: src/ui/classic_view.blp:68 src/ui/rps7_view.blp:79 src/ui/rpsls_view.blp:68
+msgid "Scissors!"
+msgstr ""
+
+#: src/ui/how_to_play.blp:33
+msgid "Move Interactions"
+msgstr ""
+
+#: src/ui/how_to_play.blp:34
+msgid "Select a move to see which opponents it defeats and why."
+msgstr ""
+
+#: src/ui/rps7_view.blp:12
+msgid "Let's Play Rock-Fire-Scissors-Sponge-Paper-Air-Water!"
+msgstr ""
+
+#: src/ui/rps7_view.blp:59
+msgid "Fire!"
+msgstr ""
+
+#: src/ui/rps7_view.blp:94
+msgid "Sponge!"
+msgstr ""
+
+#: src/ui/rps7_view.blp:129
+msgid "Air!"
+msgstr ""
+
+#: src/ui/rps7_view.blp:149
+msgid "Water!"
 msgstr ""
 
 #: src/ui/rpsls_view.blp:13
 msgid "Let's Play Rock-Paper-Scissors-Lizard-Spock!"
-msgstr ""
-
-#: src/ui/rpsls_view.blp:40 src/ui/classic_view.blp:40
-msgid "Rock!"
-msgstr ""
-
-#: src/ui/rpsls_view.blp:54 src/ui/classic_view.blp:54
-msgid "Paper!"
-msgstr ""
-
-#: src/ui/rpsls_view.blp:68 src/ui/classic_view.blp:68
-msgid "Scissors!"
 msgstr ""
 
 #: src/ui/rpsls_view.blp:82
@@ -409,18 +476,70 @@ msgstr ""
 msgid "Spock!"
 msgstr ""
 
-#: src/ui/classic_view.blp:13
-msgid "Let's Play Rock-Paper-Scissors!"
+#: src/ui/widgets.py:25
+msgid "Gameplay"
 msgstr ""
 
-#: src/ui/how_to_play.blp:5
-msgid "Rules"
+#: src/ui/widgets.py:37
+msgid "Game Mode"
 msgstr ""
 
-#: src/ui/how_to_play.blp:43
-msgid "Move Interactions"
+#: src/ui/widgets.py:40
+msgid "Switch to RPSLS Mode"
 msgstr ""
 
-#: src/ui/how_to_play.blp:44
-msgid "Select a move to see which opponents it defeats and why."
+#: src/ui/widgets.py:46
+msgid "Switch to Classic Mode"
+msgstr ""
+
+#: src/ui/widgets.py:52
+msgid "Switch to RPS-7 Mode"
+msgstr ""
+
+#: src/ui/widgets.py:69
+msgid "RPSLS Mode"
+msgstr ""
+
+#: src/ui/widgets.py:71 src/ui/widgets.py:90 src/ui/widgets.py:107
+msgid "Rock"
+msgstr ""
+
+#: src/ui/widgets.py:72 src/ui/widgets.py:91 src/ui/widgets.py:111
+msgid "Paper"
+msgstr ""
+
+#: src/ui/widgets.py:73 src/ui/widgets.py:92 src/ui/widgets.py:109
+msgid "Scissors"
+msgstr ""
+
+#: src/ui/widgets.py:74
+msgid "Lizard"
+msgstr ""
+
+#: src/ui/widgets.py:75
+msgid "Spock"
+msgstr ""
+
+#: src/ui/widgets.py:88
+msgid "Classic Mode"
+msgstr ""
+
+#: src/ui/widgets.py:105
+msgid "RPS-7 Mode"
+msgstr ""
+
+#: src/ui/widgets.py:108
+msgid "Fire"
+msgstr ""
+
+#: src/ui/widgets.py:110
+msgid "Sponge"
+msgstr ""
+
+#: src/ui/widgets.py:112
+msgid "Air"
+msgstr ""
+
+#: src/ui/widgets.py:113
+msgid "Water"
 msgstr ""
