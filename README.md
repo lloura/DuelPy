@@ -69,6 +69,8 @@ Pre-built Flatpak packages are available in the [Releases](../../releases) secti
 
 <img src="data/screenshots/lizard_x_rock_paper_x_spock.png" alt="Lizard x Rock • Paper x Spock"/>
 <img src="data/screenshots/paper_x_lizard_rock_x_scissors.png" alt="Paper x Lizard • Rock x Scissors"/>
+<img src="data/screenshots/how_to_play_rpsls_main_rps7.png" alt="Paper x Lizard • Rock x Scissors"/>
+<img src="data/screenshots/sponge_x_water_fire_x_air.png" alt="Paper x Lizard • Rock x Scissors"/>
 
 </details>
 
