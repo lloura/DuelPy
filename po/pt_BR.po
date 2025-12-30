@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: duelpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-28 15:32-0300\n"
-"PO-Revision-Date: 2025-12-29 16:06-0300\n"
+"POT-Creation-Date: 2025-12-29 20:44-0300\n"
+"PO-Revision-Date: 2025-12-29 21:08-0300\n"
 "Last-Translator: Lucas Loura <oliverloura2020@gmail.com>\n"
 "Language-Team: Brazilian Portuguese\n"
 "Language: pt_BR\n"
@@ -343,7 +343,7 @@ msgid "Rock crushes Lizard!"
 msgstr "Pedra esmaga o Lagarto!"
 
 #: src/game_logic/modes.py:40 src/game_logic/modes.py:65
-#: src/game_logic/modes.py:100
+#: src/game_logic/modes.py:91
 msgid "Paper covers Rock!"
 msgstr "Papel cobre a Pedra!"
 
@@ -385,16 +385,12 @@ msgid "Rock crushes Sponge!"
 msgstr "Pedra esmaga a Esponja!"
 
 #: src/game_logic/modes.py:90
-msgid "Fire melts Scissors!"
-msgstr "Fogo derrete a Tesoura!"
-
-#: src/game_logic/modes.py:91
-msgid "Fire burns Paper!"
-msgstr "Fogo queima o Papel!"
+msgid "Paper fans Air!"
+msgstr "Papel abana o Ar!"
 
 #: src/game_logic/modes.py:92
-msgid "Fire burns Sponge!"
-msgstr "Fogo queima a Esponja!"
+msgid "Paper floats on Water!"
+msgstr "Papel flutua na Água!"
 
 #: src/game_logic/modes.py:93
 msgid "Scissors swishes through Air!"
@@ -417,36 +413,40 @@ msgid "Sponge absorbs Water!"
 msgstr "Esponja absorve a Água!"
 
 #: src/game_logic/modes.py:99
-msgid "Paper fans Air!"
-msgstr "Papel abana o Ar!"
+msgid "Fire melts Scissors!"
+msgstr "Fogo derrete a Tesoura!"
+
+#: src/game_logic/modes.py:100
+msgid "Fire burns Paper!"
+msgstr "Fogo queima o Papel!"
 
 #: src/game_logic/modes.py:101
-msgid "Paper floats on Water!"
-msgstr "Papel flutua na Água!"
+msgid "Fire burns Sponge!"
+msgstr "Fogo queima a Esponja!"
 
 #: src/game_logic/modes.py:102
-msgid "Air blows out Fire!"
-msgstr "Ar apaga o Fogo!"
-
-#: src/game_logic/modes.py:103
-msgid "Air erodes Rock!"
-msgstr "Ar erode a Pedra!"
-
-#: src/game_logic/modes.py:104
-msgid "Air evaporates Water!"
-msgstr "Ar evapora a Água!"
-
-#: src/game_logic/modes.py:105
 msgid "Water erodes Rock!"
 msgstr "Água erode a Pedra!"
 
-#: src/game_logic/modes.py:106
+#: src/game_logic/modes.py:103
 msgid "Water puts out Fire!"
 msgstr "Água apaga o Fogo!"
 
-#: src/game_logic/modes.py:107
+#: src/game_logic/modes.py:104
 msgid "Water rusts Scissors!"
 msgstr "Água enferruja a Tesoura!"
+
+#: src/game_logic/modes.py:105
+msgid "Air blows out Fire!"
+msgstr "Ar apaga o Fogo!"
+
+#: src/game_logic/modes.py:106
+msgid "Air erodes Rock!"
+msgstr "Ar erode a Pedra!"
+
+#: src/game_logic/modes.py:107
+msgid "Air evaporates Water!"
+msgstr "Ar evapora a Água!"
 
 #: src/ui/classic_view.blp:13
 msgid "Let's Play Rock-Paper-Scissors!"
@@ -456,7 +456,7 @@ msgstr "Vamos jogar Pedra-Papel-Tesoura!"
 msgid "Rock!"
 msgstr "Pedra!"
 
-#: src/ui/classic_view.blp:54 src/ui/rps7_view.blp:114 src/ui/rpsls_view.blp:54
+#: src/ui/classic_view.blp:54 src/ui/rps7_view.blp:59 src/ui/rpsls_view.blp:54
 msgid "Paper!"
 msgstr "Papel!"
 
@@ -473,24 +473,24 @@ msgid "Select a move to see which opponents it defeats and why."
 msgstr "Selecione uma jogada para ver quais oponentes ela vence e o porquê."
 
 #: src/ui/rps7_view.blp:12
-msgid "Let's Play Rock-Fire-Scissors-Sponge-Paper-Air-Water!"
-msgstr "Vamos jogar Pedra-Fogo-Tesoura-Esponja-Papel-Ar-Água!"
-
-#: src/ui/rps7_view.blp:59
-msgid "Fire!"
-msgstr "Fogo!"
+msgid "Let's Play Rock-Paper-Scissors-Sponge-Fire-Water-Air!"
+msgstr "Vamos jogar Pedra-Papel-Tesoura-Esponja-Fogo-Água-Ar!"
 
 #: src/ui/rps7_view.blp:94
 msgid "Sponge!"
 msgstr "Esponja!"
 
-#: src/ui/rps7_view.blp:129
-msgid "Air!"
-msgstr "Ar!"
+#: src/ui/rps7_view.blp:114
+msgid "Fire!"
+msgstr "Fogo!"
 
-#: src/ui/rps7_view.blp:149
+#: src/ui/rps7_view.blp:128
 msgid "Water!"
 msgstr "Água!"
+
+#: src/ui/rps7_view.blp:148
+msgid "Air!"
+msgstr "Ar!"
 
 #: src/ui/rpsls_view.blp:13
 msgid "Let's Play Rock-Paper-Scissors-Lizard-Spock!"
@@ -532,7 +532,7 @@ msgstr "Modo PPTLS"
 msgid "Rock"
 msgstr "Pedra"
 
-#: src/ui/widgets.py:72 src/ui/widgets.py:91 src/ui/widgets.py:111
+#: src/ui/widgets.py:72 src/ui/widgets.py:91 src/ui/widgets.py:108
 msgid "Paper"
 msgstr "Papel"
 
@@ -556,21 +556,21 @@ msgstr "Modo Clássico"
 msgid "RPS-7 Mode"
 msgstr "Modo RPS-7"
 
-#: src/ui/widgets.py:108
-msgid "Fire"
-msgstr "Fogo"
-
 #: src/ui/widgets.py:110
 msgid "Sponge"
 msgstr "Esponja"
 
-#: src/ui/widgets.py:112
-msgid "Air"
-msgstr "Ar"
+#: src/ui/widgets.py:111
+msgid "Fire"
+msgstr "Fogo"
 
-#: src/ui/widgets.py:113
+#: src/ui/widgets.py:112
 msgid "Water"
 msgstr "Água"
+
+#: src/ui/widgets.py:113
+msgid "Air"
+msgstr "Ar"
 
 #~ msgid "Rules"
 #~ msgstr "Regras"

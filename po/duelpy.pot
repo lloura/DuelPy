@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: duelpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-28 15:32-0300\n"
+"POT-Creation-Date: 2025-12-29 20:44-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -315,7 +315,7 @@ msgid "Rock crushes Lizard!"
 msgstr ""
 
 #: src/game_logic/modes.py:40 src/game_logic/modes.py:65
-#: src/game_logic/modes.py:100
+#: src/game_logic/modes.py:91
 msgid "Paper covers Rock!"
 msgstr ""
 
@@ -357,15 +357,11 @@ msgid "Rock crushes Sponge!"
 msgstr ""
 
 #: src/game_logic/modes.py:90
-msgid "Fire melts Scissors!"
-msgstr ""
-
-#: src/game_logic/modes.py:91
-msgid "Fire burns Paper!"
+msgid "Paper fans Air!"
 msgstr ""
 
 #: src/game_logic/modes.py:92
-msgid "Fire burns Sponge!"
+msgid "Paper floats on Water!"
 msgstr ""
 
 #: src/game_logic/modes.py:93
@@ -389,35 +385,39 @@ msgid "Sponge absorbs Water!"
 msgstr ""
 
 #: src/game_logic/modes.py:99
-msgid "Paper fans Air!"
+msgid "Fire melts Scissors!"
+msgstr ""
+
+#: src/game_logic/modes.py:100
+msgid "Fire burns Paper!"
 msgstr ""
 
 #: src/game_logic/modes.py:101
-msgid "Paper floats on Water!"
+msgid "Fire burns Sponge!"
 msgstr ""
 
 #: src/game_logic/modes.py:102
-msgid "Air blows out Fire!"
-msgstr ""
-
-#: src/game_logic/modes.py:103
-msgid "Air erodes Rock!"
-msgstr ""
-
-#: src/game_logic/modes.py:104
-msgid "Air evaporates Water!"
-msgstr ""
-
-#: src/game_logic/modes.py:105
 msgid "Water erodes Rock!"
 msgstr ""
 
-#: src/game_logic/modes.py:106
+#: src/game_logic/modes.py:103
 msgid "Water puts out Fire!"
 msgstr ""
 
-#: src/game_logic/modes.py:107
+#: src/game_logic/modes.py:104
 msgid "Water rusts Scissors!"
+msgstr ""
+
+#: src/game_logic/modes.py:105
+msgid "Air blows out Fire!"
+msgstr ""
+
+#: src/game_logic/modes.py:106
+msgid "Air erodes Rock!"
+msgstr ""
+
+#: src/game_logic/modes.py:107
+msgid "Air evaporates Water!"
 msgstr ""
 
 #: src/ui/classic_view.blp:13
@@ -428,7 +428,7 @@ msgstr ""
 msgid "Rock!"
 msgstr ""
 
-#: src/ui/classic_view.blp:54 src/ui/rps7_view.blp:114 src/ui/rpsls_view.blp:54
+#: src/ui/classic_view.blp:54 src/ui/rps7_view.blp:59 src/ui/rpsls_view.blp:54
 msgid "Paper!"
 msgstr ""
 
@@ -445,23 +445,23 @@ msgid "Select a move to see which opponents it defeats and why."
 msgstr ""
 
 #: src/ui/rps7_view.blp:12
-msgid "Let's Play Rock-Fire-Scissors-Sponge-Paper-Air-Water!"
-msgstr ""
-
-#: src/ui/rps7_view.blp:59
-msgid "Fire!"
+msgid "Let's Play Rock-Paper-Scissors-Sponge-Fire-Water-Air!"
 msgstr ""
 
 #: src/ui/rps7_view.blp:94
 msgid "Sponge!"
 msgstr ""
 
-#: src/ui/rps7_view.blp:129
-msgid "Air!"
+#: src/ui/rps7_view.blp:114
+msgid "Fire!"
 msgstr ""
 
-#: src/ui/rps7_view.blp:149
+#: src/ui/rps7_view.blp:128
 msgid "Water!"
+msgstr ""
+
+#: src/ui/rps7_view.blp:148
+msgid "Air!"
 msgstr ""
 
 #: src/ui/rpsls_view.blp:13
@@ -504,7 +504,7 @@ msgstr ""
 msgid "Rock"
 msgstr ""
 
-#: src/ui/widgets.py:72 src/ui/widgets.py:91 src/ui/widgets.py:111
+#: src/ui/widgets.py:72 src/ui/widgets.py:91 src/ui/widgets.py:108
 msgid "Paper"
 msgstr ""
 
@@ -528,18 +528,18 @@ msgstr ""
 msgid "RPS-7 Mode"
 msgstr ""
 
-#: src/ui/widgets.py:108
-msgid "Fire"
-msgstr ""
-
 #: src/ui/widgets.py:110
 msgid "Sponge"
 msgstr ""
 
+#: src/ui/widgets.py:111
+msgid "Fire"
+msgstr ""
+
 #: src/ui/widgets.py:112
-msgid "Air"
+msgid "Water"
 msgstr ""
 
 #: src/ui/widgets.py:113
-msgid "Water"
+msgid "Air"
 msgstr ""
