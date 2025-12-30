@@ -81,8 +81,8 @@
 
   <releases>
     <release version="0.3.1" date="2025-12-29">
-      <p>The RPS-7 Update</p>
       <description>
+        <p>The RPS-7 Update</p>
         <p>This release introduces the RPS-7 game mode and several improvements:</p>
         <ul>
           <li>Implemented new RPS-7 game mode (Rock-Paper-Scissors-Sponge-Fire-Water-Air)</li>
@@ -93,8 +93,8 @@
       </description>
     </release>
     <release version="0.3.0" date="2025-12-26">
-      <p>How to Play Guide &amp; Refactoring</p>
       <description>
+        <p>How to Play Guide &amp; Refactoring</p>
         <p>A major update focusing on user guidance and code quality:</p>
         <ul>
           <li>Introduced a new "How to Play" section with visual guides for each game mode</li>
@@ -104,8 +104,8 @@
       </description>
     </release>
     <release version="0.2.1" date="2025-12-21">
-      <p>Credits and Visual Polish</p>
       <description>
+        <p>Credits and Visual Polish</p>
         <p>Improved project information and attribution:</p>
         <ul>
           <li>Redesigned the "About" window to provide a more modern experience</li>
@@ -114,8 +114,8 @@
       </description>
     </release>
     <release version="0.2.0" date="2025-12-20">
-      <p>Introducing Game Modes</p>
       <description>
+        <p>Introducing Game Modes</p>
         <p>Expanded gameplay with new modes and persistence:</p>
         <ul>
           <li>Added Classic game mode (Rock, Paper, Scissors)</li>
@@ -125,8 +125,8 @@
       </description>
     </release>
     <release version="0.1.2" date="2025-12-19">
-      <p>Implemented Internationalization Support</p>
       <description>
+        <p>Implemented Internationalization Support</p>
         <p>Expanded accessibility with new languages and input methods:</p>
         <ul>
           <li>Added support for internationalization (i18n) using gettext</li>
@@ -136,8 +136,8 @@
       </description>
     </release>
     <release version="0.1.1" date="2025-12-17">
-      <p>Updated Runtime and Keybindings</p>
       <description>
+        <p>Updated Runtime and Keybindings</p>
         <p>Technical updates and improved shortcuts:</p>
         <ul>
           <li>Added keyboard shortcuts for game actions and a shortcuts window</li>
@@ -147,8 +147,8 @@
       </description>
     </release>
     <release version="0.1.0" date="2025-12-17">
-      <p>Initial release</p>
       <description>
+        <p>Initial release</p>
         <p>First public version of Duel! featuring:</p>
         <ul>
           <li>Rock, Paper, Scissors, Lizard, Spock gameplay</li>
