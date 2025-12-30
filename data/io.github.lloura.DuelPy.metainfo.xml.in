@@ -66,6 +66,17 @@
   </screenshots>
 
   <releases>
+    <release version="0.3.1" date="2025-12-29">
+      <p>Introducing RPS-7</p>
+      <description>
+        <ul>
+          <li>Implemented new RPS-7 game mode (Rock-Paper-Scissors-Sponge-Fire-Water-Air)</li>
+          <li>Added persistent window state, remembering size and maximized state between sessions</li>
+          <li>Overhauled the localization system for better translation coverage across all pages</li>
+          <li>Refreshed application and game icons</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.3.0" date="2025-12-26">
       <p>How to Play Guide &amp; Refactoring</p>
       <description>
