@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: duelpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 20:44-0300\n"
+"POT-Creation-Date: 2025-12-29 23:22-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,7 +64,6 @@ msgid "Follows GNOME Human Interface Guidelines"
 msgstr ""
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:21
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:126
 msgid "Clean and simple design"
 msgstr ""
 
@@ -72,115 +71,158 @@ msgstr ""
 msgid "Lucas Loura"
 msgstr ""
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:48
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:46
 msgid "Main welcome screen"
 msgstr ""
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:52
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:50
 msgid "Game results showing Paper vs Spock"
 msgstr ""
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:56
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:54
 msgid "Game results showing Lizard vs Rock"
 msgstr ""
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:60
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:58
 msgid "Game results showing Rock vs Scissors"
 msgstr ""
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:64
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:62
 msgid "Game results showing Paper vs Lizard"
 msgstr ""
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:73
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:66
+msgid "\"How to Play\" screen for RPSLS"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:70
+msgid "Main RPS-7 screen"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:74
+msgid "Game results showing Sponge vs Water"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:78
+msgid "Game results showing Fire vs Air"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:86
+msgid "This release introduces the RPS-7 game mode and several improvements:"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:88
+msgid ""
+"Implemented new RPS-7 game mode (Rock-Paper-Scissors-Sponge-Fire-Water-Air)"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:89
+msgid ""
+"Added persistent window state, remembering size and maximized state between "
+"sessions"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:90
+msgid ""
+"Overhauled the localization system for better translation coverage across "
+"all pages"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:91
+msgid "Refreshed application and game icons"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:98
+msgid "A major update focusing on user guidance and code quality:"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:100
 msgid ""
 "Introduced a new \"How to Play\" section with visual guides for each game "
 "mode"
 msgstr ""
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:74
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:101
 msgid ""
 "Significant internal restructuring and code refactoring for better "
 "maintainability"
 msgstr ""
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:75
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:102
 msgid "Added new keyboard shortcuts and updated the shortcuts window"
 msgstr ""
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:83
-msgid ""
-"Redesigned the \"About\" window to provide a more modern experience and "
-"clearer project information"
-msgstr ""
-
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:84
-msgid ""
-"Added dedicated credits for the game variant creators: Sam Kass and Karen "
-"Bryla (RPSLS) and David C. Lovelace (RPS-7)"
-msgstr ""
-
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:92
-msgid "Added Classic game mode (Rock, Paper, Scissors)"
-msgstr ""
-
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:93
-msgid "Implemented game mode persistence using GSettings"
-msgstr ""
-
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:94
-msgid "New mode selector in the header bar"
-msgstr ""
-
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:95
-msgid "Refactored internal architecture for better scalability"
-msgstr ""
-
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:103
-msgid "Added support for internationalization (i18n) using gettext"
-msgstr ""
-
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:104
-msgid "Added Brazilian Portuguese (pt_BR) translation"
-msgstr ""
-
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:105
-msgid ""
-"Keyboard shortcuts (1-5) are now also triggerable via the keypad (Numpad)"
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:109
+msgid "Improved project information and attribution:"
 msgstr ""
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:111
-msgid "Updated Runtime and Keybindings"
+msgid "Redesigned the \"About\" window to provide a more modern experience"
 msgstr ""
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:113
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:112
 msgid ""
-"Added keyboard shortcuts for game actions (Rock, Paper, Scissors, Lizard, "
-"Spock, Retry)"
+"Added dedicated credits for game variant creators: Sam Kass, Karen Bryla and "
+"David C. Lovelace"
 msgstr ""
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:114
-msgid ""
-"Added a 'Keyboard Shortcuts' window to easily see the available shortcuts"
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:119
+msgid "Expanded gameplay with new modes and persistence:"
 msgstr ""
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:115
-msgid "Updated the Flatpak runtime to GNOME SDK 49"
-msgstr ""
-
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:116
-msgid "Slightly updated the application icon"
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:121
+msgid "Added Classic game mode (Rock, Paper, Scissors)"
 msgstr ""
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:122
-msgid "Initial release"
+msgid "Implemented game mode persistence using GSettings"
 msgstr ""
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:124
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:123
+msgid "New mode selector in the header bar"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:130
+msgid "Expanded accessibility with new languages and input methods:"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:132
+msgid "Added support for internationalization (i18n) using gettext"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:133
+msgid "Added Brazilian Portuguese (pt_BR) translation"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:134
+msgid "Keyboard shortcuts (1-5) are now triggerable via the keypad (Numpad)"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:141
+msgid "Technical updates and improved shortcuts:"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:143
+msgid "Added keyboard shortcuts for game actions and a shortcuts window"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:144
+msgid "Updated the Flatpak runtime to GNOME SDK 49"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:145
+msgid "Slightly updated the application icon"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:152
+msgid "First public version of Duel! featuring:"
+msgstr ""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:154
 msgid "Rock, Paper, Scissors, Lizard, Spock gameplay"
 msgstr ""
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:125
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:155
 msgid "Modern GTK4/Libadwaita interface"
 msgstr ""
 
@@ -436,11 +478,11 @@ msgstr ""
 msgid "Scissors!"
 msgstr ""
 
-#: src/ui/how_to_play.blp:33
+#: src/ui/how_to_play.blp:31
 msgid "Move Interactions"
 msgstr ""
 
-#: src/ui/how_to_play.blp:34
+#: src/ui/how_to_play.blp:32
 msgid "Select a move to see which opponents it defeats and why."
 msgstr ""
 
