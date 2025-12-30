@@ -54,7 +54,7 @@ class DuelpyApplication(Adw.Application):
             application_name='Duel!',
             application_icon='io.github.lloura.DuelPy',
             developer_name='Lucas Loura',
-            version='0.3.1',
+            version='0.3.2',
             copyright='© 2025 Lucas Loura',
             # credits and inspirations shown in the About dialog
             comments=_("A modern take on the RPSLS variant created by Sam Kass and Karen Bryla. Inspired by the work of ByteSeb.\n\nSpecial thanks to David C. Lovelace for the additional game variants."),
@@ -88,3 +88,4 @@ def main(version):
     """The application's entry point."""
     app = DuelpyApplication()
     return app.run(sys.argv)
+

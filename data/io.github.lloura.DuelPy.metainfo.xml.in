@@ -4,27 +4,35 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
   <name>Duel!</name>
-  <summary>Play Rock, Paper, Scissors, Lizard, Spock against the computer</summary>
+  <summary>Epic hand-game duels</summary>
 
   <description>
     <p>
-      Duel! is a modern GNOME game implementing the Rock, Paper, Scissors, Lizard, Spock variant popularized by The Big Bang Theory.
+      Duel! is a modern take on hand-game classics. Challenge the computer in the famous Rock, Paper, Scissors, Lizard, Spock variant or try the expanded RPS-7 mode.
     </p>
     <p>
-      Built with GTK4 and Libadwaita, it provides a clean and intuitive interface following GNOME's design guidelines. Challenge the computer and see if you can master all five moves!
+      Enjoy a clean and intuitive experience designed to feel natural on your desktop. Master all moves and see if you can outsmart the machine.
     </p>
     <p>Features:</p>
     <ul>
-      <li>Classic RPSLS gameplay with all five moves</li>
-      <li>Modern adaptive interface</li>
-      <li>Follows GNOME Human Interface Guidelines</li>
-      <li>Clean and simple design</li>
+      <li>Multiple game modes including Classic, RPSLS, and RPS-7</li>
+      <li>Visual guides for every game variant</li>
+      <li>Adaptive interface that works on any screen size</li>
+      <li>Full keyboard support for fast-paced gameplay</li>
     </ul>
   </description>
 
   <developer id="io.github.lloura">
     <name>Lucas Loura</name>
   </developer>
+
+  <keywords>
+    <keyword>RPSLS</keyword>
+    <keyword>RPS-7</keyword>
+    <keyword>GTK4</keyword>
+    <keyword>Libadwaita</keyword>
+    <keyword>Python</keyword>
+  </keywords>
 
   <url type="homepage">https://github.com/lloura/DuelPy</url>
   <url type="vcs-browser">https://github.com/lloura/DuelPy</url>
@@ -42,48 +50,52 @@
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/main.png</image>
+      <image xml:lang="en">https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/main.png</image>
       <caption>Main welcome screen</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/paper_x_spock.png</image>
+      <image xml:lang="en">https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/paper_x_spock.png</image>
       <caption>Game results showing Paper vs Spock</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/lizard_x_rock.png</image>
-      <caption>Game results showing Lizard vs Rock</caption>
+      <image xml:lang="en">https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/how_to_play_rpsls.png</image>
+      <caption>Visual guide for game rules</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/rock_x_scissors.png</image>
-      <caption>Game results showing Rock vs Scissors</caption>
+      <image xml:lang="en">https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/main_rps7.png</image>
+      <caption>Expanded RPS-7 game mode</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/paper_x_lizard.png</image>
-      <caption>Game results showing Paper vs Lizard</caption>
-    </screenshot>
-    <screenshot>
-      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/how_to_play_rpsls.png</image>
-      <caption>"How to Play" screen for RPSLS</caption>
-    </screenshot>
-    <screenshot>
-      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/main_rps7.png</image>
-      <caption>Main RPS-7 screen</caption>
-    </screenshot>
-    <screenshot>
-      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/sponge_x_water.png</image>
-      <caption>Game results showing Sponge vs Water</caption>
-    </screenshot>
-    <screenshot>
-      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/fire_x_air.png</image>
+      <image xml:lang="en">https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/fire_x_air.png</image>
       <caption>Game results showing Fire vs Air</caption>
     </screenshot>
   </screenshots>
 
   <releases>
+    <release version="0.3.2" date="2025-12-30">
+      <description>
+        <p>Quality Improvements &amp; Metadata Polish</p>
+        <ul>
+          <li>Refined application description and summary for better clarity</li>
+          <li>Updated screenshots to better showcase the interface</li>
+          <li>Added metadata keywords to make the app easier to find</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.3.1" date="2025-12-29">
       <description>
-        <p>The RPS-7 Update</p>
-        <p>This release introduces the RPS-7 game mode and several improvements:</p>
+        <p>Introducing RPS-7</p>
+        <ul>
+          <li>Implemented new RPS-7 game mode (Rock-Paper-Scissors-Sponge-Fire-Water-Air)</li>
+          <li>Added persistent window state, remembering size and maximized state between sessions</li>
+          <li>Overhauled the localization system for better translation coverage across all pages</li>
+          <li>Refreshed application and game icons</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.3.1" date="2025-12-29">
+      <description>
+        <p>Introducing RPS-7</p>
         <ul>
           <li>Implemented new RPS-7 game mode (Rock-Paper-Scissors-Sponge-Fire-Water-Air)</li>
           <li>Added persistent window state, remembering size and maximized state between sessions</li>
@@ -95,7 +107,6 @@
     <release version="0.3.0" date="2025-12-26">
       <description>
         <p>How to Play Guide &amp; Refactoring</p>
-        <p>A major update focusing on user guidance and code quality:</p>
         <ul>
           <li>Introduced a new "How to Play" section with visual guides for each game mode</li>
           <li>Significant internal restructuring and code refactoring for better maintainability</li>
@@ -105,8 +116,7 @@
     </release>
     <release version="0.2.1" date="2025-12-21">
       <description>
-        <p>Credits and Visual Polish</p>
-        <p>Improved project information and attribution:</p>
+        <p>Credits &amp; Visual Polish</p>
         <ul>
           <li>Redesigned the "About" window to provide a more modern experience</li>
           <li>Added dedicated credits for game variant creators: Sam Kass, Karen Bryla and David C. Lovelace</li>
@@ -116,7 +126,6 @@
     <release version="0.2.0" date="2025-12-20">
       <description>
         <p>Introducing Game Modes</p>
-        <p>Expanded gameplay with new modes and persistence:</p>
         <ul>
           <li>Added Classic game mode (Rock, Paper, Scissors)</li>
           <li>Implemented game mode persistence using GSettings</li>
@@ -127,7 +136,6 @@
     <release version="0.1.2" date="2025-12-19">
       <description>
         <p>Implemented Internationalization Support</p>
-        <p>Expanded accessibility with new languages and input methods:</p>
         <ul>
           <li>Added support for internationalization (i18n) using gettext</li>
           <li>Added Brazilian Portuguese (pt_BR) translation</li>
@@ -137,8 +145,7 @@
     </release>
     <release version="0.1.1" date="2025-12-17">
       <description>
-        <p>Updated Runtime and Keybindings</p>
-        <p>Technical updates and improved shortcuts:</p>
+        <p>Updated Runtime &amp; Keybindings</p>
         <ul>
           <li>Added keyboard shortcuts for game actions and a shortcuts window</li>
           <li>Updated the Flatpak runtime to GNOME SDK 49</li>
@@ -149,7 +156,6 @@
     <release version="0.1.0" date="2025-12-17">
       <description>
         <p>Initial release</p>
-        <p>First public version of Duel! featuring:</p>
         <ul>
           <li>Rock, Paper, Scissors, Lizard, Spock gameplay</li>
           <li>Modern GTK4/Libadwaita interface</li>
@@ -170,6 +176,7 @@
 
   <categories>
     <category>Game</category>
+    <category>LogicGame</category>
   </categories>
 </component>
 
