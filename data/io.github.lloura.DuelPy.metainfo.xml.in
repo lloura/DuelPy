@@ -50,23 +50,23 @@
 
   <screenshots>
     <screenshot type="default">
-      <image xml:lang="en">https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/main.png</image>
+      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/main.png</image>
       <caption>Main welcome screen</caption>
     </screenshot>
     <screenshot>
-      <image xml:lang="en">https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/paper_x_spock.png</image>
+      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/paper_x_spock.png</image>
       <caption>Game results showing Paper vs Spock</caption>
     </screenshot>
     <screenshot>
-      <image xml:lang="en">https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/how_to_play_rpsls.png</image>
+      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/how_to_play_rpsls.png</image>
       <caption>Visual guide for game rules</caption>
     </screenshot>
     <screenshot>
-      <image xml:lang="en">https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/main_rps7.png</image>
+      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/main_rps7.png</image>
       <caption>Expanded RPS-7 game mode</caption>
     </screenshot>
     <screenshot>
-      <image xml:lang="en">https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/fire_x_air.png</image>
+      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/fire_x_air.png</image>
       <caption>Game results showing Fire vs Air</caption>
     </screenshot>
   </screenshots>
