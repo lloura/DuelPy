@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: duelpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-30 14:59-0300\n"
+"POT-Creation-Date: 2025-12-30 15:07-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -114,7 +114,7 @@ msgid "Game results showing Fire vs Air"
 msgstr ""
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:77
-msgid "Quality Improvements & Metadata Polish"
+msgid "Quality Improvements and Metadata Polish"
 msgstr ""
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:79
@@ -160,7 +160,7 @@ msgid "Refreshed application and game icons"
 msgstr ""
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:109
-msgid "How to Play Guide & Refactoring"
+msgid "How to Play Guide and Refactoring"
 msgstr ""
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:111
@@ -180,7 +180,7 @@ msgid "Added new keyboard shortcuts and updated the shortcuts window"
 msgstr ""
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:119
-msgid "Credits & Visual Polish"
+msgid "Credits and Visual Polish"
 msgstr ""
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:121
@@ -226,7 +226,7 @@ msgid "Keyboard shortcuts (1-5) are now triggerable via the keypad (Numpad)"
 msgstr ""
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:148
-msgid "Updated Runtime & Keybindings"
+msgid "Updated Runtime and Keybindings"
 msgstr ""
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:150

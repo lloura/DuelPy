@@ -74,7 +74,7 @@
   <releases>
     <release version="0.3.2" date="2025-12-30">
       <description>
-        <p>Quality Improvements &amp; Metadata Polish</p>
+        <p>Quality Improvements and Metadata Polish</p>
         <ul>
           <li>Refined application description and summary for better clarity</li>
           <li>Updated screenshots to better showcase the interface</li>
@@ -106,7 +106,7 @@
     </release>
     <release version="0.3.0" date="2025-12-26">
       <description>
-        <p>How to Play Guide &amp; Refactoring</p>
+        <p>How to Play Guide and Refactoring</p>
         <ul>
           <li>Introduced a new "How to Play" section with visual guides for each game mode</li>
           <li>Significant internal restructuring and code refactoring for better maintainability</li>
@@ -116,7 +116,7 @@
     </release>
     <release version="0.2.1" date="2025-12-21">
       <description>
-        <p>Credits &amp; Visual Polish</p>
+        <p>Credits and Visual Polish</p>
         <ul>
           <li>Redesigned the "About" window to provide a more modern experience</li>
           <li>Added dedicated credits for game variant creators: Sam Kass, Karen Bryla and David C. Lovelace</li>
@@ -145,7 +145,7 @@
     </release>
     <release version="0.1.1" date="2025-12-17">
       <description>
-        <p>Updated Runtime &amp; Keybindings</p>
+        <p>Updated Runtime and Keybindings</p>
         <ul>
           <li>Added keyboard shortcuts for game actions and a shortcuts window</li>
           <li>Updated the Flatpak runtime to GNOME SDK 49</li>

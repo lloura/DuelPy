@@ -122,7 +122,7 @@ msgid "Game results showing Fire vs Air"
 msgstr "Resultados do jogo mostrando Fogo vs Ar"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:77
-msgid "Quality Improvements & Metadata Polish"
+msgid "Quality Improvements and Metadata Polish"
 msgstr "Melhorias de Qualidade e Polimento de Metadados"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:79
@@ -174,8 +174,8 @@ msgid "Refreshed application and game icons"
 msgstr "Atualização dos ícones de jogo e do aplicativo "
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:109
-msgid "How to Play Guide & Refactoring"
-msgstr "Guia de Como Jogar & Refatoração"
+msgid "How to Play Guide and Refactoring"
+msgstr "Guia de Como Jogar e Refatoração"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:111
 msgid ""
@@ -198,8 +198,8 @@ msgid "Added new keyboard shortcuts and updated the shortcuts window"
 msgstr "Adicionados novos atalhos de teclado e janela de atalhos atualizada"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:119
-msgid "Credits & Visual Polish"
-msgstr "Créditos & Polimento Visual"
+msgid "Credits and Visual Polish"
+msgstr "Créditos e Polimento Visual"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:121
 msgid "Redesigned the \"About\" window to provide a more modern experience"
@@ -248,8 +248,8 @@ msgstr ""
 "Atalhos de teclado (1-5) agora são acionáveis através do teclado numérico"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:148
-msgid "Updated Runtime & Keybindings"
-msgstr "Runtime Atualizado & Atalhos de Teclado"
+msgid "Updated Runtime and Keybindings"
+msgstr "Runtime Atualizado e Atalhos de Teclado"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:150
 msgid "Added keyboard shortcuts for game actions and a shortcuts window"
