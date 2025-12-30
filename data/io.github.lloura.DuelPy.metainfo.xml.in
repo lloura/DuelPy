@@ -7,12 +7,8 @@
   <summary>Play Rock, Paper, Scissors, Lizard, Spock against the computer</summary>
 
   <description>
-    <p>
-      Duel! is a modern GNOME game implementing the Rock, Paper, Scissors, Lizard, Spock variant popularized by The Big Bang Theory.
-    </p>
-    <p>
-      Built with GTK4 and Libadwaita, it provides a clean and intuitive interface following GNOME's design guidelines. Challenge the computer and see if you can master all five moves!
-    </p>
+    <p>Duel! is a modern GNOME game implementing the Rock, Paper, Scissors, Lizard, Spock variant popularized by The Big Bang Theory.</p>
+    <p>Built with GTK4 and Libadwaita, it provides a clean and intuitive interface following GNOME's design guidelines. Challenge the computer and see if you can master all five moves!</p>
     <p>Features:</p>
     <ul>
       <li>Classic RPSLS gameplay with all five moves</li>
@@ -62,6 +58,22 @@
     <screenshot>
       <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/paper_x_lizard.png</image>
       <caption>Game results showing Paper vs Lizard</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/how_to_play_rpsls.png</image>
+      <caption>"How to Play" screen for RPSLS</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/main_rps7.png</image>
+      <caption>Main RPS-7 screen</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/sponge_x_water.png</image>
+      <caption>Game results showing Sponge vs Water</caption>
+    </screenshot>
+        <screenshot>
+      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/fire_x_air.png</image>
+      <caption>Game results showing Fire vs Air</caption>
     </screenshot>
   </screenshots>
 
