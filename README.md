@@ -2,8 +2,10 @@
   <img src="data/icons/hicolor/scalable/apps/io.github.lloura.DuelPy.svg" width="192" height="192" alt="Duel! Icon"/>
   
   # Duel! (DuelPy)
-  
-  A Rock, Paper, Scissors, Lizard, Spock game built with GTK4 and Libadwaita
+
+  Epic hand-game duels built with GTK4 and Libadwaita
+
+  [![Download on Flathub](https://dl.flathub.org/assets/badges/flathub-badge-en.png)](https://flathub.org/apps/io.github.lloura.DuelPy)
   
   <img src="data/screenshots/main_paper_x_spock.png" alt="Main • Paper x Spock"/>
 </div>
@@ -36,7 +38,7 @@ Choose your move and see if you can beat the computer!
 
 ## Technologies
 
-- Python 3.14+
+- Python 3.12+
 - GTK 4
 - Libadwaita 1.8+ (GNOME 49)
 - Blueprint Compiler
@@ -46,6 +48,18 @@ Choose your move and see if you can beat the computer!
 
 ## Installation & Running
 
+### Flathub (Recommended)
+
+The easiest way to install Duel! on any Linux distribution is via Flathub:
+
+**[Click here to install from Flathub](https://flathub.org/apps/io.github.lloura.DuelPy)**
+
+Alternatively, use the terminal:
+
+```bash
+flatpak install flathub io.github.lloura.DuelPy
+flatpak run io.github.lloura.DuelPy
+```
 ### GNOME Builder (Recommended for Development)
 
 1. Install [GNOME Builder](https://flathub.org/apps/org.gnome.Builder)
@@ -58,7 +72,7 @@ Choose your move and see if you can beat the computer!
 
 ### Flatpak
 
-Pre-built Flatpak packages are available in the [Releases](../../releases) section.
+Pre-built Flatpak packages are also available in the [Releases](../../releases) section.
 
 ---
 
@@ -96,7 +110,8 @@ I chose Python because I plan to use it for similar projects in the future, and 
 - [x] Persistence with GSettings
 - [x] Implementation of a visual 'How to Play' guide for the different variants
 - [x] Implementation of David C. Lovelace's **RPS-7** mode
-- [ ] Flathub submission (😳👉️👈️)
+- [x] Flathub submission (Done! 🎉)
+- [ ] Add more game variants (RPS-9, RPS-11...)
 
 **Contributions are welcome!** Feel free to open issues or submit pull requests.
 
