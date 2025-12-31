@@ -16,6 +16,13 @@
 
 set -e
 
+# Detects the folder where the script is located and sets the project root (one level above)
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+
+# Changes to the project root so that all commands (meson, ninja, po) work
+cd "$PROJECT_ROOT"
+
 PROJECT_NAME="duelpy"
 PO_DIR="po"
 POT_FILE="$PO_DIR/$PROJECT_NAME.pot"
@@ -26,6 +33,14 @@ GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
+
+# Verifying necessary tools
+for cmd in msgmerge msginit msgfmt ninja meson; do
+    if ! command -v $cmd &> /dev/null; then
+        echo -e "${RED}ERROR: The command '$cmd' was not found. Install gettext, meson, and ninja.${NC}"
+        exit 1
+    fi
+done
 
 print_help() {
     echo -e "${BLUE}=== DuelPy Translation Manager ===${NC}"

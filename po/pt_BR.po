@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: duelpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-30 14:59-0300\n"
+"POT-Creation-Date: 2025-12-31 11:44-0300\n"
 "PO-Revision-Date: 2025-12-30 14:59-0300\n"
 "Last-Translator: Lucas Loura <oliverloura2020@gmail.com>\n"
 "Language-Team: Brazilian Portuguese\n"
@@ -138,12 +138,10 @@ msgid "Added metadata keywords to make the app easier to find"
 msgstr "Adição de palavras-chave para facilitar a busca pelo aplicativo"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:87
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:98
 msgid "Introducing RPS-7"
 msgstr "Introduzindo o RPS-7"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:89
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:100
 msgid ""
 "Implemented new RPS-7 game mode (Rock-Paper-Scissors-Sponge-Fire-Water-Air)"
 msgstr ""
@@ -151,7 +149,6 @@ msgstr ""
 "Água-Ar!"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:90
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:101
 msgid ""
 "Added persistent window state, remembering size and maximized state between "
 "sessions"
@@ -160,7 +157,6 @@ msgstr ""
 "maximizado entre sessões"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:91
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:102
 msgid ""
 "Overhauled the localization system for better translation coverage across "
 "all pages"
@@ -169,15 +165,14 @@ msgstr ""
 "em todas as páginas"
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:92
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:103
 msgid "Refreshed application and game icons"
 msgstr "Atualização dos ícones de jogo e do aplicativo "
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:109
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:98
 msgid "How to Play Guide and Refactoring"
 msgstr "Guia de Como Jogar e Refatoração"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:111
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:100
 msgid ""
 "Introduced a new \"How to Play\" section with visual guides for each game "
 "mode"
@@ -185,7 +180,7 @@ msgstr ""
 "Introduzida uma nova seção \"Como Jogar\" com guias visuais para cada modo "
 "de jogo"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:112
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:101
 msgid ""
 "Significant internal restructuring and code refactoring for better "
 "maintainability"
@@ -193,20 +188,20 @@ msgstr ""
 "Reestruturação interna significativa e refatoração de código para melhor "
 "manutenção"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:113
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:102
 msgid "Added new keyboard shortcuts and updated the shortcuts window"
 msgstr "Adicionados novos atalhos de teclado e janela de atalhos atualizada"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:119
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:108
 msgid "Credits and Visual Polish"
 msgstr "Créditos e Polimento Visual"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:121
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:110
 msgid "Redesigned the \"About\" window to provide a more modern experience"
 msgstr ""
 "Reformulação da janela \"Sobre\" para fornecer uma experiência mais moderna"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:122
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:111
 msgid ""
 "Added dedicated credits for game variant creators: Sam Kass, Karen Bryla and "
 "David C. Lovelace"
@@ -214,64 +209,64 @@ msgstr ""
 "Adicionados créditos aos criadores dos modos de jogo: Sam Kass, Karen Bryla "
 "e David C. Lovelace"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:128
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:117
 msgid "Introducing Game Modes"
 msgstr "Introduzindo Modos de Jogo"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:130
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:119
 msgid "Added Classic game mode (Rock, Paper, Scissors)"
 msgstr "Adicionado modo de jogo Clássico (Pedra, Papel, Tesoura)"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:131
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:120
 msgid "Implemented game mode persistence using GSettings"
 msgstr "Implementada persistência de modo de jogo usando GSettings"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:132
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:121
 msgid "New mode selector in the header bar"
 msgstr "Novo seletor de modos na barra de título"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:138
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:127
 msgid "Implemented Internationalization Support"
 msgstr "Implementado Suporte a Internacionalização"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:140
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:129
 msgid "Added support for internationalization (i18n) using gettext"
 msgstr "Adicionado suporte para internacionalização (i18n) por meio do gettext"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:141
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:130
 msgid "Added Brazilian Portuguese (pt_BR) translation"
 msgstr "Adicionada tradução em Português Brasileiro (pt_BR)"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:142
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:131
 msgid "Keyboard shortcuts (1-5) are now triggerable via the keypad (Numpad)"
 msgstr ""
 "Atalhos de teclado (1-5) agora são acionáveis através do teclado numérico"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:148
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:137
 msgid "Updated Runtime and Keybindings"
 msgstr "Runtime Atualizado e Atalhos de Teclado"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:150
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:139
 msgid "Added keyboard shortcuts for game actions and a shortcuts window"
 msgstr "Adicionados novos atalhos para ações de jogo e uma janela de atalhos"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:151
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:140
 msgid "Updated the Flatpak runtime to GNOME SDK 49"
 msgstr "Atualizado runtime flatpak para o GNOME SDK 49"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:152
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:141
 msgid "Slightly updated the application icon"
 msgstr "Leve atualização do ícone do aplicativo"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:158
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:147
 msgid "Initial release"
 msgstr "Lançamento inicial"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:160
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:149
 msgid "Rock, Paper, Scissors, Lizard, Spock gameplay"
 msgstr "Jogabilidade de Pedra, Papel, Tesoura, Lagarto, Spock"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:161
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:150
 msgid "Modern GTK4/Libadwaita interface"
 msgstr "Interface moderna usando GTK4/Libadwaita"
 
