@@ -47,8 +47,6 @@ duelpy_sources = [
   '__init__.py',
   'main.py',
   'window.py',
-  'ui/widgets.py',
-  'ui/how_to_play.py',
 ]
 
 logic_sources = [
