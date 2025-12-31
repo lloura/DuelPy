@@ -9,30 +9,31 @@
     <file preprocess="xml-stripblanks">ui/how_to_play.ui</file>
     <file>style.css</file>
 
-    <file preprocess="xml-stripblanks">icons/air.svg</file>
-    <file preprocess="xml-stripblanks">icons/fire.svg</file>
-    <file preprocess="xml-stripblanks">icons/lizard.svg</file>
-    <file preprocess="xml-stripblanks">icons/paper.svg</file>
-    <file preprocess="xml-stripblanks">icons/rock.svg</file>
-    <file preprocess="xml-stripblanks">icons/scissors.svg</file>
-    <file preprocess="xml-stripblanks">icons/spock.svg</file>
-    <file preprocess="xml-stripblanks">icons/sponge.svg</file>
-    <file preprocess="xml-stripblanks">icons/water.svg</file>
-    <file preprocess="xml-stripblanks">icons/welcome.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/air.svg">icons/scalable/air.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/fire.svg">icons/scalable/fire.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/lizard.svg">icons/scalable/lizard.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/paper.svg">icons/scalable/paper.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/rock.svg">icons/scalable/rock.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/scissors.svg">icons/scalable/scissors.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/spock.svg">icons/scalable/spock.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/sponge.svg">icons/scalable/sponge.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/water.svg">icons/scalable/water.svg</file>
 
-    <file preprocess="xml-stripblanks">icons/air-symbolic.svg</file>
-    <file preprocess="xml-stripblanks">icons/fire-symbolic.svg</file>
-    <file preprocess="xml-stripblanks">icons/lizard-symbolic.svg</file>
-    <file preprocess="xml-stripblanks">icons/paper-symbolic.svg</file>
-    <file preprocess="xml-stripblanks">icons/rock-symbolic.svg</file>
-    <file preprocess="xml-stripblanks">icons/scissors-symbolic.svg</file>
-    <file preprocess="xml-stripblanks">icons/spock-symbolic.svg</file>
-    <file preprocess="xml-stripblanks">icons/sponge-symbolic.svg</file>
-    <file preprocess="xml-stripblanks">icons/water-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/welcome.svg">icons/ui/welcome.svg</file>
 
-    <file preprocess="xml-stripblanks">icons/diagram-classic.svg</file>
-    <file preprocess="xml-stripblanks">icons/diagram-rpsls.svg</file>
-    <file preprocess="xml-stripblanks">icons/diagram-rps7.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/air-symbolic.svg">icons/symbolic/air-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/fire-symbolic.svg">icons/symbolic/fire-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/lizard-symbolic.svg">icons/symbolic/lizard-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/paper-symbolic.svg">icons/symbolic/paper-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/rock-symbolic.svg">icons/symbolic/rock-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/scissors-symbolic.svg">icons/symbolic/scissors-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/spock-symbolic.svg">icons/symbolic/spock-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/sponge-symbolic.svg">icons/symbolic/sponge-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/water-symbolic.svg">icons/symbolic/water-symbolic.svg</file>
+
+    <file preprocess="xml-stripblanks" alias="icons/diagram-classic.svg">icons/diagrams/diagram-classic.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/diagram-rpsls.svg">icons/diagrams/diagram-rpsls.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/diagram-rps7.svg">icons/diagrams/diagram-rps7.svg</file>
   </gresource>
 </gresources>
 
