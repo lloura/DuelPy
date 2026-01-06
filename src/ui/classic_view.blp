@@ -1,13 +1,9 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $ClassicView : Gtk.Box {
+template $ClassicView: Gtk.Box {
   orientation: vertical;
   spacing: 12;
-
-  margin-start: 16;
-  margin-end: 16;
-  width-request: 350;
 
   Gtk.Label {
     label: _("Let's Play Rock-Paper-Scissors!");
@@ -17,7 +13,7 @@ template $ClassicView : Gtk.Box {
     margin-bottom: 16;
 
     styles [
-      "description"
+      "description",
     ]
   }
 
