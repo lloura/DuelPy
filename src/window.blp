@@ -5,11 +5,14 @@ template $DuelpyWindow: Adw.ApplicationWindow {
   title: _("Duel!");
   default-width: 450;
   default-height: 600;
+  width-request: 360;
+  height-request: 530;
 
   Adw.Breakpoint {
-    condition ("max-width: 420px")
+    condition ("max-width: 400px")
 
     setters {
+      img_welcome.pixel-size: 140;
       img_player_choice.pixel-size: 140;
       img_computer_choice.pixel-size: 140;
       results_main_box.margin-top: 24;
@@ -54,9 +57,9 @@ template $DuelpyWindow: Adw.ApplicationWindow {
           halign: center;
           spacing: 12;
           margin-top: 8;
-          margin-bottom: 32;
+          margin-bottom: 16;
 
-          Gtk.Image {
+          Gtk.Image img_welcome {
             icon-name: "welcome";
             pixel-size: 160;
 
@@ -110,8 +113,6 @@ template $DuelpyWindow: Adw.ApplicationWindow {
           valign: center;
           halign: center;
           spacing: 8;
-          margin-top: 80;
-          margin-bottom: 116;
 
           Gtk.Box results_images_box {
             orientation: horizontal;
