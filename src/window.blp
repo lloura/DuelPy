@@ -6,6 +6,17 @@ template $DuelpyWindow: Adw.ApplicationWindow {
   default-width: 450;
   default-height: 600;
 
+  Adw.Breakpoint {
+    condition ("max-width: 420px")
+
+    setters {
+      img_player_choice.pixel-size: 140;
+      img_computer_choice.pixel-size: 140;
+      results_main_box.margin-top: 24;
+      results_main_box.margin-bottom: 24;
+    }
+  }
+
   Adw.ToolbarView {
     [top]
     Adw.HeaderBar {
@@ -90,7 +101,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
       }
 
       /* ───────────── Results ───────────── */
-      Adw.NavigationPage {
+      Adw.NavigationPage results_main_box {
         title: _("Results");
         tag: "results";
 
@@ -102,9 +113,11 @@ template $DuelpyWindow: Adw.ApplicationWindow {
           margin-top: 80;
           margin-bottom: 116;
 
-          Gtk.Box {
+          Gtk.Box results_images_box {
             orientation: horizontal;
             margin-bottom: 12;
+            spacing: 12;
+            halign: center;
 
             Gtk.Image img_player_choice {
               pixel-size: 160;
