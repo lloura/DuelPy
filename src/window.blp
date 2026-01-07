@@ -6,7 +6,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
   default-width: 450;
   default-height: 600;
   width-request: 360;
-  height-request: 535;
+  height-request: 550;
 
   Adw.Breakpoint {
     condition ("max-width: 400px")
@@ -51,76 +51,20 @@ template $DuelpyWindow: Adw.ApplicationWindow {
         title: _("Home");
         tag: "home";
 
-        child: Gtk.Box {
-          orientation: vertical;
-          valign: center;
-          halign: center;
-          spacing: 12;
-          margin-top: 8;
-          margin-bottom: 16;
+        child: Gtk.ScrolledWindow {
+          hscrollbar-policy: never;
+          vscrollbar-policy: automatic;
 
-          Gtk.Image img_welcome {
-            icon-name: "welcome";
-            pixel-size: 160;
-
-            styles [
-              "icon-dropshadow",
-            ]
-          }
-
-          Gtk.Label {
-            label: _("Welcome!");
+          child: Gtk.Box {
+            orientation: vertical;
+            valign: center;
             halign: center;
-
-            styles [
-              "title-1",
-            ]
-          }
-
-          /* ═══════════ ViewStack ═══════════ */
-          Adw.ViewStack mode_stack {
-            Adw.ViewStackPage {
-              name: "rpsls";
-              title: _("RPSLS");
-
-              child: $RpslsView {};
-            }
-
-            Adw.ViewStackPage {
-              name: "classic";
-              title: _("Classic");
-
-              child: $ClassicView {};
-            }
-
-            Adw.ViewStackPage {
-              name: "rps7";
-              title: _("RPS-7");
-
-              child: $Rps7View {};
-            }
-          }
-        };
-      }
-
-      /* ───────────── Results ───────────── */
-      Adw.NavigationPage results_main_box {
-        title: _("Results");
-        tag: "results";
-
-        child: Gtk.Box {
-          orientation: vertical;
-          valign: center;
-          halign: center;
-          spacing: 8;
-
-          Gtk.Box results_images_box {
-            orientation: horizontal;
-            margin-bottom: 12;
             spacing: 12;
-            halign: center;
+            margin-top: 8;
+            margin-bottom: 28;
 
-            Gtk.Image img_player_choice {
+            Gtk.Image img_welcome {
+              icon-name: "welcome";
               pixel-size: 160;
 
               styles [
@@ -129,59 +73,126 @@ template $DuelpyWindow: Adw.ApplicationWindow {
             }
 
             Gtk.Label {
-              label: "VS";
+              label: _("Welcome!");
+              halign: center;
 
               styles [
                 "title-1",
               ]
             }
 
-            Gtk.Image img_computer_choice {
-              pixel-size: 160;
+            /* ═══════════ ViewStack ═══════════ */
+            Adw.ViewStack mode_stack {
+              Adw.ViewStackPage {
+                name: "rpsls";
+                title: _("RPSLS");
 
-              styles [
-                "icon-dropshadow",
-              ]
+                child: $RpslsView {};
+              }
+
+              Adw.ViewStackPage {
+                name: "classic";
+                title: _("Classic");
+
+                child: $ClassicView {};
+              }
+
+              Adw.ViewStackPage {
+                name: "rps7";
+                title: _("RPS-7");
+
+                child: $Rps7View {};
+              }
             }
-          }
+          };
+        };
+      }
 
-          Gtk.Box {
+      /* ───────────── Results ───────────── */
+      Adw.NavigationPage results_main_box {
+        title: _("Results");
+        tag: "results";
+
+        child: Gtk.ScrolledWindow {
+          hscrollbar-policy: never;
+          vscrollbar-policy: automatic;
+
+          child: Gtk.Box {
             orientation: vertical;
-            spacing: 12;
-            margin-bottom: 32;
+            valign: center;
+            halign: center;
+            spacing: 8;
+            margin-bottom: 28;
 
-            Gtk.Label lbl_result {
-              styles [
-                "title-2",
-              ]
+            Gtk.Box results_images_box {
+              orientation: horizontal;
+              margin-bottom: 12;
+              spacing: 12;
+              halign: center;
+
+              Gtk.Image img_player_choice {
+                pixel-size: 160;
+
+                styles [
+                  "icon-dropshadow",
+                ]
+              }
+
+              Gtk.Label {
+                label: "VS";
+
+                styles [
+                  "title-1",
+                ]
+              }
+
+              Gtk.Image img_computer_choice {
+                pixel-size: 160;
+
+                styles [
+                  "icon-dropshadow",
+                ]
+              }
             }
 
-            Gtk.Label lbl_explanation {
-              wrap: true;
-              justify: center;
+            Gtk.Box {
+              orientation: vertical;
+              spacing: 12;
+              margin-bottom: 32;
 
-              styles [
-                "description",
-              ]
+              Gtk.Label lbl_result {
+                styles [
+                  "title-2",
+                ]
+              }
+
+              Gtk.Label lbl_explanation {
+                wrap: true;
+                justify: center;
+
+                styles [
+                  "description",
+                ]
+              }
             }
-          }
 
-          Adw.Clamp {
-            maximum-size: 250;
+            Adw.Clamp {
+              maximum-size: 250;
 
-            Gtk.Button {
-              action-name: "win.retry";
+              Gtk.Button {
+                action-name: "win.retry";
 
-              styles [
-                "opaque",
-              ]
+                styles [
+                  "opaque",
+                ]
 
-              child: Adw.ButtonContent {
-                label: _("Try Again");
-                icon-name: "view-refresh-symbolic";
-              };
+                child: Adw.ButtonContent {
+                  label: _("Try Again");
+                  icon-name: "view-refresh-symbolic";
+                };
+              }
             }
-          }
+          };
         };
       }
     };
