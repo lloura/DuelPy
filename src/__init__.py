@@ -21,13 +21,8 @@ import gettext, locale, os
 
 # localization setup
 
-DOMAIN = 'io.github.lloura.DuelPy'
-
-localedir = os.environ.get('LOCALEDIR')
-if not localedir:
-    localedir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'locale')
-
-gettext.bindtextdomain(DOMAIN, localedir)
-gettext.textdomain(DOMAIN)
+localedir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'locale')
+gettext.bindtextdomain('io.github.lloura.DuelPy', localedir)
+gettext.textdomain('io.github.lloura.DuelPy')
 
 _ = gettext.gettext
