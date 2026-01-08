@@ -66,6 +66,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
             Gtk.Image img_welcome {
               icon-name: "welcome";
               pixel-size: 160;
+              accessible-role: presentation;
 
               styles [
                 "icon-dropshadow",
@@ -132,6 +133,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
 
               Gtk.Image img_player_choice {
                 pixel-size: 160;
+                accessible-role: presentation;
 
                 styles [
                   "icon-dropshadow",
@@ -140,6 +142,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
 
               Gtk.Label {
                 label: "VS";
+                accessible-role: label;
 
                 styles [
                   "title-1",
@@ -148,6 +151,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
 
               Gtk.Image img_computer_choice {
                 pixel-size: 160;
+                accessible-role: presentation;
 
                 styles [
                   "icon-dropshadow",
@@ -159,6 +163,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
               orientation: vertical;
               spacing: 12;
               margin-bottom: 32;
+              accessible-role: label;
 
               Gtk.Label lbl_result {
                 styles [
@@ -169,6 +174,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
               Gtk.Label lbl_explanation {
                 wrap: true;
                 justify: center;
+                accessible-role: label;
 
                 styles [
                   "description",
@@ -181,6 +187,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
 
               Gtk.Button {
                 action-name: "win.retry";
+                accessible-role: button;
 
                 styles [
                   "opaque",

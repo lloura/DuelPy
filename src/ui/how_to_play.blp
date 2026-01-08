@@ -18,6 +18,7 @@ template $HowToPlayDialog: Adw.Dialog {
 
           Gtk.Image img_diagram {
             pixel-size: 300;
+            accessible-role: presentation;
 
             styles [
               "icon-dropshadow",
@@ -30,6 +31,7 @@ template $HowToPlayDialog: Adw.Dialog {
       Adw.PreferencesGroup rules_group {
         title: _("Move Interactions");
         description: _("Select a move to see which opponents it defeats and why.");
+        accessible-role: group;
       }
     };
   };

@@ -39,9 +39,11 @@ class HowToPlayDialog(Adw.Dialog):
             # creating expander row for main move
             expander = Adw.ExpanderRow()
             expander.set_title(_(action.capitalize()))
+            expander.set_accessible_role(Gtk.AccessibleRole.BUTTON)
 
             # main move icon (prefix)
             img = Gtk.Image.new_from_icon_name(f"{action}-symbolic")
+            img.set_accessible_role(Gtk.AccessibleRole.PRESENTATION)
             expander.add_prefix(img)
 
             # adding a nested row for each win for this move
@@ -50,8 +52,10 @@ class HowToPlayDialog(Adw.Dialog):
 
                 nested_row = Adw.ActionRow()
                 nested_row.set_title(_(explanation))
+                nested_row.set_accessible_role(Gtk.AccessibleRole.LIST_ITEM)
 
                 victim_img = Gtk.Image.new_from_icon_name(f"{victim}-symbolic")
+                victim_img.set_accessible_role(Gtk.AccessibleRole.PRESENTATION)
                 nested_row.add_prefix(victim_img)
 
                 expander.add_row(nested_row)
