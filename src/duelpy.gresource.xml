@@ -17,8 +17,7 @@
     <file preprocess="xml-stripblanks" alias="icons/spock.svg">icons/scalable/spock.svg</file>
     <file preprocess="xml-stripblanks" alias="icons/sponge.svg">icons/scalable/sponge.svg</file>
     <file preprocess="xml-stripblanks" alias="icons/water.svg">icons/scalable/water.svg</file>
-
-    <file preprocess="xml-stripblanks" alias="icons/welcome.svg">icons/ui/welcome.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/welcome.svg">icons/scalable/welcome.svg</file>
 
     <file preprocess="xml-stripblanks" alias="icons/air-symbolic.svg">icons/symbolic/air-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="icons/fire-symbolic.svg">icons/symbolic/fire-symbolic.svg</file>
@@ -29,6 +28,7 @@
     <file preprocess="xml-stripblanks" alias="icons/spock-symbolic.svg">icons/symbolic/spock-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="icons/sponge-symbolic.svg">icons/symbolic/sponge-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="icons/water-symbolic.svg">icons/symbolic/water-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/welcome-symbolic.svg">icons/symbolic/welcome-symbolic.svg</file>
 
     <file preprocess="xml-stripblanks" alias="icons/diagram-classic.svg">icons/diagrams/diagram-classic.svg</file>
     <file preprocess="xml-stripblanks" alias="icons/diagram-rpsls.svg">icons/diagrams/diagram-rpsls.svg</file>
