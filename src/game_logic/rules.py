@@ -17,7 +17,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-from .. import _
+from . import _
 
 class GameMode:
     def __init__(self, id, name, icon, diagram, choices, wins_map, explanations):

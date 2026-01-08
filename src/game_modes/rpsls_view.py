@@ -1,4 +1,4 @@
-# game_logic/__init__.py
+# ui/game_modes/RpslsView.py
 #
 # Copyright 2025 Lucas Loura
 #
@@ -17,4 +17,23 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-from .. import _
+from gi.repository import Gtk, Adw
+from ..ui.shortcuts import ShortcutManager
+
+@Gtk.Template(resource_path='/io/github/lloura/DuelPy/game_modes/rpsls_view.ui')
+class RpslsView(Gtk.Box):
+    __gtype_name__ = 'RpslsView'
+
+    from . import _
+
+    def __init__(self, **kwargs):
+        self.shortcuts_dialog = ShortcutManager(
+            title=_("RPSLS Mode"),
+            moves=[
+                (_("Rock"), "1", "win.rock"),
+                (_("Paper"), "2", "win.paper"),
+                (_("Scissors"), "3", "win.scissors"),
+                (_("Lizard"), "4", "win.lizard"),
+                (_("Spock"), "5", "win.spock"),
+            ]
+        )

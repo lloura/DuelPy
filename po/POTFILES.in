@@ -12,9 +12,13 @@ src/window.py
 src/game_logic/modes.py
 src/game_logic/rules.py
 
-src/ui/classic_view.blp
 src/ui/how_to_play.blp
 src/ui/how_to_play.py
-src/ui/rps7_view.blp
-src/ui/rpsls_view.blp
-src/ui/widgets.py
+src/ui/shortcuts.py
+
+src/game_modes/classic_view.blp
+src/game_modes/classic_view.py
+src/game_modes/rps7_view.blp
+src/game_modes/rps7_view.py
+src/game_modes/rpsls_view.blp
+src/game_modes/rpsls_view.py

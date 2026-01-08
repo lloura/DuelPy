@@ -24,8 +24,12 @@ import random
 from .game_logic.modes import AVAILABLE_MODES, ALL_POSSIBLE_MOVES
 
 # import ui widgets
-from .ui.widgets import ClassicView, RpslsView, Rps7View
 from .ui.how_to_play import HowToPlayDialog
+
+# import game modes
+from .game_modes.rpsls_view import RpslsView
+from .game_modes.classic_view import ClassicView
+from .game_modes.rps7_view import Rps7View
 
 @Gtk.Template(resource_path='/io/github/lloura/DuelPy/window.ui')
 class DuelpyWindow(Adw.ApplicationWindow):
@@ -182,13 +186,14 @@ class DuelpyWindow(Adw.ApplicationWindow):
             self.navigation_view.pop()
 
     def on_show_shortcuts(self):
-        current_view = self.mode_stack.get_visible_child()
-        dialog = getattr(current_view, 'shortcuts_dialog', None)
+            current_view = self.mode_stack.get_visible_child()
+            manager = getattr(current_view, 'shortcuts_dialog', None)
 
-        if dialog:
-            dialog.present(self)
-        else:
-            print("error: dialog not found on current view")
+            if manager:
+                dialog = manager.get_dialog()
+                dialog.present(self)
+            else:
+                print("error: shortcuts manager not found on current view")
 
     def on_how_to_play(self):
         dialog = HowToPlayDialog(mode=self.current_game_mode)

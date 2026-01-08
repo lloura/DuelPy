@@ -23,7 +23,7 @@ from gi.repository import Gtk, Adw, Gio
 class HowToPlayDialog(Adw.Dialog):
     __gtype_name__ = 'HowToPlayDialog'
 
-    from .. import _
+    from . import _
 
     rules_group = Gtk.Template.Child()
     img_diagram = Gtk.Template.Child()

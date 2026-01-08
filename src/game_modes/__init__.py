@@ -1,4 +1,4 @@
-# game_logic/__init__.py
+# ui/game_modes/__init__.py
 #
 # Copyright 2025 Lucas Loura
 #

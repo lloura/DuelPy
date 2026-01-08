@@ -1,4 +1,4 @@
-# game_logic/__init__.py
+# ui/game_modes/ClassicView.py
 #
 # Copyright 2025 Lucas Loura
 #
@@ -17,4 +17,22 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-from .. import _
+from gi.repository import Gtk, Adw
+from ..ui.shortcuts import ShortcutManager
+
+@Gtk.Template(resource_path='/io/github/lloura/DuelPy/game_modes/classic_view.ui')
+class ClassicView(Gtk.Box):
+    __gtype_name__ = 'ClassicView'
+
+    from . import _
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.shortcuts_dialog = ShortcutManager(
+            title=_("Classic Mode"),
+            moves=[
+                (_("Rock"), "1", "win.rock"),
+                (_("Paper"), "2", "win.paper"),
+                (_("Scissors"), "3", "win.scissors"),
+            ]
+        )

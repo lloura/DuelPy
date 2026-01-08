@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: duelpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-31 11:44-0300\n"
+"POT-Creation-Date: 2026-01-07 21:51-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,13 +71,13 @@ msgstr ""
 msgid "Lucas Loura"
 msgstr ""
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:30 src/window.blp:21
-#: src/window.blp:73 src/window.blp:206 src/game_logic/modes.py:26
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:30 src/window.blp:35
+#: src/window.blp:88 src/window.blp:225 src/game_logic/modes.py:26
 msgid "RPSLS"
 msgstr ""
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:31 src/window.blp:87
-#: src/window.blp:218 src/game_logic/modes.py:73
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:31 src/window.blp:102
+#: src/window.blp:237 src/game_logic/modes.py:73
 msgid "RPS-7"
 msgstr ""
 
@@ -304,59 +304,59 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 
-#: src/window.blp:18
+#: src/window.blp:32
 msgid "Mode Selection"
 msgstr ""
 
-#: src/window.blp:30
+#: src/window.blp:44
 msgid "Main Menu"
 msgstr ""
 
-#: src/window.blp:37
+#: src/window.blp:51
 msgid "Home"
 msgstr ""
 
-#: src/window.blp:61
+#: src/window.blp:76
 msgid "Welcome!"
 msgstr ""
 
-#: src/window.blp:80 src/window.blp:212 src/game_logic/modes.py:54
+#: src/window.blp:95 src/window.blp:231 src/game_logic/modes.py:54
 msgid "Classic"
 msgstr ""
 
-#: src/window.blp:97
+#: src/window.blp:113
 msgid "Results"
 msgstr ""
 
-#: src/window.blp:172 src/ui/widgets.py:31
+#: src/window.blp:190 src/ui/shortcuts.py:41
 msgid "Try Again"
 msgstr ""
 
-#: src/window.blp:187 src/ui/how_to_play.blp:5
+#: src/window.blp:206 src/ui/how_to_play.blp:5
 msgid "How to Play"
 msgstr ""
 
-#: src/window.blp:192
+#: src/window.blp:211
 msgid "Keyboard Shortcuts"
 msgstr ""
 
-#: src/window.blp:197
+#: src/window.blp:216
 msgid "About Duel!"
 msgstr ""
 
-#: src/window.py:156
+#: src/window.py:160
 msgid "Draw!"
 msgstr ""
 
-#: src/window.py:157
+#: src/window.py:161
 msgid "it's a tie!"
 msgstr ""
 
-#: src/window.py:159
+#: src/window.py:163
 msgid "You Won!"
 msgstr ""
 
-#: src/window.py:162
+#: src/window.py:166
 msgid "You Lost!"
 msgstr ""
 
@@ -475,22 +475,6 @@ msgstr ""
 msgid "Air evaporates Water!"
 msgstr ""
 
-#: src/ui/classic_view.blp:13
-msgid "Let's Play Rock-Paper-Scissors!"
-msgstr ""
-
-#: src/ui/classic_view.blp:40 src/ui/rps7_view.blp:44 src/ui/rpsls_view.blp:40
-msgid "Rock!"
-msgstr ""
-
-#: src/ui/classic_view.blp:54 src/ui/rps7_view.blp:59 src/ui/rpsls_view.blp:54
-msgid "Paper!"
-msgstr ""
-
-#: src/ui/classic_view.blp:68 src/ui/rps7_view.blp:79 src/ui/rpsls_view.blp:68
-msgid "Scissors!"
-msgstr ""
-
 #: src/ui/how_to_play.blp:31
 msgid "Move Interactions"
 msgstr ""
@@ -499,102 +483,126 @@ msgstr ""
 msgid "Select a move to see which opponents it defeats and why."
 msgstr ""
 
-#: src/ui/rps7_view.blp:12
-msgid "Let's Play Rock-Paper-Scissors-Sponge-Fire-Water-Air!"
-msgstr ""
-
-#: src/ui/rps7_view.blp:94
-msgid "Sponge!"
-msgstr ""
-
-#: src/ui/rps7_view.blp:114
-msgid "Fire!"
-msgstr ""
-
-#: src/ui/rps7_view.blp:128
-msgid "Water!"
-msgstr ""
-
-#: src/ui/rps7_view.blp:148
-msgid "Air!"
-msgstr ""
-
-#: src/ui/rpsls_view.blp:13
-msgid "Let's Play Rock-Paper-Scissors-Lizard-Spock!"
-msgstr ""
-
-#: src/ui/rpsls_view.blp:82
-msgid "Lizard!"
-msgstr ""
-
-#: src/ui/rpsls_view.blp:96
-msgid "Spock!"
-msgstr ""
-
-#: src/ui/widgets.py:25
+#. Gameplay Section
+#: src/ui/shortcuts.py:34
 msgid "Gameplay"
 msgstr ""
 
-#: src/ui/widgets.py:37
+#. Game Modes Section
+#: src/ui/shortcuts.py:48
 msgid "Game Mode"
 msgstr ""
 
-#: src/ui/widgets.py:40
+#: src/ui/shortcuts.py:50
 msgid "Switch to RPSLS Mode"
 msgstr ""
 
-#: src/ui/widgets.py:46
+#: src/ui/shortcuts.py:51
 msgid "Switch to Classic Mode"
 msgstr ""
 
-#: src/ui/widgets.py:52
+#: src/ui/shortcuts.py:52
 msgid "Switch to RPS-7 Mode"
 msgstr ""
 
-#: src/ui/widgets.py:69
-msgid "RPSLS Mode"
+#: src/game_modes/classic_view.blp:9
+msgid "Let's Play Rock-Paper-Scissors!"
 msgstr ""
 
-#: src/ui/widgets.py:71 src/ui/widgets.py:90 src/ui/widgets.py:107
-msgid "Rock"
+#: src/game_modes/classic_view.blp:36 src/game_modes/rps7_view.blp:43
+#: src/game_modes/rpsls_view.blp:38
+msgid "Rock!"
 msgstr ""
 
-#: src/ui/widgets.py:72 src/ui/widgets.py:91 src/ui/widgets.py:108
-msgid "Paper"
+#: src/game_modes/classic_view.blp:50 src/game_modes/rps7_view.blp:58
+#: src/game_modes/rpsls_view.blp:52
+msgid "Paper!"
 msgstr ""
 
-#: src/ui/widgets.py:73 src/ui/widgets.py:92 src/ui/widgets.py:109
-msgid "Scissors"
+#: src/game_modes/classic_view.blp:64 src/game_modes/rps7_view.blp:78
+#: src/game_modes/rpsls_view.blp:66
+msgid "Scissors!"
 msgstr ""
 
-#: src/ui/widgets.py:74
-msgid "Lizard"
-msgstr ""
-
-#: src/ui/widgets.py:75
-msgid "Spock"
-msgstr ""
-
-#: src/ui/widgets.py:88
+#: src/game_modes/classic_view.py:32
 msgid "Classic Mode"
 msgstr ""
 
-#: src/ui/widgets.py:105
+#: src/game_modes/classic_view.py:34 src/game_modes/rps7_view.py:34
+#: src/game_modes/rpsls_view.py:33
+msgid "Rock"
+msgstr ""
+
+#: src/game_modes/classic_view.py:35 src/game_modes/rps7_view.py:35
+#: src/game_modes/rpsls_view.py:34
+msgid "Paper"
+msgstr ""
+
+#: src/game_modes/classic_view.py:36 src/game_modes/rps7_view.py:36
+#: src/game_modes/rpsls_view.py:35
+msgid "Scissors"
+msgstr ""
+
+#: src/game_modes/rps7_view.blp:11
+msgid "Let's Play Rock-Paper-Scissors-Sponge-Fire-Water-Air!"
+msgstr ""
+
+#: src/game_modes/rps7_view.blp:93
+msgid "Sponge!"
+msgstr ""
+
+#: src/game_modes/rps7_view.blp:113
+msgid "Fire!"
+msgstr ""
+
+#: src/game_modes/rps7_view.blp:127
+msgid "Water!"
+msgstr ""
+
+#: src/game_modes/rps7_view.blp:147
+msgid "Air!"
+msgstr ""
+
+#: src/game_modes/rps7_view.py:32
 msgid "RPS-7 Mode"
 msgstr ""
 
-#: src/ui/widgets.py:110
+#: src/game_modes/rps7_view.py:37
 msgid "Sponge"
 msgstr ""
 
-#: src/ui/widgets.py:111
+#: src/game_modes/rps7_view.py:38
 msgid "Fire"
 msgstr ""
 
-#: src/ui/widgets.py:112
+#: src/game_modes/rps7_view.py:39
 msgid "Water"
 msgstr ""
 
-#: src/ui/widgets.py:113
+#: src/game_modes/rps7_view.py:40
 msgid "Air"
+msgstr ""
+
+#: src/game_modes/rpsls_view.blp:11
+msgid "Let's Play Rock-Paper-Scissors-Lizard-Spock!"
+msgstr ""
+
+#: src/game_modes/rpsls_view.blp:80
+msgid "Lizard!"
+msgstr ""
+
+#: src/game_modes/rpsls_view.blp:94
+msgid "Spock!"
+msgstr ""
+
+#: src/game_modes/rpsls_view.py:31
+msgid "RPSLS Mode"
+msgstr ""
+
+#: src/game_modes/rpsls_view.py:36
+msgid "Lizard"
+msgstr ""
+
+#: src/game_modes/rpsls_view.py:37
+msgid "Spock"
 msgstr ""

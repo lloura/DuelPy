@@ -2,11 +2,10 @@
 <gresources>
   <gresource prefix="/io/github/lloura/DuelPy">
     <file preprocess="xml-stripblanks">window.ui</file>
-    <file preprocess="xml-stripblanks">ui/rpsls_view.ui</file>
-    <file preprocess="xml-stripblanks">ui/classic_view.ui</file>
-    <file preprocess="xml-stripblanks">ui/rps7_view.ui</file>
-
     <file preprocess="xml-stripblanks">ui/how_to_play.ui</file>
+    <file preprocess="xml-stripblanks">game_modes/rpsls_view.ui</file>
+    <file preprocess="xml-stripblanks">game_modes/classic_view.ui</file>
+    <file preprocess="xml-stripblanks">game_modes/rps7_view.ui</file>
     <file>style.css</file>
 
     <file preprocess="xml-stripblanks" alias="icons/air.svg">icons/scalable/air.svg</file>
