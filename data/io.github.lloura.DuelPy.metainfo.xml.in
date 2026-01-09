@@ -74,11 +74,12 @@
   <releases>
     <release version="0.3.3" date="2026-01-09">
       <description>
-        <p></p>
+        <p>Accessibility and Architecture Overhaul</p>
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>Implemented accessible roles for all UI elements to support assistive technologies</li>
+          <li>Modularized the project structure by splitting widgets into separate files</li>
+          <li>Enhanced adaptive layout with new breakpoints and scrollable window support</li>
+          <li>Updated "About" page design following GNOME 49 guidelines</li>
         </ul>
       </description>
     </release>
