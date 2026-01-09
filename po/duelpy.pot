@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: duelpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-07 21:51-0300\n"
+"POT-Creation-Date: 2026-01-09 11:57-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,12 +72,12 @@ msgid "Lucas Loura"
 msgstr ""
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:30 src/window.blp:35
-#: src/window.blp:88 src/window.blp:225 src/game_logic/modes.py:26
+#: src/window.blp:89 src/window.blp:232 src/game_logic/modes.py:26
 msgid "RPSLS"
 msgstr ""
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:31 src/window.blp:102
-#: src/window.blp:237 src/game_logic/modes.py:73
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:31 src/window.blp:103
+#: src/window.blp:244 src/game_logic/modes.py:73
 msgid "RPS-7"
 msgstr ""
 
@@ -290,18 +290,16 @@ msgid ""
 "'classic' for Rock-Paper-Scissors"
 msgstr ""
 
-#. credits and inspirations shown in the About dialog
-#: src/main.py:60
-msgid ""
-"A modern take on the RPSLS variant created by Sam Kass and Karen Bryla. "
-"Inspired by the work of ByteSeb.\n"
-"\n"
-"Special thanks to David C. Lovelace for the additional game variants."
+#: src/main.py:65
+msgid "translator-credits"
 msgstr ""
 
-#. set translator credits from the .po file
 #: src/main.py:67
-msgid "translator-credits"
+msgid "Game Variant Creators"
+msgstr ""
+
+#: src/main.py:71
+msgid "Original Inspiration"
 msgstr ""
 
 #: src/window.blp:32
@@ -316,31 +314,31 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: src/window.blp:76
+#: src/window.blp:77
 msgid "Welcome!"
 msgstr ""
 
-#: src/window.blp:95 src/window.blp:231 src/game_logic/modes.py:54
+#: src/window.blp:96 src/window.blp:238 src/game_logic/modes.py:54
 msgid "Classic"
 msgstr ""
 
-#: src/window.blp:113
+#: src/window.blp:114
 msgid "Results"
 msgstr ""
 
-#: src/window.blp:190 src/ui/shortcuts.py:41
+#: src/window.blp:197 src/ui/shortcuts.py:41
 msgid "Try Again"
 msgstr ""
 
-#: src/window.blp:206 src/ui/how_to_play.blp:5
+#: src/window.blp:213 src/ui/how_to_play.blp:5
 msgid "How to Play"
 msgstr ""
 
-#: src/window.blp:211
+#: src/window.blp:218
 msgid "Keyboard Shortcuts"
 msgstr ""
 
-#: src/window.blp:216
+#: src/window.blp:223
 msgid "About Duel!"
 msgstr ""
 
@@ -475,11 +473,11 @@ msgstr ""
 msgid "Air evaporates Water!"
 msgstr ""
 
-#: src/ui/how_to_play.blp:31
+#: src/ui/how_to_play.blp:32
 msgid "Move Interactions"
 msgstr ""
 
-#: src/ui/how_to_play.blp:32
+#: src/ui/how_to_play.blp:33
 msgid "Select a move to see which opponents it defeats and why."
 msgstr ""
 
@@ -509,18 +507,18 @@ msgstr ""
 msgid "Let's Play Rock-Paper-Scissors!"
 msgstr ""
 
-#: src/game_modes/classic_view.blp:36 src/game_modes/rps7_view.blp:43
-#: src/game_modes/rpsls_view.blp:38
+#: src/game_modes/classic_view.blp:37 src/game_modes/rps7_view.blp:44
+#: src/game_modes/rpsls_view.blp:39
 msgid "Rock!"
 msgstr ""
 
-#: src/game_modes/classic_view.blp:50 src/game_modes/rps7_view.blp:58
-#: src/game_modes/rpsls_view.blp:52
+#: src/game_modes/classic_view.blp:52 src/game_modes/rps7_view.blp:60
+#: src/game_modes/rpsls_view.blp:54
 msgid "Paper!"
 msgstr ""
 
-#: src/game_modes/classic_view.blp:64 src/game_modes/rps7_view.blp:78
-#: src/game_modes/rpsls_view.blp:66
+#: src/game_modes/classic_view.blp:67 src/game_modes/rps7_view.blp:81
+#: src/game_modes/rpsls_view.blp:69
 msgid "Scissors!"
 msgstr ""
 
@@ -547,19 +545,19 @@ msgstr ""
 msgid "Let's Play Rock-Paper-Scissors-Sponge-Fire-Water-Air!"
 msgstr ""
 
-#: src/game_modes/rps7_view.blp:93
+#: src/game_modes/rps7_view.blp:97
 msgid "Sponge!"
 msgstr ""
 
-#: src/game_modes/rps7_view.blp:113
+#: src/game_modes/rps7_view.blp:118
 msgid "Fire!"
 msgstr ""
 
-#: src/game_modes/rps7_view.blp:127
+#: src/game_modes/rps7_view.blp:133
 msgid "Water!"
 msgstr ""
 
-#: src/game_modes/rps7_view.blp:147
+#: src/game_modes/rps7_view.blp:154
 msgid "Air!"
 msgstr ""
 
@@ -587,11 +585,11 @@ msgstr ""
 msgid "Let's Play Rock-Paper-Scissors-Lizard-Spock!"
 msgstr ""
 
-#: src/game_modes/rpsls_view.blp:80
+#: src/game_modes/rpsls_view.blp:84
 msgid "Lizard!"
 msgstr ""
 
-#: src/game_modes/rpsls_view.blp:94
+#: src/game_modes/rpsls_view.blp:99
 msgid "Spock!"
 msgstr ""
 
