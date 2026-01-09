@@ -19,11 +19,18 @@ blueprints = custom_target('blueprints',
   command: [find_program('blueprint-compiler'), 'batch-compile', '@OUTPUT@', '@CURRENT_SOURCE_DIR@', '@INPUT@'],
 )
 
+metainfo_dir = meson.project_build_root() / 'data'
+
 gnome.compile_resources('duelpy',
   'duelpy.gresource.xml',
   gresource_bundle: true,
   install: true,
   install_dir: pkgdatadir,
+  source_dir: [
+    '.',
+    metainfo_dir,
+    meson.current_source_dir(),
+  ],
   dependencies: blueprints,
 )
 

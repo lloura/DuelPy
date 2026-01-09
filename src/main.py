@@ -50,23 +50,29 @@ class DuelpyApplication(Adw.Application):
 
     def on_about_action(self, *args):
         """Callback for the app.about action."""
-        about = Adw.AboutDialog(
-            application_name='Duel!',
-            application_icon='io.github.lloura.DuelPy',
-            developer_name='Lucas Loura',
-            version='0.3.2',
-            copyright='© 2025 Lucas Loura',
-            # credits and inspirations shown in the About dialog
-            comments=_("A modern take on the RPSLS variant created by Sam Kass and Karen Bryla. Inspired by the work of ByteSeb.\n\nSpecial thanks to David C. Lovelace for the additional game variants."),
-            website='https://github.com/lloura/DuelPy',
-            issue_url='https://github.com/lloura/DuelPy/issues',
-            license_type=Gtk.License.GPL_3_0
-        )
+        resource_path = "/io/github/lloura/DuelPy/io.github.lloura.DuelPy.metainfo.xml"
+        about = Adw.AboutDialog.new_from_appdata(resource_path, "0.3.2")
 
-        # set translator credits from the .po file
-        about.set_translator_credits(_('translator-credits'))
+        about.set_copyright("© 2025-2026 Lucas Loura")
+        about.set_license_type(Gtk.License.GPL_3_0)
 
-        # present the dialog over the active window
+        about.set_developers([
+            ("Lucas Loura https://github.com/lloura")
+        ])
+        about.set_designers([
+            ("Lucas Loura https://github.com/lloura")
+        ])
+        about.set_translator_credits(_("translator-credits"))
+
+        about.add_acknowledgement_section(_("Game Variant Creators"), [
+            "Sam Kass & Karen Bryla https://www.samkass.com/theories/RPSSL.html",
+            "David C. Lovelace https://umop.com/rps.htm"
+        ])
+        about.add_acknowledgement_section(_("Original Inspiration"), [
+            "ByteSeb's Duel https://github.com/byteseb/Duel",
+            "ByteSeb's Tutorial Video https://www.youtube.com/watch?v=WtvObZHhdf0"
+        ])
+
         about.present(self.props.active_window)
 
     def create_action(self, name, callback, shortcuts=None):
