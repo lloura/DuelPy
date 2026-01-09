@@ -1,6 +1,6 @@
 # ui/game_modes/Rps7View.py
 #
-# Copyright 2025 Lucas Loura
+# Copyright 2025-2026 Lucas Loura
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
