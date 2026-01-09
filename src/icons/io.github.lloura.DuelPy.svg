@@ -10,7 +10,7 @@
    id="svg11300"
    sodipodi:version="0.32"
    inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
-   sodipodi:docname="com.domain.Application.svg"
+   sodipodi:docname="io.github.lloura.DuelPy.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new"
@@ -4386,9 +4386,9 @@
      borderopacity="0.25490196"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.313709"
-     inkscape:cx="201.56962"
-     inkscape:cy="17.279922"
+     inkscape:zoom="2.0000001"
+     inkscape:cx="74.249997"
+     inkscape:cy="135.24999"
      inkscape:current-layer="layer9"
      showgrid="false"
      inkscape:grid-bbox="true"
@@ -5917,7 +5917,7 @@
            x="39.130371"
            y="201.89459" /></text><g
          id="path1-2-5"
-         style="display:none;opacity:1;fill:#222222;fill-opacity:1;enable-background:new"
+         style="display:inline;opacity:1;fill:#222222;fill-opacity:1;enable-background:new"
          transform="matrix(0.99685115,0,0,1,0.503816,0)"
          sodipodi:insensitive="true"><path
            style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:#222222;fill-opacity:1;fill-rule:evenodd;stroke-linejoin:round;enable-background:new;stop-color:#000000;stop-opacity:1"
@@ -5953,7 +5953,7 @@
            id="path34" /></g><g
          id="g453"
          transform="translate(-24,-158.93403)"
-         style="display:none"
+         style="display:inline"
          sodipodi:insensitive="true"><g
            id="g10-8-5"
            transform="matrix(0.7499974,0,0,0.7499974,38.760418,185.75051)"
