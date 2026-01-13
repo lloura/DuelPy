@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: duelpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-09 12:42-0300\n"
+"POT-Creation-Date: 2026-01-13 18:02-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,8 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: data/io.github.lloura.DuelPy.desktop.in:2
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:6 src/window.blp:5
+#: data/io.github.lloura.DuelPy.desktop.in:2 src/window.blp:5
 msgid "Duel!"
 msgstr ""
 
@@ -65,10 +64,6 @@ msgstr ""
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:21
 msgid "Full keyboard support for fast-paced gameplay"
-msgstr ""
-
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:26
-msgid "Lucas Loura"
 msgstr ""
 
 #: data/io.github.lloura.DuelPy.metainfo.xml.in:30 src/window.blp:35

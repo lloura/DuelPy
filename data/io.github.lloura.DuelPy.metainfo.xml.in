@@ -3,7 +3,7 @@
   <id>io.github.lloura.DuelPy</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
-  <name>Duel!</name>
+  <name translate="no">Duel!</name>
   <summary>Epic hand-game duels</summary>
 
   <description>
@@ -23,7 +23,7 @@
   </description>
 
   <developer id="io.github.lloura">
-    <name>Lucas Loura</name>
+    <name translate="no">Lucas Loura</name>
   </developer>
 
   <keywords>
