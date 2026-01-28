@@ -2,12 +2,12 @@
 <schemalist gettext-domain="duelpy">
   <schema id="io.github.lloura.DuelPy" path="/io/github/lloura/DuelPy/">
     <key name="window-width" type="i">
-      <default>600</default>
+      <default>400</default>
       <summary>Window width</summary>
       <description>The width of the application window</description>
     </key>
     <key name="window-height" type="i">
-      <default>400</default>
+      <default>500</default>
       <summary>Window height</summary>
       <description>The height of the application window</description>
     </key>
