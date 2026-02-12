@@ -1,0 +1,596 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the duelpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: duelpy\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-13 18:02-0300\n"
+"PO-Revision-Date: 2026-02-12 21:40+0700\n"
+"Last-Translator: Loc Huynh <https://github.com/hthienloc>\n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#: data/io.github.lloura.DuelPy.desktop.in:2 src/window.blp:5
+msgid "Duel!"
+msgstr "Duel!"
+
+#: data/io.github.lloura.DuelPy.desktop.in:3
+msgid "Play Rock, Paper, Scissors, Lizard, Spock!"
+msgstr "Chơi Rock, Paper, Scissors, Lizard, Spock!"
+
+#: data/io.github.lloura.DuelPy.desktop.in:9
+msgid "game;rock;paper;scissors;lizard;spock;rpsls;"
+msgstr "game;rock;paper;scissors;lizard;spock;rpsls;"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:7
+msgid "Epic hand-game duels"
+msgstr "Trận đấu tay đôi hoành tráng"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:10
+msgid "Duel! is a modern take on hand-game classics. Challenge the computer in the famous Rock, Paper, Scissors, Lizard, Spock variant or try the expanded RPS-7 mode."
+msgstr "Duel! là một trò chơi cổ điển hiện đại trên tay. Thử thách máy tính trong biến thể Rock, Paper, Scissors, Lizard, Spock nổi tiếng hoặc thử chế độ RPS-7 mở rộng."
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:13
+msgid "Enjoy a clean and intuitive experience designed to feel natural on your desktop. Master all moves and see if you can outsmart the machine."
+msgstr ""
+"Tận hưởng trải nghiệm rõ ràng và trực quan được thiết kế để mang lại cảm giác tự nhiên trên máy tính để bàn của bạn. Nắm vững mọi động tác và xem liệu bạn có thể vượt qua máy hay không."
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:16
+msgid "Features:"
+msgstr "Tính năng:"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:18
+msgid "Multiple game modes including Classic, RPSLS, and RPS-7"
+msgstr "Nhiều chế độ trò chơi bao gồm Cổ điển, RPSLS và RPS-7"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:19
+msgid "Visual guides for every game variant"
+msgstr "Hướng dẫn trực quan cho mọi biến thể trò chơi"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:20
+msgid "Adaptive interface that works on any screen size"
+msgstr "Giao diện thích ứng hoạt động trên mọi kích thước màn hình"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:21
+msgid "Full keyboard support for fast-paced gameplay"
+msgstr "Hỗ trợ bàn phím đầy đủ để chơi trò chơi có nhịp độ nhanh"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:30 src/window.blp:35 src/window.blp:89 src/window.blp:232 src/game_logic/modes.py:26
+msgid "RPSLS"
+msgstr "RPSLS"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:31 src/window.blp:103 src/window.blp:244 src/game_logic/modes.py:73
+msgid "RPS-7"
+msgstr "RPS-7"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:32
+msgid "GTK4"
+msgstr "GTK4"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:33
+msgid "Libadwaita"
+msgstr "Libadwaita"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:34
+msgid "Python"
+msgstr "Python"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:54
+msgid "Main welcome screen"
+msgstr "Màn hình chào mừng chính"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:58
+msgid "Game results showing Paper vs Spock"
+msgstr "Kết quả trò chơi hiển thị Paper vs Spock"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:62
+msgid "Visual guide for game rules"
+msgstr "Hướng dẫn trực quan về luật chơi"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:66
+msgid "Expanded RPS-7 game mode"
+msgstr "Chế độ trò chơi RPS-7 mở rộng"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:70
+msgid "Game results showing Fire vs Air"
+msgstr "Kết quả trò chơi hiển thị Fire vs Air"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:77
+msgid "Accessibility and Architecture Overhaul"
+msgstr "Đại tu kiến ​​trúc và khả năng truy cập"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:79
+msgid "Implemented accessible roles for all UI elements to support assistive technologies"
+msgstr "Đã triển khai các vai trò có thể truy cập cho tất cả các thành phần giao diện người dùng để hỗ trợ các công nghệ hỗ trợ"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:80
+msgid "Modularized the project structure by splitting widgets into separate files"
+msgstr "Mô-đun hóa cấu trúc dự án bằng cách chia widgets thành các tệp riêng biệt"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:81
+msgid "Enhanced adaptive layout with new breakpoints and scrollable window support"
+msgstr "Bố cục thích ứng nâng cao với các điểm dừng mới và hỗ trợ cửa sổ có thể cuộn"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:82
+msgid "Updated \"About\" page design following GNOME 49 guidelines"
+msgstr "Đã cập nhật thiết kế trang \"Giới thiệu\" theo hướng dẫn GNOME 49"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:88
+msgid "Quality Improvements and Metadata Polish"
+msgstr "Cải tiến chất lượng và đánh bóng siêu dữ liệu"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:90
+msgid "Refined application description and summary for better clarity"
+msgstr "Mô tả và tóm tắt ứng dụng được tinh chỉnh để rõ ràng hơn"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:91
+msgid "Updated screenshots to better showcase the interface"
+msgstr "Đã cập nhật ảnh chụp màn hình để hiển thị giao diện tốt hơn"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:92
+msgid "Added metadata keywords to make the app easier to find"
+msgstr "Đã thêm từ khóa siêu dữ liệu để giúp tìm ứng dụng dễ dàng hơn"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:98
+msgid "Introducing RPS-7"
+msgstr "Giới thiệu RPS-7"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:100
+msgid "Implemented new RPS-7 game mode (Rock-Paper-Scissors-Sponge-Fire-Water-Air)"
+msgstr "Đã triển khai chế độ trò chơi RPS-7 mới (Rock-Paper-Scissors-Sponge-Fire-Water-Air)"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:101
+msgid "Added persistent window state, remembering size and maximized state between sessions"
+msgstr "Đã thêm trạng thái cửa sổ liên tục, ghi nhớ kích thước và trạng thái tối đa giữa các phiên"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:102
+msgid "Overhauled the localization system for better translation coverage across all pages"
+msgstr "Đại tu hệ thống bản địa hóa để có phạm vi dịch tốt hơn trên tất cả các trang"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:103
+msgid "Refreshed application and game icons"
+msgstr "Các biểu tượng ứng dụng và trò chơi được làm mới"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:109
+msgid "How to Play Guide and Refactoring"
+msgstr "Hướng dẫn cách chơi và tái cấu trúc"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:111
+msgid "Introduced a new \"How to Play\" section with visual guides for each game mode"
+msgstr "Đã giới thiệu phần \"Cách chơi\" mới với hướng dẫn trực quan cho từng chế độ trò chơi"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:112
+msgid "Significant internal restructuring and code refactoring for better maintainability"
+msgstr "Tái cơ cấu nội bộ và tái cấu trúc mã đáng kể để có khả năng bảo trì tốt hơn"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:113
+msgid "Added new keyboard shortcuts and updated the shortcuts window"
+msgstr "Đã thêm phím tắt mới và cập nhật cửa sổ phím tắt"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:119
+msgid "Credits and Visual Polish"
+msgstr "Ghi công và Hình ảnh Ba Lan"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:121
+msgid "Redesigned the \"About\" window to provide a more modern experience"
+msgstr "Thiết kế lại cửa sổ \"Giới thiệu\" để mang lại trải nghiệm hiện đại hơn"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:122
+msgid "Added dedicated credits for game variant creators: Sam Kass, Karen Bryla and David C. Lovelace"
+msgstr "Đã thêm tín dụng dành riêng cho người tạo biến thể trò chơi: Sam Kass, Karen Bryla và David C. Lovelace"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:128
+msgid "Introducing Game Modes"
+msgstr "Giới thiệu chế độ game"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:130
+msgid "Added Classic game mode (Rock, Paper, Scissors)"
+msgstr "Đã thêm chế độ trò chơi cổ điển (Rock, Paper, Scissors)"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:131
+msgid "Implemented game mode persistence using GSettings"
+msgstr "Đã triển khai tính bền vững của chế độ trò chơi bằng GSSettings"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:132
+msgid "New mode selector in the header bar"
+msgstr "Bộ chọn chế độ mới trong thanh tiêu đề"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:138
+msgid "Implemented Internationalization Support"
+msgstr "Triển khai hỗ trợ quốc tế hóa"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:140
+msgid "Added support for internationalization (i18n) using gettext"
+msgstr "Đã thêm hỗ trợ quốc tế hóa (i18n) bằng gettext"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:141
+msgid "Added Brazilian Portuguese (pt_BR) translation"
+msgstr "Đã thêm bản dịch tiếng Bồ Đào Nha Brazil (pt_BR)"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:142
+msgid "Keyboard shortcuts (1-5) are now triggerable via the keypad (Numpad)"
+msgstr "Các phím tắt (1-5) hiện có thể được kích hoạt thông qua bàn phím (Numpad)"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:148
+msgid "Updated Runtime and Keybindings"
+msgstr "Đã cập nhật thời gian chạy và liên kết phím"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:150
+msgid "Added keyboard shortcuts for game actions and a shortcuts window"
+msgstr "Đã thêm phím tắt cho các thao tác trong trò chơi và cửa sổ phím tắt"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:151
+msgid "Updated the Flatpak runtime to GNOME SDK 49"
+msgstr "Đã cập nhật thời gian chạy Flatpak lên GNOME SDK 49"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:152
+msgid "Slightly updated the application icon"
+msgstr "Cập nhật nhẹ biểu tượng ứng dụng"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:158
+msgid "Initial release"
+msgstr "Bản phát hành đầu tiên"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:160
+msgid "Rock, Paper, Scissors, Lizard, Spock gameplay"
+msgstr "Gameplay của Rock, Paper, Scissors, Lizard, Spock"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:161
+msgid "Modern GTK4/Libadwaita interface"
+msgstr "Giao diện GTK4/Libadwaita hiện đại"
+
+#: data/io.github.lloura.DuelPy.gschema.xml:6
+msgid "Window width"
+msgstr "Chiều rộng cửa sổ"
+
+#: data/io.github.lloura.DuelPy.gschema.xml:7
+msgid "The width of the application window"
+msgstr "Chiều rộng của cửa sổ ứng dụng"
+
+#: data/io.github.lloura.DuelPy.gschema.xml:11
+msgid "Window height"
+msgstr "Chiều cao cửa sổ"
+
+#: data/io.github.lloura.DuelPy.gschema.xml:12
+msgid "The height of the application window"
+msgstr "Chiều cao của cửa sổ ứng dụng"
+
+#: data/io.github.lloura.DuelPy.gschema.xml:16
+msgid "Window maximized state"
+msgstr "Trạng thái tối đa hóa cửa sổ"
+
+#: data/io.github.lloura.DuelPy.gschema.xml:17
+msgid "Whether the window is maximized"
+msgstr "Cửa sổ có được phóng to hay không"
+
+#: data/io.github.lloura.DuelPy.gschema.xml:21
+msgid "Window fullscreen state"
+msgstr "Trạng thái toàn màn hình của cửa sổ"
+
+#: data/io.github.lloura.DuelPy.gschema.xml:22
+msgid "Whether the window is fullscreen"
+msgstr "Cửa sổ có ở chế độ toàn màn hình không"
+
+#: data/io.github.lloura.DuelPy.gschema.xml:26
+msgid "Game mode"
+msgstr "Chế độ trò chơi"
+
+#: data/io.github.lloura.DuelPy.gschema.xml:27
+msgid "The current game mode: 'rpsls' for Rock-Paper-Scissors-Lizard-Spock or 'classic' for Rock-Paper-Scissors"
+msgstr "Chế độ trò chơi hiện tại: 'rpsls' cho Rock-Paper-Scissors-Lizard-Spock hoặc 'classic' cho Rock-Paper-Scissors"
+
+#: src/main.py:65
+msgid "translator-credits"
+msgstr ""
+"Vietnam Linux L10n <https://github.com/linux-l10n-vi>\n"
+"Loc Huynh <https://github.com/hthienloc>"
+
+#: src/main.py:67
+msgid "Game Variant Creators"
+msgstr "Người tạo biến thể trò chơi"
+
+#: src/main.py:71
+msgid "Original Inspiration"
+msgstr "Cảm hứng gốc"
+
+#: src/window.blp:32
+msgid "Mode Selection"
+msgstr "Lựa chọn chế độ"
+
+#: src/window.blp:44
+msgid "Main Menu"
+msgstr "Menu chính"
+
+#: src/window.blp:51
+msgid "Home"
+msgstr "Trang chủ"
+
+#: src/window.blp:77
+msgid "Welcome!"
+msgstr "Chào mừng!"
+
+#: src/window.blp:96 src/window.blp:238 src/game_logic/modes.py:54
+msgid "Classic"
+msgstr "Cổ điển"
+
+#: src/window.blp:114
+msgid "Results"
+msgstr "Kết quả"
+
+#: src/window.blp:197 src/ui/shortcuts.py:41
+msgid "Try Again"
+msgstr "Thử lại"
+
+#: src/window.blp:213 src/ui/how_to_play.blp:5
+msgid "How to Play"
+msgstr "Cách chơi"
+
+#: src/window.blp:218
+msgid "Keyboard Shortcuts"
+msgstr "Phím tắt"
+
+#: src/window.blp:223
+msgid "About Duel!"
+msgstr "Giới thiệu Duel!"
+
+#: src/window.py:160
+msgid "Draw!"
+msgstr "Hòa!"
+
+#: src/window.py:161
+msgid "it's a tie!"
+msgstr "đó là một trận hòa!"
+
+#: src/window.py:163
+msgid "You Won!"
+msgstr "Bạn đã thắng!"
+
+#: src/window.py:166
+msgid "You Lost!"
+msgstr "Bạn đã thua!"
+
+#: src/game_logic/modes.py:38 src/game_logic/modes.py:64 src/game_logic/modes.py:88
+msgid "Rock breaks Scissors!"
+msgstr "Búa phá Kéo!"
+
+#: src/game_logic/modes.py:39
+msgid "Rock crushes Lizard!"
+msgstr "Đá nghiền nát Thằn lằn!"
+
+#: src/game_logic/modes.py:40 src/game_logic/modes.py:65 src/game_logic/modes.py:91
+msgid "Paper covers Rock!"
+msgstr "Giấy bao Đá!"
+
+#: src/game_logic/modes.py:41
+msgid "Paper disproves Spock!"
+msgstr "Giấy bác bỏ Spock!"
+
+#: src/game_logic/modes.py:42 src/game_logic/modes.py:66 src/game_logic/modes.py:94
+msgid "Scissors cuts Paper!"
+msgstr "Kéo cắt Giấy!"
+
+#: src/game_logic/modes.py:43
+msgid "Scissors decapitates Lizard!"
+msgstr "Kéo chặt đầu Thằn lằn!"
+
+#: src/game_logic/modes.py:44
+msgid "Lizard poisons Spock!"
+msgstr "Thằn lằn đầu độc Spock!"
+
+#: src/game_logic/modes.py:45
+msgid "Lizard eats Paper!"
+msgstr "Thằn lằn ăn Giấy!"
+
+#: src/game_logic/modes.py:46
+msgid "Spock breaks Scissors!"
+msgstr "Spock bẻ gãy Kéo!"
+
+#: src/game_logic/modes.py:47
+msgid "Spock vaporizes Rock!"
+msgstr "Spock làm bốc hơi Đá!"
+
+#: src/game_logic/modes.py:87
+msgid "Rock pounds out Fire!"
+msgstr "Đá dập Lửa!"
+
+#: src/game_logic/modes.py:89
+msgid "Rock crushes Sponge!"
+msgstr "Đá nghiền nát Bọt biển!"
+
+#: src/game_logic/modes.py:90
+msgid "Paper fans Air!"
+msgstr "Giấy quạt Gió!"
+
+#: src/game_logic/modes.py:92
+msgid "Paper floats on Water!"
+msgstr "Giấy nổi trên Nước!"
+
+#: src/game_logic/modes.py:93
+msgid "Scissors swishes through Air!"
+msgstr "Kéo lướt qua Gió!"
+
+#: src/game_logic/modes.py:95
+msgid "Scissors cuts Sponge!"
+msgstr "Kéo cắt Bọt biển!"
+
+#: src/game_logic/modes.py:96
+msgid "Sponge soaks Paper!"
+msgstr "Giấy thấm Bọt biển!"
+
+#: src/game_logic/modes.py:97
+msgid "Sponge uses Air pockets!"
+msgstr "Bọt biển sử dụng túi Khí!"
+
+#: src/game_logic/modes.py:98
+msgid "Sponge absorbs Water!"
+msgstr "Bọt biển hút Nước!"
+
+#: src/game_logic/modes.py:99
+msgid "Fire melts Scissors!"
+msgstr "Lửa làm tan chảy Kéo!"
+
+#: src/game_logic/modes.py:100
+msgid "Fire burns Paper!"
+msgstr "Lửa đốt Giấy!"
+
+#: src/game_logic/modes.py:101
+msgid "Fire burns Sponge!"
+msgstr "Lửa đốt Bọt biển!"
+
+#: src/game_logic/modes.py:102
+msgid "Water erodes Rock!"
+msgstr "Nước làm mòn Đá!"
+
+#: src/game_logic/modes.py:103
+msgid "Water puts out Fire!"
+msgstr "Nước dập Lửa!"
+
+#: src/game_logic/modes.py:104
+msgid "Water rusts Scissors!"
+msgstr "Nước rỉ sét Kéo!"
+
+#: src/game_logic/modes.py:105
+msgid "Air blows out Fire!"
+msgstr "Gió thổi ra Lửa!"
+
+#: src/game_logic/modes.py:106
+msgid "Air erodes Rock!"
+msgstr "Gió ăn mòn Đá!"
+
+#: src/game_logic/modes.py:107
+msgid "Air evaporates Water!"
+msgstr "Gió làm bay hơi Nước!"
+
+#: src/ui/how_to_play.blp:32
+msgid "Move Interactions"
+msgstr "Tương tác di chuyển"
+
+#: src/ui/how_to_play.blp:33
+msgid "Select a move to see which opponents it defeats and why."
+msgstr "Chọn một nước đi để xem đối thủ nào nó đánh bại và tại sao."
+
+#. Gameplay Section
+#: src/ui/shortcuts.py:34
+msgid "Gameplay"
+msgstr "Cách chơi"
+
+#. Game Modes Section
+#: src/ui/shortcuts.py:48
+msgid "Game Mode"
+msgstr "Chế độ trò chơi"
+
+#: src/ui/shortcuts.py:50
+msgid "Switch to RPSLS Mode"
+msgstr "Chuyển sang Chế độ RPSLS"
+
+#: src/ui/shortcuts.py:51
+msgid "Switch to Classic Mode"
+msgstr "Chuyển sang Chế độ cổ điển"
+
+#: src/ui/shortcuts.py:52
+msgid "Switch to RPS-7 Mode"
+msgstr "Chuyển sang Chế độ RPS-7"
+
+#: src/game_modes/classic_view.blp:9
+msgid "Let's Play Rock-Paper-Scissors!"
+msgstr "Cùng chơi trò oẳn tù tì!"
+
+#: src/game_modes/classic_view.blp:37 src/game_modes/rps7_view.blp:44 src/game_modes/rpsls_view.blp:39
+msgid "Rock!"
+msgstr "Đá!"
+
+#: src/game_modes/classic_view.blp:52 src/game_modes/rps7_view.blp:60 src/game_modes/rpsls_view.blp:54
+msgid "Paper!"
+msgstr "Giấy!"
+
+#: src/game_modes/classic_view.blp:67 src/game_modes/rps7_view.blp:81 src/game_modes/rpsls_view.blp:69
+msgid "Scissors!"
+msgstr "Kéo!"
+
+#: src/game_modes/classic_view.py:32
+msgid "Classic Mode"
+msgstr "Chế độ cổ điển"
+
+#: src/game_modes/classic_view.py:34 src/game_modes/rps7_view.py:34 src/game_modes/rpsls_view.py:33
+msgid "Rock"
+msgstr "Đá"
+
+#: src/game_modes/classic_view.py:35 src/game_modes/rps7_view.py:35 src/game_modes/rpsls_view.py:34
+msgid "Paper"
+msgstr "Giấy"
+
+#: src/game_modes/classic_view.py:36 src/game_modes/rps7_view.py:36 src/game_modes/rpsls_view.py:35
+msgid "Scissors"
+msgstr "Kéo"
+
+#: src/game_modes/rps7_view.blp:11
+msgid "Let's Play Rock-Paper-Scissors-Sponge-Fire-Water-Air!"
+msgstr "Cùng chơi Rock-Paper-Scissors-Sponge-Fire-Water-Air!"
+
+#: src/game_modes/rps7_view.blp:97
+msgid "Sponge!"
+msgstr "Bọt biển!"
+
+#: src/game_modes/rps7_view.blp:118
+msgid "Fire!"
+msgstr "Lửa!"
+
+#: src/game_modes/rps7_view.blp:133
+msgid "Water!"
+msgstr "Nước!"
+
+#: src/game_modes/rps7_view.blp:154
+msgid "Air!"
+msgstr "Gió!"
+
+#: src/game_modes/rps7_view.py:32
+msgid "RPS-7 Mode"
+msgstr "Chế độ RPS-7"
+
+#: src/game_modes/rps7_view.py:37
+msgid "Sponge"
+msgstr "Bọt biển"
+
+#: src/game_modes/rps7_view.py:38
+msgid "Fire"
+msgstr "Cháy"
+
+#: src/game_modes/rps7_view.py:39
+msgid "Water"
+msgstr "Nước"
+
+#: src/game_modes/rps7_view.py:40
+msgid "Air"
+msgstr "Gió"
+
+#: src/game_modes/rpsls_view.blp:11
+msgid "Let's Play Rock-Paper-Scissors-Lizard-Spock!"
+msgstr "Cùng chơi Rock-Paper-Scissors-Lizard-Spock!"
+
+#: src/game_modes/rpsls_view.blp:84
+msgid "Lizard!"
+msgstr "Thằn lằn!"
+
+#: src/game_modes/rpsls_view.blp:99
+msgid "Spock!"
+msgstr "Spock!"
+
+#: src/game_modes/rpsls_view.py:31
+msgid "RPSLS Mode"
+msgstr "Chế độ RPSLS"
+
+#: src/game_modes/rpsls_view.py:36
+msgid "Lizard"
+msgstr "Thằn lằn"
+
+#: src/game_modes/rpsls_view.py:37
+msgid "Spock"
+msgstr "Spock"
