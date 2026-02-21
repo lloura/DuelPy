@@ -1,32 +1,28 @@
 .button_rock, .button_paper, .button_scissors,
 .button_lizard, .button_spock, .button_fire,
-.button_sponge, .button_air, .button_water {
+.button_sponge, .button_air, .button_water,
+.button_human, .button_gun {
     transition: all 200ms ease;
 }
 
 .button_rock { background-color: @blue_3; color: white; }
-.button_rock:hover { background-color: @blue_4; }
 
 .button_paper { background-color: @purple_2; color: white; }
-.button_paper:hover { background-color: @purple_3; }
 
 .button_scissors { background-color: @red_3; color: white; }
-.button_scissors:hover { background-color: @red_4; }
 
 .button_lizard { background-color: @orange_3; color: white; }
-.button_lizard:hover { background-color: @orange_4; }
 
 .button_spock { background-color: @green_4; color: white; }
-.button_spock:hover { background-color: @green_5; }
-
-.button_fire { background-color: @orange_4; color: white; }
-.button_fire:hover { background-color: @orange_5; }
 
 .button_sponge { background-color: @yellow_3; color: black; }
-.button_sponge:hover { background-color: @yellow_4; }
 
-.button_air { background-color: @light_3; color: black; }
-.button_air:hover { background-color: @light_4; }
+.button_fire { background-color: @orange_4; color: white; }
 
 .button_water { background-color: @blue_1; color: black; }
-.button_water:hover { background-color: @blue_2; }
+
+.button_air { background-color: @light_3; color: black; }
+
+.button_human { background-color: @yellow_4; color: black; }
+
+.button_gun { background-color: @dark_2; color: white; }
