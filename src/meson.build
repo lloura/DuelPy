@@ -14,6 +14,7 @@ blueprints = custom_target('blueprints',
     'game_modes/rpsls_view.blp',
     'game_modes/classic_view.blp',
     'game_modes/rps7_view.blp',
+    'game_modes/rps9_view.blp',
   ),
   output: '.',
   command: [find_program('blueprint-compiler'), 'batch-compile', '@OUTPUT@', '@CURRENT_SOURCE_DIR@', '@INPUT@'],
@@ -74,6 +75,7 @@ game_modes_sources = [
   'game_modes/rpsls_view.py',
   'game_modes/classic_view.py',
   'game_modes/rps7_view.py',
+  'game_modes/rps9_view.py',
 ]
 
 install_data(duelpy_sources, install_dir: moduledir)

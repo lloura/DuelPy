@@ -30,6 +30,7 @@ from .ui.how_to_play import HowToPlayDialog
 from .game_modes.rpsls_view import RpslsView
 from .game_modes.classic_view import ClassicView
 from .game_modes.rps7_view import Rps7View
+from .game_modes.rps9_view import Rps9View
 
 @Gtk.Template(resource_path='/io/github/lloura/DuelPy/window.ui')
 class DuelpyWindow(Adw.ApplicationWindow):
@@ -98,6 +99,7 @@ class DuelpyWindow(Adw.ApplicationWindow):
         app.set_accels_for_action("win.change-mode('rpsls')", ["<Ctrl><Shift>R"])
         app.set_accels_for_action("win.change-mode('classic')", ["<Ctrl><Shift>C"])
         app.set_accels_for_action("win.change-mode('rps7')", ["<Ctrl><Shift>S"])
+        app.set_accels_for_action("win.change-mode('rps9')", ["<Ctrl><Shift>N"])
 
     def create_action(self, name, callback, parameter=None, shortcuts=None):
         """helper to create SimpleActions quickly"""

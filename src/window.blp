@@ -90,6 +90,13 @@ template $DuelpyWindow: Adw.ApplicationWindow {
 
                 child: $Rps7View {};
               }
+
+              Adw.ViewStackPage {
+                name: "rps9";
+                title: _("RPS-9");
+
+                child: $Rps9View {};
+              }
             }
           };
         };
@@ -230,6 +237,12 @@ menu window_menu {
       label: _("RPS-7");
       action: "win.change-mode";
       target: "rps7";
+    }
+
+    item {
+      label: _("RPS-9");
+      action: "win.change-mode";
+      target: "rps9";
     }
   }
 }

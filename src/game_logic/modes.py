@@ -108,11 +108,70 @@ rps7_mode = GameMode(
     }
 )
 
+# --- rps9 mode ---
+rps9_mode = GameMode(
+    id="rps9",
+    name=_("RPS-9"),
+    icon="gun-symbolic",
+    diagram="diagram-rps9",
+    choices=["rock","paper","scissors","sponge","fire","water","air","human","gun"],
+    wins_map={
+        "rock": ["fire", "scissors", "sponge", "human"],
+        "paper": ["air", "rock", "water", "gun"],
+        "scissors": ["air", "paper", "sponge", "human"],
+        "sponge": ["paper", "air", "water", "gun"],
+        "fire": ["scissors", "paper", "sponge", "human"],
+        "water": ["rock", "fire", "scissors", "gun"],
+        "air": ["fire", "rock", "water", "gun"],
+        "human": ["paper", "sponge", "water", "air"],
+        "gun": ["rock", "scissors", "fire", "human"],
+    },
+    explanations={
+        ("rock", "fire"): _("Rock pounds out Fire!"),
+        ("rock", "scissors"): _("Rock breaks Scissors!"),
+        ("rock", "sponge"): _("Rock crushes Sponge!"),
+        ("rock", "human"): _("Rock crushes Human!"),
+        ("paper", "air"): _("Paper fans Air!"),
+        ("paper", "rock"): _("Paper covers Rock!"),
+        ("paper", "water"): _("Paper floats on Water!"),
+        ("paper", "gun"): _("Paper outlaws Gun!"),
+        ("scissors", "air"): _("Scissors swishes through Air!"),
+        ("scissors", "paper"): _("Scissors cuts Paper!"),
+        ("scissors", "sponge"): _("Scissors cuts Sponge!"),
+        ("scissors", "human"): _("Scissors cuts Human!"),
+        ("sponge", "paper"): _("Sponge soaks Paper!"),
+        ("sponge", "air"): _("Sponge uses Air pockets!"),
+        ("sponge", "water"): _("Sponge absorbs Water!"),
+        ("sponge", "gun"): _("Sponge cleans Gun!"),
+        ("fire", "scissors"): _("Fire melts Scissors!"),
+        ("fire", "paper"): _("Fire burns Paper!"),
+        ("fire", "sponge"): _("Fire burns Sponge!"),
+        ("fire", "human"): _("Fire burns Human!"),
+        ("water", "rock"): _("Water erodes Rock!"),
+        ("water", "fire"): _("Water puts out Fire!"),
+        ("water", "scissors"): _("Water rusts Scissors!"),
+        ("water", "gun"): _("Water rusts Gun!"),
+        ("air", "fire"): _("Air blows out Fire!"),
+        ("air", "rock"): _("Air erodes Rock!"),
+        ("air", "water"): _("Air evaporates Water!"),
+        ("air", "gun"): _("Air tarnishes Gun!"),
+        ("human", "sponge"): _("Human cleans with Sponge!"),
+        ("human", "paper"): _("Human writes on Paper!"),
+        ("human", "air"): _("Human breathes Air!"),
+        ("human", "water"): _("Human drinks Water!"),
+        ("gun", "rock"): _("Gun targets Rock!"),
+        ("gun", "fire"): _("Gun Fires!"),
+        ("gun", "scissors"): _("Gun outclasses Scissors!"),
+        ("gun", "human"): _("Gun shoots Human!"),
+    }
+)
+
 # central modes registry
 AVAILABLE_MODES = {
     "rpsls": rpsls_mode,
     "classic": classic_mode,
     "rps7": rps7_mode,
+    "rps9": rps9_mode,
 }
 
 # lists all possible moves
@@ -120,4 +179,5 @@ ALL_POSSIBLE_MOVES = [
     "rock", "paper", "scissors",
     "lizard", "spock",
     "sponge", "fire", "water", "air",
+    "human", "gun",
 ]

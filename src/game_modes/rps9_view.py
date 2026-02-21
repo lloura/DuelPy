@@ -1,4 +1,4 @@
-# ui/game_modes/Rps7View.py
+# ui/game_modes/Rps9View.py
 #
 # Copyright 2025-2026 Lucas Loura
 #
@@ -20,23 +20,25 @@
 from gi.repository import Gtk, Adw
 from ..ui.shortcuts import ShortcutManager
 
-@Gtk.Template(resource_path='/io/github/lloura/DuelPy/game_modes/rps7_view.ui')
-class Rps7View(Gtk.Box):
-    __gtype_name__ = 'Rps7View'
+@Gtk.Template(resource_path='/io/github/lloura/DuelPy/game_modes/rps9_view.ui')
+class Rps9View(Gtk.Box):
+    __gtype_name__ = 'Rps9View'
 
     from . import _
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.shortcuts_dialog = ShortcutManager(
-            title=_("RPS-7 Mode"),
+            title=_("RPS-9 Mode"),
             moves=[
                 (_("Rock"), "1", "win.rock"),
-                (_("Paper"), "2", "win.paper"),
+                (_("Paper"), "5", "win.paper"),
                 (_("Scissors"), "3", "win.scissors"),
                 (_("Sponge"), "4", "win.sponge"),
                 (_("Fire"), "5", "win.fire"),
                 (_("Water"), "6", "win.water"),
                 (_("Air"), "7", "win.air"),
+                (_("Human"), "8", "win.human"),
+                (_("Gun"), "9", "win.gun"),
             ]
         )

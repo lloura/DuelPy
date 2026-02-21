@@ -50,6 +50,7 @@ class ShortcutManager:
             (_("Switch to RPSLS Mode"), "<Ctrl><Shift>R", "rpsls"),
             (_("Switch to Classic Mode"), "<Ctrl><Shift>C", "classic"),
             (_("Switch to RPS-7 Mode"), "<Ctrl><Shift>S", "rps7"),
+            (_("Switch to RPS-9 Mode"), "<Ctrl><Shift>S", "rps9"),
         ]
 
         for label, accel, mode_id in modes:

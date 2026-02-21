@@ -1,0 +1,197 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $Rps9View: Gtk.Box {
+  orientation: vertical;
+  spacing: 12;
+  margin-start: 16;
+  margin-end: 16;
+
+  Gtk.Label {
+    label: _("Let's Play Rock-Paper-Scissors-Sponge-Fire-Water-Air-Human-Gun!");
+    halign: center;
+    wrap: true;
+    justify: center;
+    margin-bottom: 16;
+
+    styles [
+      "description",
+    ]
+  }
+
+  Adw.Clamp {
+    maximum-size: 375;
+
+    Gtk.Box {
+      orientation: vertical;
+      spacing: 8;
+
+      Gtk.Box {
+        spacing: 8;
+        homogeneous: true;
+
+        Gtk.Button {
+          action-name: "win.rock";
+          hexpand: true;
+          accessible-role: button;
+
+          styles [
+            "opaque",
+            "button_rock",
+          ]
+
+          child: Adw.ButtonContent {
+            label: _("Rock!");
+            icon-name: "rock-symbolic";
+          };
+        }
+
+        Gtk.Button {
+          action-name: "win.paper";
+          hexpand: true;
+          accessible-role: button;
+
+          styles [
+            "opaque",
+            "button_paper",
+          ]
+
+          child: Adw.ButtonContent {
+            label: _("Paper!");
+            icon-name: "paper-symbolic";
+          };
+        }
+      }
+
+      Gtk.Box {
+        spacing: 8;
+        homogeneous: true;
+
+        Gtk.Button {
+          action-name: "win.scissors";
+          hexpand: true;
+          accessible-role: button;
+
+          styles [
+            "opaque",
+            "button_scissors",
+          ]
+
+          child: Adw.ButtonContent {
+            label: _("Scissors!");
+            icon-name: "scissors-symbolic";
+          };
+        }
+
+        Gtk.Button {
+          action-name: "win.sponge";
+          hexpand: true;
+          accessible-role: button;
+
+          styles [
+            "opaque",
+            "button_sponge",
+          ]
+
+          child: Adw.ButtonContent {
+            label: _("Sponge!");
+            icon-name: "sponge-symbolic";
+          };
+        }
+      }
+
+      Gtk.Box {
+        spacing: 8;
+        homogeneous: true;
+
+        Gtk.Button {
+          action-name: "win.fire";
+          hexpand: true;
+          accessible-role: button;
+
+          styles [
+            "opaque",
+            "button_fire",
+          ]
+
+          child: Adw.ButtonContent {
+            label: _("Fire!");
+            icon-name: "fire-symbolic";
+          };
+        }
+
+        Gtk.Button {
+          action-name: "win.water";
+          accessible-role: button;
+
+          styles [
+            "opaque",
+            "button_water",
+          ]
+
+          child: Adw.ButtonContent {
+            label: _("Water!");
+            icon-name: "water-symbolic";
+          };
+        }
+      }
+
+      Gtk.Box {
+        spacing: 8;
+        homogeneous: true;
+
+        Gtk.Button {
+          action-name: "win.air";
+          hexpand: true;
+          accessible-role: button;
+
+          styles [
+            "opaque",
+            "button_air",
+          ]
+
+          child: Adw.ButtonContent {
+            label: _("Air!");
+            icon-name: "air-symbolic";
+          };
+        }
+
+        Gtk.Button {
+          action-name: "win.human";
+          accessible-role: button;
+
+          styles [
+            "opaque",
+            "button_human",
+          ]
+
+          child: Adw.ButtonContent {
+            label: _("Human!");
+            icon-name: "human-symbolic";
+          };
+        }
+      }
+
+      Gtk.Box {
+        spacing: 8;
+        halign: center;
+
+        Gtk.Button {
+          action-name: "win.gun";
+          width-request: 165;
+          accessible-role: button;
+
+          styles [
+            "opaque",
+            "button_gun",
+          ]
+
+          child: Adw.ButtonContent {
+            label: _("Gun!");
+            icon-name: "gun-symbolic";
+          };
+        }
+      }
+    }
+  }
+}
