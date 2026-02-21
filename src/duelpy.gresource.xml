@@ -13,6 +13,8 @@
 
     <file preprocess="xml-stripblanks" alias="icons/air.svg">icons/scalable/air.svg</file>
     <file preprocess="xml-stripblanks" alias="icons/fire.svg">icons/scalable/fire.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/gun.svg">icons/scalable/gun.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/human.svg">icons/scalable/human.svg</file>
     <file preprocess="xml-stripblanks" alias="icons/lizard.svg">icons/scalable/lizard.svg</file>
     <file preprocess="xml-stripblanks" alias="icons/paper.svg">icons/scalable/paper.svg</file>
     <file preprocess="xml-stripblanks" alias="icons/rock.svg">icons/scalable/rock.svg</file>
