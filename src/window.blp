@@ -6,18 +6,6 @@ template $DuelpyWindow: Adw.ApplicationWindow {
   width-request: 360;
   height-request: 550;
 
-  Adw.Breakpoint {
-    condition ("max-width: 400px")
-
-    setters {
-      img_welcome.pixel-size: 140;
-      img_player_choice.pixel-size: 140;
-      img_computer_choice.pixel-size: 140;
-      results_main_box.margin-top: 24;
-      results_main_box.margin-bottom: 24;
-    }
-  }
-
   Adw.ToolbarView {
     [top]
     Adw.HeaderBar {
@@ -63,7 +51,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
 
             Gtk.Image img_welcome {
               icon-name: "welcome";
-              pixel-size: 160;
+              pixel-size: 124;
               accessible-role: presentation;
 
               styles [
@@ -126,11 +114,11 @@ template $DuelpyWindow: Adw.ApplicationWindow {
             Gtk.Box results_images_box {
               orientation: horizontal;
               margin-bottom: 12;
-              spacing: 12;
+              spacing: 20;
               halign: center;
 
               Gtk.Image img_player_choice {
-                pixel-size: 160;
+                pixel-size: 124;
                 accessible-role: presentation;
 
                 styles [
@@ -148,7 +136,7 @@ template $DuelpyWindow: Adw.ApplicationWindow {
               }
 
               Gtk.Image img_computer_choice {
-                pixel-size: 160;
+                pixel-size: 124;
                 accessible-role: presentation;
 
                 styles [
