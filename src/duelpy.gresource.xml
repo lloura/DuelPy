@@ -40,6 +40,7 @@
     <file preprocess="xml-stripblanks" alias="icons/diagram-classic.svg">icons/diagrams/diagram-classic.svg</file>
     <file preprocess="xml-stripblanks" alias="icons/diagram-rpsls.svg">icons/diagrams/diagram-rpsls.svg</file>
     <file preprocess="xml-stripblanks" alias="icons/diagram-rps7.svg">icons/diagrams/diagram-rps7.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/diagram-rps9.svg">icons/diagrams/diagram-rps9.svg</file>
   </gresource>
 </gresources>
 
