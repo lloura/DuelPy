@@ -1,38 +1,61 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $HowToPlayDialog: Adw.Dialog {
+template $HowToPlayDialog : Adw.Dialog {
   title: _("How to Play");
-  content-width: 500;
+  width-request: 360;
+  height-request: 500;
+  content-width: 800;
   content-height: 700;
 
   child: Adw.ToolbarView {
     [top]
     Adw.HeaderBar {}
 
-    content: Adw.PreferencesPage {
-      /* --- image section --- */
-      Adw.PreferencesGroup {
-        Gtk.Box {
+    content: Gtk.ScrolledWindow {
+      Adw.Clamp {
+        maximum-size: 800;
+        tightening-threshold: 400;
+
+        child: Gtk.Box main_layout {
           orientation: vertical;
+          margin-top: 16;
+          margin-bottom: 16;
+          margin-start: 16;
+          margin-end: 16;
+          spacing: 16;
 
           Gtk.Image img_diagram {
-            pixel-size: 300;
-            accessible-role: presentation;
-
-            styles [
-              "icon-dropshadow",
-            ]
+            pixel-size: 320;
+            halign: center;
+            valign: center;
+            styles ["icon-dropshadow"]
           }
-        }
-      }
 
-      /* --- dynamic rules section --- */
-      Adw.PreferencesGroup rules_group {
-        title: _("Move Interactions");
-        description: _("Select a move to see which opponents it defeats and why.");
-        accessible-role: group;
+          Adw.PreferencesGroup rules_group {
+            title: _("Move Interactions");
+            description: _("Select a move to see which opponents it defeats.");
+          }
+        };
       }
     };
   };
+
+  /*Adw.Breakpoint {
+    condition ("min-width: 650")
+
+    setters {
+      main_layout.orientation: horizontal;
+      main_layout.spacing: 48;
+      main_layout.margin-start: 32;
+      main_layout.margin-end: 32;
+
+      img_diagram.pixel-size: 320;
+      img_diagram.valign: start;
+      img_diagram.halign: start;
+
+      rules_group.hexpand: true;
+      rules_group.valign: start;
+    }
+  }*/
 }
