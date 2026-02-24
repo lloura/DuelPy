@@ -80,6 +80,8 @@
           <li>Redesigned the "How to Play" page to be more responsive on different window sizes</li>
           <li>Redesigned the diagrams that serve as visual guides on the "How to Play" page</li>
           <li>Optimised all svg files to occupy less disk space</li>
+          <li>Add Vietnamese (vi) translation (Thank you, Huỳnh Thiện Lộc!)</li>
+          <li>Updated brazilian portuguese (pt_BR) translation<li>
         </ul>
       </description>
     </release>
