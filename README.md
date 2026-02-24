@@ -111,7 +111,10 @@ I chose Python because I plan to use it for similar projects in the future, and 
 - [x] Implementation of a visual 'How to Play' guide for the different variants
 - [x] Implementation of David C. Lovelace's **RPS-7** mode
 - [x] Flathub submission (Done! 🎉)
-- [ ] Add more game variants (RPS-9, RPS-11...)
+- [ ] Add more game variants:
+  - [x] RPS-9
+  - [ ] RPS-11
+  - [ ] RPS-15
 
 **Contributions are welcome!** Feel free to open issues or submit pull requests.
 
