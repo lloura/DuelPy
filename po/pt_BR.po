@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: duelpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-13 18:02-0300\n"
-"PO-Revision-Date: 2026-01-09 12:53-0300\n"
+"POT-Creation-Date: 2026-02-24 19:43-0300\n"
+"PO-Revision-Date: 2026-02-24 19:56-0300\n"
 "Last-Translator: Lucas Loura <oliverloura2020@gmail.com>\n"
 "Language-Team: Brazilian Portuguese\n"
 "Language: pt_BR\n"
@@ -74,13 +74,13 @@ msgstr "Interface adaptativa que funciona em qualquer tamanho de tela"
 msgid "Full keyboard support for fast-paced gameplay"
 msgstr "Suporte total ao teclado para uma jogabilidade ágil"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:30 src/window.blp:35
-#: src/window.blp:89 src/window.blp:232 src/game_logic/modes.py:26
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:30 src/window.blp:21
+#: src/window.blp:75 src/window.blp:225 src/game_logic/modes.py:26
 msgid "RPSLS"
 msgstr "PPTLS"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:31 src/window.blp:103
-#: src/window.blp:244 src/game_logic/modes.py:73
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:31 src/window.blp:89
+#: src/window.blp:237 src/game_logic/modes.py:73
 msgid "RPS-7"
 msgstr "RPS-7"
 
@@ -116,11 +116,54 @@ msgstr "Modo de jogo RPS-7 expandido"
 msgid "Game results showing Fire vs Air"
 msgstr "Resultados do jogo mostrando Fogo vs Ar"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:77
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:74
+msgid "Expanded RPS-9 game mode"
+msgstr "Modo de jogo RPS-9 expandido"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:78
+msgid "Game results showing Gun vs Paper"
+msgstr "Resultados do jogo mostrando Arma vs Papel"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:85
+msgid "Introducing RPS-9"
+msgstr "Introduzindo o RPS-9"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:87
+msgid ""
+"Implemented new RPS-9 game mode (Rock-Paper-Scissors-Sponge-Fire-Water-Air-"
+"Human-Gun)"
+msgstr ""
+"Implementação do novo modo de jogo RPS-9 Pedra-Papel-Tesoura-Esponja-Fogo-"
+"Água-Ar-Humano-Arma!"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:88
+msgid ""
+"Redesigned the \"How to Play\" page to be more responsive on different "
+"window sizes"
+msgstr ""
+"Redesign da página \"Como Jogar\" para ser mais responsiva em diferentes "
+"tamanhos de janela"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:89
+msgid ""
+"Redesigned the diagrams that serve as visual guides on the \"How to Play\" "
+"page"
+msgstr ""
+"Redesign dos diagramas que servem como guias visuais na página \"Como Jogar\""
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:90
+msgid "Add Vietnamese (vi) translation (Thank you, Huỳnh Thiện Lộc!)"
+msgstr "Adicionada tradução em Vietnamita (vi) (Obrigado, Huỳnh Thiện Lộc!)"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:91
+msgid "Updated brazilian portuguese (pt_BR) translation"
+msgstr "Atualizada tradução em Português Brasileiro (pt_BR)"
+
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:97
 msgid "Accessibility and Architecture Overhaul"
 msgstr "Acessibilidade e Reformulação de Arquitetura"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:79
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:99
 msgid ""
 "Implemented accessible roles for all UI elements to support assistive "
 "technologies"
@@ -128,53 +171,53 @@ msgstr ""
 "Implementação de funções de acessibilidade para todos os elementos da "
 "interface do usuário para dar suporte a tecnologias assistivas"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:80
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:100
 msgid ""
 "Modularized the project structure by splitting widgets into separate files"
 msgstr ""
 "Modularização da estrutura do projeto dividindo os widgets em arquivos "
 "separados"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:81
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:101
 msgid ""
 "Enhanced adaptive layout with new breakpoints and scrollable window support"
 msgstr ""
 "Aprimoraçã aprimorar aprimoração o doLayout adaptativo aprimorado com novos "
 "pontos de interrupção e suporte para janelas roláveis"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:82
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:102
 msgid "Updated \"About\" page design following GNOME 49 guidelines"
 msgstr ""
 "Design da página \"Sobre\" atualizado de acordo com as diretrizes do GNOME 49"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:88
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:108
 msgid "Quality Improvements and Metadata Polish"
 msgstr "Melhorias de Qualidade e Polimento de Metadados"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:90
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:110
 msgid "Refined application description and summary for better clarity"
 msgstr "Descrição e resumo do aplicativo refinados para maior clareza"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:91
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:111
 msgid "Updated screenshots to better showcase the interface"
 msgstr "Capturas de tela atualizadas para melhor exibição da interface"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:92
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:112
 msgid "Added metadata keywords to make the app easier to find"
 msgstr "Adição de palavras-chave para facilitar a busca pelo aplicativo"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:98
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:118
 msgid "Introducing RPS-7"
 msgstr "Introduzindo o RPS-7"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:100
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:120
 msgid ""
 "Implemented new RPS-7 game mode (Rock-Paper-Scissors-Sponge-Fire-Water-Air)"
 msgstr ""
 "Implementação do novo modo de jogo RPS-7 Pedra-Papel-Tesoura-Esponja-Fogo-"
 "Água-Ar!"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:101
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:121
 msgid ""
 "Added persistent window state, remembering size and maximized state between "
 "sessions"
@@ -182,7 +225,7 @@ msgstr ""
 "Adicionado estado de janela persistente, lembrando tamanho e estado "
 "maximizado entre sessões"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:102
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:122
 msgid ""
 "Overhauled the localization system for better translation coverage across "
 "all pages"
@@ -190,15 +233,15 @@ msgstr ""
 "Reformulação do sistema de localização para uma melhor cobertura de tradução "
 "em todas as páginas"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:103
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:123
 msgid "Refreshed application and game icons"
 msgstr "Atualização dos ícones de jogo e do aplicativo "
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:109
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:129
 msgid "How to Play Guide and Refactoring"
 msgstr "Guia de Como Jogar e Refatoração"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:111
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:131
 msgid ""
 "Introduced a new \"How to Play\" section with visual guides for each game "
 "mode"
@@ -206,7 +249,7 @@ msgstr ""
 "Introduzida uma nova seção \"Como Jogar\" com guias visuais para cada modo "
 "de jogo"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:112
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:132
 msgid ""
 "Significant internal restructuring and code refactoring for better "
 "maintainability"
@@ -214,20 +257,20 @@ msgstr ""
 "Reestruturação interna significativa e refatoração de código para melhor "
 "manutenção"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:113
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:133
 msgid "Added new keyboard shortcuts and updated the shortcuts window"
 msgstr "Adicionados novos atalhos de teclado e janela de atalhos atualizada"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:119
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:139
 msgid "Credits and Visual Polish"
 msgstr "Créditos e Polimento Visual"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:121
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:141
 msgid "Redesigned the \"About\" window to provide a more modern experience"
 msgstr ""
 "Reformulação da janela \"Sobre\" para fornecer uma experiência mais moderna"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:122
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:142
 msgid ""
 "Added dedicated credits for game variant creators: Sam Kass, Karen Bryla and "
 "David C. Lovelace"
@@ -235,64 +278,64 @@ msgstr ""
 "Adicionados créditos aos criadores dos modos de jogo: Sam Kass, Karen Bryla "
 "e David C. Lovelace"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:128
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:148
 msgid "Introducing Game Modes"
 msgstr "Introduzindo Modos de Jogo"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:130
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:150
 msgid "Added Classic game mode (Rock, Paper, Scissors)"
 msgstr "Adicionado modo de jogo Clássico (Pedra, Papel, Tesoura)"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:131
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:151
 msgid "Implemented game mode persistence using GSettings"
 msgstr "Implementada persistência de modo de jogo usando GSettings"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:132
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:152
 msgid "New mode selector in the header bar"
 msgstr "Novo seletor de modos na barra de título"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:138
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:158
 msgid "Implemented Internationalization Support"
 msgstr "Implementado Suporte a Internacionalização"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:140
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:160
 msgid "Added support for internationalization (i18n) using gettext"
 msgstr "Adicionado suporte para internacionalização (i18n) por meio do gettext"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:141
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:161
 msgid "Added Brazilian Portuguese (pt_BR) translation"
 msgstr "Adicionada tradução em Português Brasileiro (pt_BR)"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:142
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:162
 msgid "Keyboard shortcuts (1-5) are now triggerable via the keypad (Numpad)"
 msgstr ""
 "Atalhos de teclado (1-5) agora são acionáveis através do teclado numérico"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:148
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:168
 msgid "Updated Runtime and Keybindings"
 msgstr "Runtime Atualizado e Atalhos de Teclado"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:150
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:170
 msgid "Added keyboard shortcuts for game actions and a shortcuts window"
 msgstr "Adicionados novos atalhos para ações de jogo e uma janela de atalhos"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:151
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:171
 msgid "Updated the Flatpak runtime to GNOME SDK 49"
 msgstr "Atualizado runtime flatpak para o GNOME SDK 49"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:152
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:172
 msgid "Slightly updated the application icon"
 msgstr "Leve atualização do ícone do aplicativo"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:158
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:178
 msgid "Initial release"
 msgstr "Lançamento inicial"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:160
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:180
 msgid "Rock, Paper, Scissors, Lizard, Spock gameplay"
 msgstr "Jogabilidade de Pedra, Papel, Tesoura, Lagarto, Spock"
 
-#: data/io.github.lloura.DuelPy.metainfo.xml.in:161
+#: data/io.github.lloura.DuelPy.metainfo.xml.in:181
 msgid "Modern GTK4/Libadwaita interface"
 msgstr "Interface moderna usando GTK4/Libadwaita"
 
@@ -352,64 +395,68 @@ msgstr "Criadores das Variantes"
 msgid "Original Inspiration"
 msgstr "Inspiração Original"
 
-#: src/window.blp:32
+#: src/window.blp:18
 msgid "Mode Selection"
 msgstr "Seleção de Modos"
 
-#: src/window.blp:44
+#: src/window.blp:30
 msgid "Main Menu"
 msgstr "Menu Principal"
 
-#: src/window.blp:51
+#: src/window.blp:37
 msgid "Home"
 msgstr "Início"
 
-#: src/window.blp:77
+#: src/window.blp:63
 msgid "Welcome!"
 msgstr "Boas-vindas!"
 
-#: src/window.blp:96 src/window.blp:238 src/game_logic/modes.py:54
+#: src/window.blp:82 src/window.blp:231 src/game_logic/modes.py:54
 msgid "Classic"
 msgstr "Clássico"
 
-#: src/window.blp:114
+#: src/window.blp:96 src/window.blp:243 src/game_logic/modes.py:114
+msgid "RPS-9"
+msgstr "RPS-9"
+
+#: src/window.blp:107
 msgid "Results"
 msgstr "Resultados"
 
-#: src/window.blp:197 src/ui/shortcuts.py:41
+#: src/window.blp:190 src/ui/shortcuts.py:41
 msgid "Try Again"
 msgstr "Tentar Novamente"
 
-#: src/window.blp:213 src/ui/how_to_play.blp:5
+#: src/window.blp:206 src/ui/how_to_play.blp:5
 msgid "How to Play"
 msgstr "Como Jogar"
 
-#: src/window.blp:218
+#: src/window.blp:211
 msgid "Keyboard Shortcuts"
 msgstr "Atalhos de Teclado"
 
-#: src/window.blp:223
+#: src/window.blp:216
 msgid "About Duel!"
 msgstr "Sobre o Duel!"
 
-#: src/window.py:160
+#: src/window.py:162
 msgid "Draw!"
 msgstr "Empate!"
 
-#: src/window.py:161
+#: src/window.py:163
 msgid "it's a tie!"
 msgstr "É um empate!"
 
-#: src/window.py:163
+#: src/window.py:165
 msgid "You Won!"
 msgstr "Você Venceu!"
 
-#: src/window.py:166
+#: src/window.py:168
 msgid "You Lost!"
 msgstr "Você Perdeu!"
 
 #: src/game_logic/modes.py:38 src/game_logic/modes.py:64
-#: src/game_logic/modes.py:88
+#: src/game_logic/modes.py:87 src/game_logic/modes.py:130
 msgid "Rock breaks Scissors!"
 msgstr "Pedra quebra a Tesoura!"
 
@@ -418,7 +465,7 @@ msgid "Rock crushes Lizard!"
 msgstr "Pedra esmaga o Lagarto!"
 
 #: src/game_logic/modes.py:40 src/game_logic/modes.py:65
-#: src/game_logic/modes.py:91
+#: src/game_logic/modes.py:90 src/game_logic/modes.py:134
 msgid "Paper covers Rock!"
 msgstr "Papel cobre a Pedra!"
 
@@ -427,7 +474,7 @@ msgid "Paper disproves Spock!"
 msgstr "Papel refuta o Spock!"
 
 #: src/game_logic/modes.py:42 src/game_logic/modes.py:66
-#: src/game_logic/modes.py:94
+#: src/game_logic/modes.py:93 src/game_logic/modes.py:138
 msgid "Scissors cuts Paper!"
 msgstr "Tesoura corta o Papel!"
 
@@ -451,83 +498,143 @@ msgstr "Spock quebra a Tesoura!"
 msgid "Spock vaporizes Rock!"
 msgstr "Spock vaporiza a Pedra!"
 
-#: src/game_logic/modes.py:87
-msgid "Rock pounds out Fire!"
-msgstr "Pedra abafa o Fogo!"
-
-#: src/game_logic/modes.py:89
+#: src/game_logic/modes.py:88 src/game_logic/modes.py:131
 msgid "Rock crushes Sponge!"
 msgstr "Pedra esmaga a Esponja!"
 
-#: src/game_logic/modes.py:90
-msgid "Paper fans Air!"
-msgstr "Papel abana o Ar!"
+#: src/game_logic/modes.py:89 src/game_logic/modes.py:132
+msgid "Rock pounds out Fire!"
+msgstr "Pedra abafa o Fogo!"
 
-#: src/game_logic/modes.py:92
+#: src/game_logic/modes.py:91 src/game_logic/modes.py:135
 msgid "Paper floats on Water!"
 msgstr "Papel flutua na Água!"
 
-#: src/game_logic/modes.py:93
-msgid "Scissors swishes through Air!"
-msgstr "Tesoura corta o Ar!"
+#: src/game_logic/modes.py:92 src/game_logic/modes.py:136
+msgid "Paper fans Air!"
+msgstr "Papel abana o Ar!"
 
-#: src/game_logic/modes.py:95
+#: src/game_logic/modes.py:94 src/game_logic/modes.py:139
 msgid "Scissors cuts Sponge!"
 msgstr "Tesoura corta a Esponja!"
 
-#: src/game_logic/modes.py:96
+#: src/game_logic/modes.py:95 src/game_logic/modes.py:140
+msgid "Scissors swishes through Air!"
+msgstr "Tesoura corta o Ar!"
+
+#: src/game_logic/modes.py:96 src/game_logic/modes.py:142
 msgid "Sponge soaks Paper!"
 msgstr "Esponja encharca o Papel!"
 
-#: src/game_logic/modes.py:97
-msgid "Sponge uses Air pockets!"
-msgstr "Esponja usa bolsões de Ar!"
-
-#: src/game_logic/modes.py:98
+#: src/game_logic/modes.py:97 src/game_logic/modes.py:143
 msgid "Sponge absorbs Water!"
 msgstr "Esponja absorve a Água!"
 
-#: src/game_logic/modes.py:99
-msgid "Fire melts Scissors!"
-msgstr "Fogo derrete a Tesoura!"
+#: src/game_logic/modes.py:98 src/game_logic/modes.py:144
+msgid "Sponge uses Air pockets!"
+msgstr "Esponja usa bolsões de Ar!"
 
-#: src/game_logic/modes.py:100
+#: src/game_logic/modes.py:99 src/game_logic/modes.py:146
 msgid "Fire burns Paper!"
 msgstr "Fogo queima o Papel!"
 
-#: src/game_logic/modes.py:101
+#: src/game_logic/modes.py:100 src/game_logic/modes.py:147
+msgid "Fire melts Scissors!"
+msgstr "Fogo derrete a Tesoura!"
+
+#: src/game_logic/modes.py:101 src/game_logic/modes.py:148
 msgid "Fire burns Sponge!"
 msgstr "Fogo queima a Esponja!"
 
-#: src/game_logic/modes.py:102
+#: src/game_logic/modes.py:102 src/game_logic/modes.py:150
 msgid "Water erodes Rock!"
 msgstr "Água erode a Pedra!"
 
-#: src/game_logic/modes.py:103
-msgid "Water puts out Fire!"
-msgstr "Água apaga o Fogo!"
-
-#: src/game_logic/modes.py:104
+#: src/game_logic/modes.py:103 src/game_logic/modes.py:151
 msgid "Water rusts Scissors!"
 msgstr "Água enferruja a Tesoura!"
 
-#: src/game_logic/modes.py:105
-msgid "Air blows out Fire!"
-msgstr "Ar apaga o Fogo!"
+#: src/game_logic/modes.py:104 src/game_logic/modes.py:152
+msgid "Water puts out Fire!"
+msgstr "Água apaga o Fogo!"
 
-#: src/game_logic/modes.py:106
+#: src/game_logic/modes.py:105 src/game_logic/modes.py:154
 msgid "Air erodes Rock!"
 msgstr "Ar erode a Pedra!"
 
-#: src/game_logic/modes.py:107
+#: src/game_logic/modes.py:106 src/game_logic/modes.py:155
+msgid "Air blows out Fire!"
+msgstr "Ar apaga o Fogo!"
+
+#: src/game_logic/modes.py:107 src/game_logic/modes.py:156
 msgid "Air evaporates Water!"
 msgstr "Ar evapora a Água!"
 
-#: src/ui/how_to_play.blp:32
+#: src/game_logic/modes.py:133
+msgid "Rock crushes Human!"
+msgstr "Pedra esmaga o Humano!"
+
+#: src/game_logic/modes.py:137
+msgid "Paper outlaws Gun!"
+msgstr "Papel proíbe a Arma!"
+
+#: src/game_logic/modes.py:141
+msgid "Scissors cuts Human!"
+msgstr "Tesoura corta o Humano!"
+
+#: src/game_logic/modes.py:145
+msgid "Sponge cleans Gun!"
+msgstr "Esponja limpa a Arma!"
+
+#: src/game_logic/modes.py:149
+msgid "Fire burns Human!"
+msgstr "Fogo queima o Humano!"
+
+#: src/game_logic/modes.py:153
+msgid "Water rusts Gun!"
+msgstr "Água enferruja a Arma!"
+
+#: src/game_logic/modes.py:157
+msgid "Air tarnishes Gun!"
+msgstr "Ar oxida a Arma!"
+
+#: src/game_logic/modes.py:158
+msgid "Human writes on Paper!"
+msgstr "Humano escreve no Papel!"
+
+#: src/game_logic/modes.py:159
+msgid "Human cleans with Sponge!"
+msgstr "Humano limpa com a Esponja!"
+
+#: src/game_logic/modes.py:160
+msgid "Human drinks Water!"
+msgstr "Humano bebe a Água!"
+
+#: src/game_logic/modes.py:161
+msgid "Human breathes Air!"
+msgstr "Humano respira o Ar!"
+
+#: src/game_logic/modes.py:162
+msgid "Gun targets Rock!"
+msgstr "Arma mira na Pedra!"
+
+#: src/game_logic/modes.py:163
+msgid "Gun outclasses Scissors!"
+msgstr "Arma supera a Tesoura!"
+
+#: src/game_logic/modes.py:164
+msgid "Gun Fires!"
+msgstr "Arma de Fogo!"
+
+#: src/game_logic/modes.py:165
+msgid "Gun shoots Human!"
+msgstr "Arma atira no Humano!"
+
+#: src/ui/how_to_play.blp:40
 msgid "Move Interactions"
 msgstr "Interações de Jogadas"
 
-#: src/ui/how_to_play.blp:33
+#: src/ui/how_to_play.blp:41
 msgid "Select a move to see which opponents it defeats and why."
 msgstr "Selecione uma jogada para ver quais oponentes ela vence e o porquê."
 
@@ -552,6 +659,10 @@ msgstr "Mudar para o Modo Clássico"
 #: src/ui/shortcuts.py:52
 msgid "Switch to RPS-7 Mode"
 msgstr "Mudar para o Modo RPS-7"
+
+#: src/ui/shortcuts.py:53
+msgid "Switch to RPS-9 Mode"
+msgstr "Mudar para o Modo RPS-9"
 
 #: src/game_modes/classic_view.blp:9
 msgid "Let's Play Rock-Paper-Scissors!"
