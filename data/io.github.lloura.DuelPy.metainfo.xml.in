@@ -50,24 +50,32 @@
 
   <screenshots>
     <screenshot>
-      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/main.png</image>
+      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/flathub/WelcomeRPSLS.png</image>
       <caption>Main welcome screen</caption>
     </screenshot>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/paper_x_spock.png</image>
+      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/flathub/PaperVsSpock.png</image>
       <caption>Game results showing Paper vs Spock</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/how_to_play_rpsls.png</image>
+      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/flathub/HowToPlayRPSLS.png</image>
       <caption>Visual guide for game rules</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/main_rps7.png</image>
+      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/flathub/WelcomeRPS7.png</image>
       <caption>Expanded RPS-7 game mode</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/fire_x_air.png</image>
+      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/flathub/FireVsAir.png</image>
       <caption>Game results showing Fire vs Air</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/flathub/WelcomeRPS9.png</image>
+      <caption>Expanded RPS-9 game mode</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/flathub/FireVsAir.png</image>
+      <caption>Game results showing Gun vs Paper</caption>
     </screenshot>
   </screenshots>
 
@@ -79,9 +87,8 @@
           <li>Implemented new RPS-9 game mode (Rock-Paper-Scissors-Sponge-Fire-Water-Air-Human-Gun)</li>
           <li>Redesigned the "How to Play" page to be more responsive on different window sizes</li>
           <li>Redesigned the diagrams that serve as visual guides on the "How to Play" page</li>
-          <li>Optimised all svg files to occupy less disk space</li>
           <li>Add Vietnamese (vi) translation (Thank you, Huỳnh Thiện Lộc!)</li>
-          <li>Updated brazilian portuguese (pt_BR) translation<li>
+          <li>Updated brazilian portuguese (pt_BR) translation</li>
         </ul>
       </description>
     </release>
