@@ -49,11 +49,11 @@
   </branding>
 
   <screenshots>
-    <screenshot type="default">
+    <screenshot>
       <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/main.png</image>
       <caption>Main welcome screen</caption>
     </screenshot>
-    <screenshot>
+    <screenshot type="default">
       <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/paper_x_spock.png</image>
       <caption>Game results showing Paper vs Spock</caption>
     </screenshot>
