@@ -51,7 +51,7 @@ class DuelpyApplication(Adw.Application):
     def on_about_action(self, *args):
         """Callback for the app.about action."""
         resource_path = "/io/github/lloura/DuelPy/io.github.lloura.DuelPy.metainfo.xml"
-        about = Adw.AboutDialog.new_from_appdata(resource_path, "0.3.3")
+        about = Adw.AboutDialog.new_from_appdata(resource_path, "0.3.4")
 
         about.set_copyright("© 2025-2026 Lucas Loura")
         about.set_license_type(Gtk.License.GPL_3_0)

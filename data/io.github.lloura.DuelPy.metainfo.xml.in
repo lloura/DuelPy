@@ -72,6 +72,17 @@
   </screenshots>
 
   <releases>
+    <release version="0.3.4" date="2026-02-24">
+      <description>
+        <p>Introducing RPS-9</p>
+        <ul>
+          <li>Implemented new RPS-9 game mode (Rock-Paper-Scissors-Sponge-Fire-Water-Air-Human-Gun)</li>
+          <li>Redesigned the "How to Play" page to be more responsive on different window sizes</li>
+          <li>Redesigned the diagrams that serve as visual guides on the "How to Play" page</li>
+          <li>Optimised all svg files to occupy less disk space</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.3.3" date="2026-01-09">
       <description>
         <p>Accessibility and Architecture Overhaul</p>
