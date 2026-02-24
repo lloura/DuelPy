@@ -7,7 +7,7 @@
 
   [![Download on Flathub](https://dl.flathub.org/assets/badges/flathub-badge-en.png)](https://flathub.org/apps/io.github.lloura.DuelPy)
   
-  <img src="data/screenshots/main_paper_x_spock.png" alt="Main • Paper x Spock"/>
+  <img src="data/screenshots/readme/WelcomeRPSLS_PaperVsSpock.png" alt="Lizard x Rock • Paper x Spock"/>
 </div>
 
 ---
@@ -81,10 +81,11 @@ Pre-built Flatpak packages are also available in the [Releases](../../releases) 
 <details>
 <summary>Click to see more screenshots</summary>
 
-<img src="data/screenshots/lizard_x_rock_paper_x_spock.png" alt="Lizard x Rock • Paper x Spock"/>
-<img src="data/screenshots/paper_x_lizard_rock_x_scissors.png" alt="Paper x Lizard • Rock x Scissors"/>
-<img src="data/screenshots/how_to_play_rpsls_main_rps7.png" alt="Paper x Lizard • Rock x Scissors"/>
-<img src="data/screenshots/sponge_x_water_fire_x_air.png" alt="Paper x Lizard • Rock x Scissors"/>
+<img src="data/screenshots/readme/WelcomeRPSLS_PaperVsSpock.png" alt="Lizard x Rock • Paper x Spock"/>
+<img src="data/screenshots/readme/RockVsScissors_PaperVsLizard.png" alt="Paper x Lizard • Rock x Scissors"/>
+<img src="data/screenshots/readme/HowToPlayRPSLS_WelcomeRPS7.png" alt="Paper x Lizard • Rock x Scissors"/>
+<img src="data/screenshots/readme/SpongeVsWater_FireVsAir.png" alt="Paper x Lizard • Rock x Scissors"/>
+<img src="data/screenshots/readme/WelcomeRPS9_GunVsPaper.png" alt="Lizard x Rock • Paper x Spock"/>
 
 </details>
 
@@ -136,3 +137,4 @@ I chose Python because I plan to use it for similar projects in the future, and 
 ## License
 
 This project is licensed under the [GNU General Public License v3.0](COPYING).
+
