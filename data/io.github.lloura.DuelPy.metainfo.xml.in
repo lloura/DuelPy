@@ -66,7 +66,7 @@
       <caption>Expanded RPS-7 game mode</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/flathub/FireVsAir.png</image>
+      <image>https://raw.githubusercontent.com/lloura/DuelPy/main/data/screenshots/flathub/FireVsAirW.png</image>
       <caption>Game results showing Fire vs Air</caption>
     </screenshot>
     <screenshot>
@@ -80,7 +80,7 @@
   </screenshots>
 
   <releases>
-    <release version="0.3.4" date="2026-02-24">
+    <release version="0.3.4" date="2026-02-25">
       <description>
         <p>Introducing RPS-9</p>
         <ul>
