@@ -80,6 +80,11 @@
   </screenshots>
 
   <releases>
+    <release version="51.0" date="2026-11-10">
+      <description>
+        <p>Updated runtime to GNOME 50</p>
+      </description>
+    </release>
     <release version="50.0" date="2026-08-08">
       <description>
         <p>Updated runtime to GNOME 50</p>
